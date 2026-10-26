@@ -27,6 +27,7 @@ public final class FuelProcessorTile extends SeedCrafterTile implements NuclearH
  private Job job;private Dynamic<?> jobRecovery;private int jobSchema=1;
  private record JobState(Job value){}
  private List<BlockPos> transferPorts=List.of();
+ private long lastPortTransfer=Long.MIN_VALUE;private int pullCursor;
  private int issueItem,issueFound,issueRequired;
  public int issueItem(){return issueItem;}public int issueFound(){return issueFound;}public int issueRequired(){return issueRequired;}
  private int fabricationMode,fuelStatus=5;private boolean processing,formed,structureDirty=true,running,visualRunning;private long lastStructureCheck=Long.MIN_VALUE,attemptedRevision=-1,attemptedEnergy=-1;private BlockPos issue=BlockPos.ZERO;
@@ -106,8 +107,12 @@ public final class FuelProcessorTile extends SeedCrafterTile implements NuclearH
   if(structureDirty||lastStructureCheck==Long.MIN_VALUE||level.getGameTime()-lastStructureCheck>=20)validateStructure();
   if(!chunksLoaded()){structureDirty=true;formed=false;fuelStatus=7;return false;}
   if(!formed())return false;
-  NuclearPortTile.pull(level,transferPorts);
-  if(level.getGameTime()%5==0)for(var p:transferPorts){if(!NuclearPortTile.active(level,p)||!NuclearReactor.role(level.getBlockState(p)).equals("waste_output"))continue;var face=NuclearPart.facing(level.getBlockState(p));var neighbor=p.relative(face);if(contains(neighbor)||!level.hasChunkAt(neighbor))continue;var destination=level.getCapability(net.neoforged.neoforge.capabilities.Capabilities.Item.BLOCK,neighbor,face.getOpposite());if(destination!=null)pushTo(destination);}
+  long now=level.getGameTime();
+  // Work wakes relative to this host, so a global modulo gate can starve every transfer.
+  if(lastPortTransfer==Long.MIN_VALUE||now<lastPortTransfer||now-lastPortTransfer>=5){
+   lastPortTransfer=now;pullCursor=NuclearPortTile.pullBatch(level,transferPorts,pullCursor);
+   for(var p:transferPorts){if(!NuclearPortTile.active(level,p)||!NuclearReactor.role(level.getBlockState(p)).equals("waste_output"))continue;var face=NuclearPart.facing(level.getBlockState(p));var neighbor=p.relative(face);if(contains(neighbor)||!level.hasChunkAt(neighbor))continue;var destination=level.getCapability(net.neoforged.neoforge.capabilities.Capabilities.Item.BLOCK,neighbor,face.getOpposite());if(destination!=null)pushTo(destination);}
+  }
 
   if(level.hasNeighborSignal(worldPosition)){fuelStatus=9;return false;}
   if(job!=null)return advance();

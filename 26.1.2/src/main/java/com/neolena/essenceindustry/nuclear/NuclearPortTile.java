@@ -19,10 +19,17 @@ public final class NuclearPortTile extends BlockEntity {
  public static void pull(net.minecraft.world.level.Level level,java.util.List<BlockPos> ports){
   if(ports.isEmpty()||level.getGameTime()%5!=0)return;
   int start=(int)Math.floorMod(level.getGameTime()/5*16,ports.size());
+  pullBatch(level,ports,start);
+ }
+ /** Scheduled hosts own their polling interval; resume the bounded cursor on every poll. */
+ public static int pullBatch(net.minecraft.world.level.Level level,java.util.List<BlockPos> ports,int cursor){
+  if(ports.isEmpty())return 0;
+  int start=Math.floorMod(cursor,ports.size());
   for(int i=0;i<Math.min(16,ports.size());i++){
    var pos=ports.get((start+i)%ports.size());
    if(level.getBlockEntity(pos) instanceof NuclearPortTile port)port.pullFromNeighbor();
   }
+  return (start+Math.min(16,ports.size()))%ports.size();
  }
  public void pullFromNeighbor(){
   if(level==null||level.isClientSide()||!active||outputMode())return;

@@ -77,7 +77,7 @@ Fuel and control share one section. Stack a complete interior column and place o
 
 ## Reactor Control Actuator
 
-Place one above every fuel assembly column. The controller adjusts the integrated absorbers together. Fuel-processing plants also use actuators at their fixed process positions.
+Place one above every fuel assembly column. The controller adjusts the integrated absorbers together. Fuel plants use the listed number of actuators anywhere in their roof.
 
 <Recipe id="essenceindustry:reactor_actuator" />
 

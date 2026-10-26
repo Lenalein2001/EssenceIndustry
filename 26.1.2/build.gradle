@@ -112,3 +112,115 @@ tasks.named('jar', Jar) {
 }
 
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+// Catch ambiguous bundled crafting grids before producing a release jar.
+tasks.register('verifyCraftingRecipes') {
+    def recipes = fileTree('src/main/resources/data') { include '**/recipe/**/*.json' }
+    inputs.files(recipes)
+    doLast {
+        def canonical
+        canonical = { value ->
+            if (value instanceof Map) return new TreeMap(value.collectEntries { k, v -> [(k): canonical(v)] })
+            // Lists inside custom ingredient data can be ordered (for example, components).
+            if (value instanceof List) return value.collect { canonical(it) }
+            return value
+        }
+        def ingredient = { value ->
+            def alternatives = value instanceof List ? value : [value]
+            new LinkedHashSet(alternatives.collect { entry ->
+                if (entry instanceof String) {
+                    boolean tag = entry.startsWith('#')
+                    def id = tag ? entry.substring(1) : entry
+                    if (!id.contains(':')) id = 'minecraft:' + id
+                    return (tag ? 'tag:' : 'item:') + id
+                }
+                return 'custom:' + groovy.json.JsonOutput.toJson(canonical(entry))
+            })
+        }
+        def overlaps = { left, right -> left.any { right.contains(it) } }
+        def gridsOverlap = { left, right ->
+            if (left.size() != right.size() || left.first().size() != right.first().size()) return false
+            for (int y = 0; y < left.size(); y++) {
+                for (int x = 0; x < left[y].size(); x++) {
+                    def a = left[y][x]
+                    def b = right[y][x]
+                    if (a == null || b == null) {
+                        if (a != null || b != null) return false
+                    } else if (!overlaps(a, b)) return false
+                }
+            }
+            return true
+        }
+        def contentsOverlap = { left, right ->
+            if (left.size() != right.size()) return false
+            // Find a complete ingredient assignment; greedy matching misses overlapping alternatives.
+            int[] owners = new int[right.size()]
+            java.util.Arrays.fill(owners, -1)
+            def assign
+            assign = { int index, boolean[] visited ->
+                for (int candidate = 0; candidate < right.size(); candidate++) {
+                    if (visited[candidate] || !overlaps(left[index], right[candidate])) continue
+                    visited[candidate] = true
+                    if (owners[candidate] < 0 || assign(owners[candidate], visited)) {
+                        owners[candidate] = index
+                        return true
+                    }
+                }
+                return false
+            }
+            for (int index = 0; index < left.size(); index++) {
+                if (!assign(index, new boolean[right.size()])) return false
+            }
+            return true
+        }
+        def seen = []
+        def conflicts = []
+        recipes.files.sort().each { recipe ->
+            def data = new groovy.json.JsonSlurper().parse(recipe, 'UTF-8')
+            def grid = null
+            def contents
+            if (data.type == 'minecraft:crafting_shaped') {
+                def rows = new ArrayList(data.pattern)
+                while (rows && !rows.first().trim()) rows.remove(0)
+                while (rows && !rows.last().trim()) rows.remove(rows.size() - 1)
+                if (!rows) throw new GradleException("Empty crafting pattern: ${recipe.name}")
+                def used = rows.findAll { it.trim() }
+                int left = used.collect { it.length() - it.stripLeading().length() }.min()
+                int right = used.collect { it.stripTrailing().length() }.max()
+                grid = rows.collect { row -> row.substring(left, right).toList().collect { symbol ->
+                    if (symbol == ' ') return null
+                    if (!data.key.containsKey(symbol)) throw new GradleException("Undefined crafting symbol '${symbol}': ${recipe.name}")
+                    return ingredient(data.key[symbol])
+                } }
+                contents = grid.collectMany { row -> row.findAll { it != null } }
+            } else if (data.type == 'minecraft:crafting_shapeless') {
+                contents = data.ingredients.collect { ingredient(it) }
+            } else return
+            seen.each { other ->
+                boolean conflict = false
+                if (contents.size() == other.contents.size()) {
+                    conflict = grid == null || other.grid == null
+                        ? contentsOverlap(contents, other.contents)
+                        : gridsOverlap(grid, other.grid) || gridsOverlap(grid, other.grid.collect { it.reverse() })
+                }
+                if (conflict) conflicts.add("${other.path} conflicts with ${project.relativePath(recipe)}")
+            }
+            seen.add([path: project.relativePath(recipe), grid: grid, contents: contents])
+        }
+        if (conflicts) throw new GradleException('Ambiguous crafting recipes:\n' + conflicts.join('\n'))
+        logger.lifecycle("CRAFTING_RECIPES_OK ${seen.size()} bundled recipes including direct alternatives; tag expansion, custom ingredient overlap and external pack recipes require runtime validation")
+    }
+}
+tasks.named('check') { dependsOn tasks.named('verifyCraftingRecipes') }
+
+tasks.register('verifyLanguageEncoding') {
+    def languageFile = file('src/main/resources/assets/essenceindustry/lang/en_us.json')
+    inputs.file(languageFile)
+    doLast {
+        def entries = new groovy.json.JsonSlurper().parse(languageFile, 'UTF-8')
+        def corrupt = java.util.regex.Pattern.compile('[\u00C2\u00C3\uFFFD]|\u00E2[\u0080-\u00BF\u20AC]')
+        def bad = entries.findAll { key, value -> value instanceof String && corrupt.matcher(value).find() }.keySet()
+        if (!bad.isEmpty()) throw new GradleException('Corrupt language encoding in: ' + bad.join(', '))
+    }
+}
+tasks.named('check') { dependsOn tasks.named('verifyLanguageEncoding') }
