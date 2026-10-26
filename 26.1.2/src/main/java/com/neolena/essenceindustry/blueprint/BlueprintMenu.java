@@ -1,0 +1,60 @@
+package com.neolena.essenceindustry.blueprint;
+import com.neolena.essenceindustry.construction.BuilderWork;
+import com.neolena.essenceindustry.nuclear.FuelPlantLayout;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.player.*;
+import net.minecraft.world.inventory.*;
+import net.minecraft.world.item.*;
+public final class BlueprintMenu extends AbstractContainerMenu {
+ private net.minecraft.world.level.block.entity.BlockEntity host;private net.minecraft.core.BlockPos hostPosition;
+ private boolean closed;private final Inventory inv;private final int anchor;private final ItemStack bound;private final BlueprintWork work;
+ private static final int CORE_BASE=160,CORE_WORDS=385,CORE_REVISION=CORE_BASE+CORE_WORDS,COUNT=CORE_REVISION+1;private final int[] sync=new int[COUNT*2];private final int[] values=new int[COUNT];private final int[] clientLayout=new int[COUNT*2];
+ private int plannerSlot=-1,designMessage,designRevision;private ReactorCoreDesign lastDesign;private BlueprintSettings lastDesignSettings;
+ public BlueprintMenu(int id,Inventory inv,RegistryFriendlyByteBuf b){this(id,inv,b.readVarInt(),b);}
+ private BlueprintMenu(int id,Inventory inv,int slot,RegistryFriendlyByteBuf b){this(id,inv,slot,slot<0?b.readBlockPos():null);}
+ public BlueprintMenu(int id,Inventory inv,net.minecraft.core.BlockPos pos){this(id,inv,-1,pos);}
+ public BlueprintMenu(int id,Inventory inv,int slot){this(id,inv,slot,(net.minecraft.core.BlockPos)null);}
+ private BlueprintMenu(int id,Inventory inv,int slot,net.minecraft.core.BlockPos pos){super(MultiblockPlanner.MENU.get(),id);this.inv=inv;anchor=slot;hostPosition=pos;host=pos==null?null:inv.player.level().getBlockEntity(pos);bound=pos!=null?(inv.player.level().isClientSide()?new ItemStack(Items.PAPER):BlueprintStorage.get(host)):slot>=0&&slot<inv.getContainerSize()?inv.getItem(slot):ItemStack.EMPTY;work=inv.player instanceof ServerPlayer p?(host!=null?BlueprintAutomation.open(p,bound,this,host):new BlueprintWork(p,bound,this)):null;
+  if(work!=null&&!controllerMode()){work.claim();work.reopen();}refresh();addDataSlots(new ContainerData(){public int getCount(){return COUNT*2;}public void set(int i,int v){sync[i]=v;if(i>=CORE_REVISION*2){System.arraycopy(sync,0,clientLayout,0,24);System.arraycopy(sync,153*2,clientLayout,153*2,6);System.arraycopy(sync,CORE_BASE*2,clientLayout,CORE_BASE*2,CORE_WORDS*2);}}public int get(int i){return inv.player.level().isClientSide()?sync[i]:(values[i/2]>>((i%2)*16))&65535;}});
+ }
+ public void persist(){if(host!=null&&!inv.player.level().isClientSide())BlueprintStorage.save(host);}
+ public boolean controllerMode(){return hostPosition!=null;}
+ public BlueprintWork work(){return work;}public ItemStack tool(){return bound;}
+ private void refresh(){if(work==null)return;var s=PlannerItem.settings(bound);int[] a={s.kind(),s.width(),s.depth(),s.height(),s.pattern(),s.glass(),s.filler(),s.steam(),s.hatches(),s.coil(),s.blades(),s.rings(),work.status().ordinal(),work.progress(),work.materials().size(),BuilderWork.buffered(bound),bound.has(MultiblockPlanner.TARGET.get())?1:0,work.issue().getX(),work.issue().getY(),work.issue().getZ()};java.util.Arrays.fill(values,0);System.arraycopy(a,0,values,0,a.length);if(net.neoforged.fml.ModList.get().isLoaded("ae2")&&host instanceof com.neolena.essenceindustry.array.ArrayTile arr)values[15]+=arr.builder().stored();values[20]=host instanceof com.neolena.essenceindustry.nuclear.NuclearHost h&&h.formed()||net.neoforged.fml.ModList.get().isLoaded("ae2")&&host instanceof com.neolena.essenceindustry.array.ArrayTile aTile&&aTile.formed()?1:0;values[21]=work.manualReview()?1:0;if(net.neoforged.fml.ModList.get().isLoaded("ae2")&&host instanceof com.neolena.essenceindustry.array.ArrayTile arr)values[22]=arr.layer();values[23]=work.meEnabled()?1+work.meStatus():0;values[152]=BuiltInRegistries.ITEM.getId(work.nextMaterial());var rows=work.materials();for(int i=0;i<Math.min(32,rows.size());i++){var item=rows.get(i);values[24+i*4]=BuiltInRegistries.ITEM.getId(item);values[25+i*4]=work.needed(item);values[26+i*4]=work.stored(item);values[27+i*4]=work.inventory(item);}}
+ public int stat(int i){if(!inv.player.level().isClientSide())return values[i];var source=i<12||i>=153&&i<=155||i>=CORE_BASE&&i<CORE_REVISION?clientLayout:sync;return (source[i*2]&65535)|(source[i*2+1]<<16);}
+ public BlueprintSettings settings(){return new BlueprintSettings(stat(0),Math.max(5,stat(1)),Math.max(5,stat(2)),Math.max(3,stat(3)),stat(4),stat(5),stat(6),stat(7),Math.max(1,stat(8)),stat(9),Math.max(1,stat(10)),Math.max(1,stat(11)));}
+ public ReactorCoreDesign coreDesign(){if(work!=null)return bound.get(MultiblockPlanner.CORE_DESIGN.get());if(stat(153)==0)return null;int w=stat(154),d=stat(155);if(w<5||w>64||d<5||d>64)return null;var cells=new java.util.ArrayList<Integer>();for(int i=0;i<(w-2)*(d-2);i++)cells.add((stat(CORE_BASE+i/10)>>>((i%10)*3))&7);try{return new ReactorCoreDesign(w,d,cells);}catch(IllegalArgumentException ignored){return null;}}
+ public int coreRevision(){return stat(CORE_REVISION);}
+ private java.util.List<Integer> plannerSlots(){var slots=new java.util.ArrayList<Integer>();for(int i=0;i<inv.getContainerSize();i++)if(inv.getItem(i).getItem() instanceof PlannerItem)slots.add(i);return slots;}
+ private void refreshDesign(){if(work==null)return;var design=bound.get(MultiblockPlanner.CORE_DESIGN.get());var settings=PlannerItem.settings(bound);if(!java.util.Objects.equals(lastDesign,design)||!java.util.Objects.equals(lastDesignSettings,settings)){designRevision++;lastDesign=design;lastDesignSettings=settings;}values[153]=design==null?0:1;values[154]=design==null?0:design.width();values[155]=design==null?0:design.depth();values[156]=designMessage;values[CORE_REVISION]=designRevision;var slots=plannerSlots();if(!slots.contains(plannerSlot))plannerSlot=slots.isEmpty()?-1:slots.getFirst();values[158]=plannerSlot+1;values[159]=slots.size();for(int n=0;n<CORE_WORDS;n++)values[CORE_BASE+n]=0;if(design!=null)for(int n=0;n<design.cells().size();n++)values[CORE_BASE+n/10]|=design.cells().get(n)<<((n%10)*3);}
+ @Override public void broadcastChanges(){refresh();refreshDesign();super.broadcastChanges();}
+ private boolean editCore(int id){
+  var settings=PlannerItem.settings(bound);if(settings.kind()!=0)return false;var design=bound.get(MultiblockPlanner.CORE_DESIGN.get());designMessage=0;
+  if(id==44){var slots=plannerSlots();if(slots.isEmpty()){designMessage=3;return true;}plannerSlot=slots.get(Math.floorMod(slots.indexOf(plannerSlot)+1,slots.size()));return true;}
+  if(id==43||id==45){var slots=plannerSlots();if(!slots.contains(plannerSlot)){designMessage=3;return true;}var carrier=inv.getItem(plannerSlot);
+   if(id==43){carrier.set(MultiblockPlanner.SETTINGS.get(),settings);carrier.set(MultiblockPlanner.CORE_DESIGN.get(),design==null?ReactorCoreDesign.fromPreset(settings):design);designMessage=1;inv.setChanged();return true;}
+   var saved=carrier.get(MultiblockPlanner.CORE_DESIGN.get());var savedSettings=PlannerItem.settings(carrier);if(saved==null||savedSettings.kind()!=0||savedSettings.height()<5||saved.width()!=savedSettings.width()||saved.depth()!=savedSettings.depth()||savedSettings.width()>BlueprintPlan.maximum(0,0)||savedSettings.depth()>BlueprintPlan.maximum(0,1)||savedSettings.height()>BlueprintPlan.maximum(0,2)){designMessage=4;return true;}
+   bound.set(MultiblockPlanner.SETTINGS.get(),savedSettings);bound.set(MultiblockPlanner.CORE_DESIGN.get(),saved);work.invalidate();designMessage=2;return true;
+  }
+  if(id==41){bound.remove(MultiblockPlanner.CORE_DESIGN.get());work.invalidate();return true;}
+  if(id==40){if(design==null){bound.set(MultiblockPlanner.CORE_DESIGN.get(),ReactorCoreDesign.fromPreset(settings));work.invalidate();}return true;}
+  if(id>=10000&&id<10000+5*4096){int value=(id-10000)/4096,index=(id-10000)%4096;if(value==ReactorCoreDesign.CONTROL)return false;if(design==null)design=ReactorCoreDesign.fromPreset(settings);if(index>=design.cells().size())return false;bound.set(MultiblockPlanner.CORE_DESIGN.get(),design.withCell(index,value));work.invalidate();return true;}return false;
+ }
+ private boolean setSettings(BlueprintSettings settings){var design=bound.get(MultiblockPlanner.CORE_DESIGN.get());if(design!=null&&(design.width()!=settings.width()||design.depth()!=settings.depth())){try{design=design.resized(settings.width(),settings.depth());}catch(IllegalArgumentException refused){designMessage=5;broadcastChanges();return false;}bound.set(MultiblockPlanner.CORE_DESIGN.get(),design);}bound.set(MultiblockPlanner.SETTINGS.get(),settings);designMessage=0;work.invalidate();return true;}
+ @Override public boolean stillValid(Player p){return p==inv.player&&!closed&&p.isAlive()&&p.mayBuild()&&(controllerMode()?host!=null&&!host.isRemoved()&&p.level().isLoaded(hostPosition)&&p.level().getBlockEntity(hostPosition)==host&&(p.level().isClientSide()||bound.get(MultiblockPlanner.TARGET.get())!=null&&bound.get(MultiblockPlanner.TARGET.get()).dimension().equals(p.level().dimension())&&bound.get(MultiblockPlanner.TARGET.get()).pos().equals(hostPosition))&&p.distanceToSqr(net.minecraft.world.phys.Vec3.atCenterOf(hostPosition))<=4096:anchor>=0&&anchor<inv.getContainerSize()&&inv.getItem(anchor).getItem() instanceof PlannerItem&&(p.level().isClientSide()||inv.getItem(anchor)==bound));}
+ @Override public boolean clickMenuButton(Player p,int id){if(work==null||!stillValid(p)||!(p instanceof ServerPlayer sp)||BuilderWork.busy(sp))return false;
+  if(id==26&&host!=null){persist();if(host instanceof com.neolena.essenceindustry.nuclear.NuclearHost h)h.open(p);else if(net.neoforged.fml.ModList.get().isLoaded("ae2")&&host instanceof com.neolena.essenceindustry.array.ArrayTile a)a.open(p);return true;}
+  if(controllerMode()&&!work.claim())return false;if(id==3){work.pause();persist();return true;}if(id==4){work.returnItems();if(net.neoforged.fml.ModList.get().isLoaded("ae2")&&host instanceof com.neolena.essenceindustry.array.ArrayTile a)a.builder().withdraw(sp);persist();return true;}if(!controllerMode())return false;if(work.busy())return false;
+  if(id>=40&&id<=45||id>=10000&&id<10000+5*4096){boolean accepted=editCore(id);if(accepted){persist();broadcastChanges();}return accepted;}
+  if(id>=1000&&id<1400){int action=(id-1000)/16,value=(id-1000)%16;var s=PlannerItem.settings(bound);if(value>=s.optionCount(action))return false;for(int i=0;i<8&&s.option(action)!=value;i++)s=s.change(action);if(s.option(action)!=value)return false;if(!setSettings(s))return false;persist();broadcastChanges();return true;}
+  if(id==30)work.toggleMe();else if(id==28)work.verifyManual();else if(id==27&&net.neoforged.fml.ModList.get().isLoaded("ae2")&&host instanceof com.neolena.essenceindustry.array.ArrayTile a)a.action(8,sp);else if(id==29&&net.neoforged.fml.ModList.get().isLoaded("ae2")&&host instanceof com.neolena.essenceindustry.array.ArrayTile a)a.action(7,sp);else if(id==0)work.check();else if(id==1)work.supply();else if(id==2)work.start();else if(id==25&&!controllerMode()){bound.remove(MultiblockPlanner.TARGET.get());var s=PlannerItem.settings(bound);int k=(s.kind()+1)%6;if(k==1&&!net.neoforged.fml.ModList.get().isLoaded("ae2"))k=2;s=s.type(k,5,k==5?9:5,5);if(s.fixed()){var l=FuelPlantLayout.get(BlueprintPlan.machine(k));s=s.size(l.width(),l.depth(),l.height());}bound.set(MultiblockPlanner.SETTINGS.get(),s);work.invalidate();}
+  else if(id>=10&&id<=24){var s=PlannerItem.settings(bound);if(s.fixed()||id>=21&&s.kind()!=5||id==20&&s.kind()!=1||id==19&&s.kind()!=0||id==17&&s.kind()!=0||id==16&&s.kind()>1)return false;if(!setSettings(s.change(id)))return false;}else return false;
+  inv.setChanged();persist();broadcastChanges();return true;
+ }
+ @Override public void removed(Player p){if(work!=null)work.detach(this);persist();closed=true;super.removed(p);}
+ @Override public void clicked(int slot,int button,ContainerInput input,Player p){}
+ @Override public ItemStack quickMoveStack(Player p,int slot){return ItemStack.EMPTY;}
+}
+

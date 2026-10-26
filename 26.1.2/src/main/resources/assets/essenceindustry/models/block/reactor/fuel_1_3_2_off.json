@@ -1,0 +1,6 @@
+{
+  "parent": "essenceindustry:block/reactor/assembly_3_2_off",
+  "textures": {
+    "fuel_material": "essenceindustry:block/reactor/enriched_uranium_3"
+  }
+}

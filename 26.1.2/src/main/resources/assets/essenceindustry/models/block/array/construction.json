@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "frame": "essenceindustry:block/array/frame",
+    "panel": "essenceindustry:block/array/panel",
+    "glass": "essenceindustry:block/array/glass",
+    "light": "essenceindustry:block/array/light",
+    "core": "essenceindustry:block/array/core",
+    "particle": "essenceindustry:block/array/frame",
+    "hull_body": "essenceindustry:block/array/hull_body",
+    "hull_edge": "essenceindustry:block/array/hull_edge",
+    "hull_inset": "essenceindustry:block/array/hull_inset",
+    "hull_metal": "essenceindustry:block/array/hull_metal",
+    "hull_black": "essenceindustry:block/array/hull_black",
+    "hull_blue": "essenceindustry:block/array/hull_blue",
+    "hull_glass": "essenceindustry:block/array/hull_glass",
+    "hull_service": "essenceindustry:block/array/hull_service"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#panel"
+        },
+        "down": {
+          "texture": "#panel"
+        },
+        "north": {
+          "texture": "#panel"
+        },
+        "south": {
+          "texture": "#panel"
+        },
+        "east": {
+          "texture": "#panel"
+        },
+        "west": {
+          "texture": "#panel"
+        }
+      }
+    }
+  ]
+}

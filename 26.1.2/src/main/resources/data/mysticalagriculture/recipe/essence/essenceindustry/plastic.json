@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:plastic"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "oritech:plastic_sheet"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "E": "mysticalagriculture:plastic_essence"
+  },
+  "result": {
+    "id": "oritech:plastic_sheet",
+    "count": 8
+  }
+}

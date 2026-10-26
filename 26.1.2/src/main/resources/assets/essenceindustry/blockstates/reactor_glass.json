@@ -1,0 +1,388 @@
+{
+  "variants": {
+    "facing=north,left=false,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_0",
+      "y": 0
+    },
+    "facing=north,left=true,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_1",
+      "y": 0
+    },
+    "facing=north,left=false,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_2",
+      "y": 0
+    },
+    "facing=north,left=true,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_3",
+      "y": 0
+    },
+    "facing=north,left=false,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_4",
+      "y": 0
+    },
+    "facing=north,left=true,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_5",
+      "y": 0
+    },
+    "facing=north,left=false,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_6",
+      "y": 0
+    },
+    "facing=north,left=true,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_7",
+      "y": 0
+    },
+    "facing=north,left=false,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_8",
+      "y": 0
+    },
+    "facing=north,left=true,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_9",
+      "y": 0
+    },
+    "facing=north,left=false,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_10",
+      "y": 0
+    },
+    "facing=north,left=true,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_11",
+      "y": 0
+    },
+    "facing=north,left=false,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_12",
+      "y": 0
+    },
+    "facing=north,left=true,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_13",
+      "y": 0
+    },
+    "facing=north,left=false,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_14",
+      "y": 0
+    },
+    "facing=north,left=true,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_15",
+      "y": 0
+    },
+    "facing=east,left=false,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_0",
+      "y": 90
+    },
+    "facing=east,left=true,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_1",
+      "y": 90
+    },
+    "facing=east,left=false,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_2",
+      "y": 90
+    },
+    "facing=east,left=true,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_3",
+      "y": 90
+    },
+    "facing=east,left=false,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_4",
+      "y": 90
+    },
+    "facing=east,left=true,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_5",
+      "y": 90
+    },
+    "facing=east,left=false,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_6",
+      "y": 90
+    },
+    "facing=east,left=true,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_7",
+      "y": 90
+    },
+    "facing=east,left=false,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_8",
+      "y": 90
+    },
+    "facing=east,left=true,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_9",
+      "y": 90
+    },
+    "facing=east,left=false,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_10",
+      "y": 90
+    },
+    "facing=east,left=true,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_11",
+      "y": 90
+    },
+    "facing=east,left=false,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_12",
+      "y": 90
+    },
+    "facing=east,left=true,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_13",
+      "y": 90
+    },
+    "facing=east,left=false,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_14",
+      "y": 90
+    },
+    "facing=east,left=true,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_15",
+      "y": 90
+    },
+    "facing=south,left=false,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_0",
+      "y": 180
+    },
+    "facing=south,left=true,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_1",
+      "y": 180
+    },
+    "facing=south,left=false,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_2",
+      "y": 180
+    },
+    "facing=south,left=true,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_3",
+      "y": 180
+    },
+    "facing=south,left=false,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_4",
+      "y": 180
+    },
+    "facing=south,left=true,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_5",
+      "y": 180
+    },
+    "facing=south,left=false,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_6",
+      "y": 180
+    },
+    "facing=south,left=true,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_7",
+      "y": 180
+    },
+    "facing=south,left=false,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_8",
+      "y": 180
+    },
+    "facing=south,left=true,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_9",
+      "y": 180
+    },
+    "facing=south,left=false,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_10",
+      "y": 180
+    },
+    "facing=south,left=true,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_11",
+      "y": 180
+    },
+    "facing=south,left=false,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_12",
+      "y": 180
+    },
+    "facing=south,left=true,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_13",
+      "y": 180
+    },
+    "facing=south,left=false,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_14",
+      "y": 180
+    },
+    "facing=south,left=true,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_15",
+      "y": 180
+    },
+    "facing=west,left=false,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_0",
+      "y": 270
+    },
+    "facing=west,left=true,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_1",
+      "y": 270
+    },
+    "facing=west,left=false,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_2",
+      "y": 270
+    },
+    "facing=west,left=true,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_3",
+      "y": 270
+    },
+    "facing=west,left=false,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_4",
+      "y": 270
+    },
+    "facing=west,left=true,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_5",
+      "y": 270
+    },
+    "facing=west,left=false,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_6",
+      "y": 270
+    },
+    "facing=west,left=true,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_7",
+      "y": 270
+    },
+    "facing=west,left=false,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_8",
+      "y": 270
+    },
+    "facing=west,left=true,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_9",
+      "y": 270
+    },
+    "facing=west,left=false,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_10",
+      "y": 270
+    },
+    "facing=west,left=true,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_11",
+      "y": 270
+    },
+    "facing=west,left=false,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_12",
+      "y": 270
+    },
+    "facing=west,left=true,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_13",
+      "y": 270
+    },
+    "facing=west,left=false,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_14",
+      "y": 270
+    },
+    "facing=west,left=true,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_15",
+      "y": 270
+    },
+    "facing=up,left=false,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_0",
+      "x": 90
+    },
+    "facing=down,left=false,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_0",
+      "x": 270
+    },
+    "facing=up,left=true,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_1",
+      "x": 90
+    },
+    "facing=down,left=true,right=false,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_1",
+      "x": 270
+    },
+    "facing=up,left=false,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_2",
+      "x": 90
+    },
+    "facing=down,left=false,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_2",
+      "x": 270
+    },
+    "facing=up,left=true,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_3",
+      "x": 90
+    },
+    "facing=down,left=true,right=true,top=false,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_3",
+      "x": 270
+    },
+    "facing=up,left=false,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_4",
+      "x": 90
+    },
+    "facing=down,left=false,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_4",
+      "x": 270
+    },
+    "facing=up,left=true,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_5",
+      "x": 90
+    },
+    "facing=down,left=true,right=false,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_5",
+      "x": 270
+    },
+    "facing=up,left=false,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_6",
+      "x": 90
+    },
+    "facing=down,left=false,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_6",
+      "x": 270
+    },
+    "facing=up,left=true,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_7",
+      "x": 90
+    },
+    "facing=down,left=true,right=true,top=true,bottom=false": {
+      "model": "essenceindustry:block/reactor/glass_7",
+      "x": 270
+    },
+    "facing=up,left=false,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_8",
+      "x": 90
+    },
+    "facing=down,left=false,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_8",
+      "x": 270
+    },
+    "facing=up,left=true,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_9",
+      "x": 90
+    },
+    "facing=down,left=true,right=false,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_9",
+      "x": 270
+    },
+    "facing=up,left=false,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_10",
+      "x": 90
+    },
+    "facing=down,left=false,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_10",
+      "x": 270
+    },
+    "facing=up,left=true,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_11",
+      "x": 90
+    },
+    "facing=down,left=true,right=true,top=false,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_11",
+      "x": 270
+    },
+    "facing=up,left=false,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_12",
+      "x": 90
+    },
+    "facing=down,left=false,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_12",
+      "x": 270
+    },
+    "facing=up,left=true,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_13",
+      "x": 90
+    },
+    "facing=down,left=true,right=false,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_13",
+      "x": 270
+    },
+    "facing=up,left=false,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_14",
+      "x": 90
+    },
+    "facing=down,left=false,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_14",
+      "x": 270
+    },
+    "facing=up,left=true,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_15",
+      "x": 90
+    },
+    "facing=down,left=true,right=true,top=true,bottom=true": {
+      "model": "essenceindustry:block/reactor/glass_15",
+      "x": 270
+    }
+  }
+}

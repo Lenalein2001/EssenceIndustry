@@ -1,0 +1,11 @@
+**/.gradle/
+**/build/
+**/run/
+**/runs/
+**/libs/
+**/logs/
+**/crash-reports/
+.idea/
+.vscode/
+*.iml
+.DS_Store

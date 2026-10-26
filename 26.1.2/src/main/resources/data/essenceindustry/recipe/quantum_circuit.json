@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RPR",
+    "EAE",
+    "RPR"
+  ],
+  "key": {
+    "R": "minecraft:redstone_block",
+    "P": "extendedae:concurrent_processor",
+    "E": "extendedae:entro_ingot",
+    "A": "essenceindustry:quantum_alloy"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_circuit",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedae"
+    }
+  ]
+}

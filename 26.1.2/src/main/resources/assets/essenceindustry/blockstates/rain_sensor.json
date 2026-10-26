@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "essenceindustry:block/rain_sensor_false"
+    },
+    "powered=true": {
+      "model": "essenceindustry:block/rain_sensor_true"
+    }
+  }
+}

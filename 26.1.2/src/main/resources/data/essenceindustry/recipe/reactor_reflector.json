@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IQI",
+    "QFQ",
+    "IQI"
+  ],
+  "key": {
+    "F": "essenceindustry:reactor_casing",
+    "I": "minecraft:iron_ingot",
+    "Q": "minecraft:quartz"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_reflector",
+    "count": 2
+  }
+}

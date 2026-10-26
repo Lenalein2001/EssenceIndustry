@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "essenceindustry:block/dark_machines/body",
+    "up": "essenceindustry:block/dark_machines/crop_simulator",
+    "down": "essenceindustry:block/dark_machines/body",
+    "north": "essenceindustry:block/dark_machines/crop_simulator",
+    "south": "essenceindustry:block/dark_machines/crop_simulator",
+    "east": "essenceindustry:block/dark_machines/crop_simulator",
+    "west": "essenceindustry:block/dark_machines/crop_simulator"
+  }
+}

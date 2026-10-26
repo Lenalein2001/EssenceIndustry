@@ -1,0 +1,6 @@
+{
+  "parent": "essenceindustry:block/reactor/assembly_1_2_off",
+  "textures": {
+    "fuel_material": "essenceindustry:block/reactor/thorium_1"
+  }
+}

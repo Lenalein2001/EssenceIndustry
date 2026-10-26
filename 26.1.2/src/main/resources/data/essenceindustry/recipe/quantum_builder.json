@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "ADA",
+    " A "
+  ],
+  "key": {
+    "A": "essenceindustry:quantum_alloy",
+    "C": "essenceindustry:quantum_circuit",
+    "D": "essenceindustry:quantum_core"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_builder",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "value": "mysticalagradditions:insanium_essence"
+    }
+  ],
+  "ingredients": [
+    "#essenceindustry:farmland_below_tier_6",
+    "mysticalagradditions:insanium_essence"
+  ],
+  "result": {
+    "id": "essenceindustry:vitalized_farmland_tier_6",
+    "count": 1
+  }
+}

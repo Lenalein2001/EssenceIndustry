@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "value": "mysticalagriculture:azure_silver_essence"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "silentgear:azure_silver_dust"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:azure_silver_essence"
+  },
+  "result": {
+    "id": "silentgear:azure_silver_dust",
+    "count": 1
+  }
+}

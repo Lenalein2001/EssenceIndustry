@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "CFC",
+    "IRI"
+  ],
+  "key": {
+    "B": "minecraft:iron_bars",
+    "C": "minecraft:copper_ingot",
+    "F": "essenceindustry:reactor_casing",
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_fabrication_bed",
+    "count": 2
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+    "ANA",
+    "PSP"
+  ],
+  "key": {
+    "P": "essenceindustry:quantum_circuit",
+    "S": "minecraft:diamond_block",
+    "A": "essenceindustry:quantum_alloy",
+    "N": "minecraft:netherite_block"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_core",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "advanced_ae"
+      }
+    }
+  ]
+}

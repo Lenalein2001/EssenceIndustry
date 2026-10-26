@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+    "ANA",
+    "PSP"
+  ],
+  "key": {
+    "P": "advanced_ae:quantum_processor",
+    "S": "advanced_ae:shattered_singularity",
+    "A": "essenceindustry:quantum_alloy",
+    "N": "minecraft:netherite_block"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_core",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "advanced_ae"
+    }
+  ]
+}

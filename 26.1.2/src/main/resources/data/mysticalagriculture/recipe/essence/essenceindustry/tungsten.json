@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "crop": "essenceindustry:tungsten",
+      "type": "mysticalagriculture:crop_enabled"
+    },
+    {
+      "value": "ftbmaterials:tungsten_ingot",
+      "type": "neoforge:registered"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:tungsten_essence"
+  },
+  "result": {
+    "id": "ftbmaterials:tungsten_ingot",
+    "count": 2
+  }
+}

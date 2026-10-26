@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IEI",
+    "ECE",
+    "IEI"
+  ],
+  "result": {
+    "id": "essenceindustry:essence_converter",
+    "count": 1
+  },
+  "key": {
+    "C": "minecraft:chest",
+    "I": "minecraft:iron_ingot",
+    "E": "mysticalagriculture:inferium_essence"
+  }
+}

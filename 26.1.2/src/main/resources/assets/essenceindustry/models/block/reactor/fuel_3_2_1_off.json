@@ -1,0 +1,6 @@
+{
+  "parent": "essenceindustry:block/reactor/assembly_2_1_off",
+  "textures": {
+    "fuel_material": "essenceindustry:block/reactor/mox_2"
+  }
+}

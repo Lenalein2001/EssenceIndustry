@@ -1,0 +1,37 @@
+{
+  "values": [
+    {
+      "id": "mysticalagriculture:honey_treat_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:plastic_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ferricore_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:antimony_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:bauxite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:polymer_resin_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:carbon_fibre_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:boron_seeds",
+      "required": false
+    }
+  ],
+  "replace": false
+}

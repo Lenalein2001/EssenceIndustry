@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "essenceindustry:crop_tier",
+      "crop": "thorium_fuel",
+      "owner": "essenceindustry",
+      "tier": 4
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:thorium_fuel_essence"
+  },
+  "result": {
+    "id": "essenceindustry:thorium_fuel",
+    "count": 1
+  }
+}

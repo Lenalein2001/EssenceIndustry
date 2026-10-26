@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "value": "mysticalagriculture:crimson_iron_essence"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "silentgear:crimson_iron_dust"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:crimson_iron_essence"
+  },
+  "result": {
+    "id": "silentgear:crimson_iron_dust",
+    "count": 1
+  }
+}

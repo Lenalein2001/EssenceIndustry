@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "mode=sunrise": {
+      "model": "essenceindustry:block/celestial_controller_time"
+    },
+    "mode=noon": {
+      "model": "essenceindustry:block/celestial_controller_time"
+    },
+    "mode=sunset": {
+      "model": "essenceindustry:block/celestial_controller_time"
+    },
+    "mode=night": {
+      "model": "essenceindustry:block/celestial_controller_time"
+    },
+    "mode=midnight": {
+      "model": "essenceindustry:block/celestial_controller_time"
+    },
+    "mode=dawn": {
+      "model": "essenceindustry:block/celestial_controller_time"
+    },
+    "mode=clear": {
+      "model": "essenceindustry:block/celestial_controller_clear"
+    },
+    "mode=rain": {
+      "model": "essenceindustry:block/celestial_controller_rain"
+    },
+    "mode=thunder": {
+      "model": "essenceindustry:block/celestial_controller_thunder"
+    }
+  }
+}

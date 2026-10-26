@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FCF",
+    "GPG",
+    "FCF"
+  ],
+  "key": {
+    "C": "ae2:engineering_processor",
+    "F": "ae2:fluix_pearl",
+    "P": "essenceindustry:array_efficiency_upgrade_1",
+    "G": "minecraft:gold_block"
+  },
+  "result": {
+    "id": "essenceindustry:array_efficiency_upgrade_2",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C C",
+    "CFC",
+    "C C"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "F": "essenceindustry:reactor_casing"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_cooling_channel",
+    "count": 4
+  }
+}

@@ -1,0 +1,114 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.141'
+}
+
+group = project.mod_group_id
+version = project.mod_version
+
+base {
+    archivesName = project.mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+neoForge {
+    version = project.neo_version
+
+    runs {
+        client {
+            client()
+        }
+        server {
+            server()
+            programArgument '--nogui'
+        }
+        data {
+            clientData()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+        }
+    }
+
+    mods {
+        "${project.mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+def localModsDir = providers
+        .gradleProperty('local_mods_dir')
+        .orElse(file('libs').absolutePath)
+
+dependencies {
+    compileOnly fileTree(localModsDir.get()) {
+        include 'jei-*.jar'
+        include 'MysticalAgriculture-*.jar'
+        include 'Cucumber-*.jar'
+        include 'MysticalAgradditions-*.jar'
+        include 'appliedenergistics2-*.jar'
+        include 'productivebees-*.jar'
+        include 'pylons-*.jar'
+        include 'productivefarming-*.jar'
+        include 'HostileNeuralNetworks-*.jar'
+        include 'Placebo-*.jar'
+        include 'ExtendedAE-*.jar'
+        include 'Glodium-*.jar'
+        include 'ftb-industrial-contraptions-*.jar'
+        include 'AdvancedAE-*.jar'
+        include 'oritech-*.jar'
+        include 'geckolib-*.jar'
+        include 'guideme-*.jar'
+        include 'enderio-*.jar'
+    }
+}
+
+def extractArrayLibraries = tasks.register('extractArrayLibraries', Sync) {
+    from({ fileTree(localModsDir.get()) { include 'AdvancedAE-*.jar', 'enderio-*.jar' }.files.collect { zipTree(it) } }) {
+        include 'META-INF/jarjar/ae2addonlib-*.jar', 'META-INF/jarjar/com.enderio.endercore-*.jar'
+        eachFile { path = name }
+        includeEmptyDirs = false
+    }
+    into layout.buildDirectory.dir('array-libraries')
+}
+dependencies { compileOnly files(fileTree(layout.buildDirectory.dir('array-libraries')) { include '*.jar' }).builtBy(extractArrayLibraries) }
+
+def modMetadata = [
+        loader_version_range: project.loader_version_range,
+        mod_license: project.mod_license,
+        mod_id: project.mod_id,
+        mod_version: project.mod_version,
+        mod_name: project.mod_name,
+        mod_authors: project.mod_authors,
+        mod_description: project.mod_description,
+        neo_version_range: project.neo_version_range,
+        minecraft_version_range: project.minecraft_version_range
+]
+
+tasks.named('processResources', ProcessResources).configure {
+    includeEmptyDirs = false
+    // Copy tasks otherwise retain deleted/renamed resource paths in incremental builds.
+    doFirst {
+        def output = destinationDir.toPath().toAbsolutePath().normalize()
+        def expected = layout.buildDirectory.dir('resources/main').get().asFile.toPath().toAbsolutePath().normalize()
+        if (output != expected) throw new GradleException("Unexpected resource output: ${output}")
+        project.delete(output.toFile())
+    }
+    inputs.properties modMetadata
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand modMetadata
+    }
+}
+
+tasks.named('jar', Jar) {
+    includeEmptyDirs = false
+    from('../LICENSE') { into 'META-INF'; rename { 'LICENSE.txt' } }
+    from('../CREDITS.md') { into 'META-INF' }
+}
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }

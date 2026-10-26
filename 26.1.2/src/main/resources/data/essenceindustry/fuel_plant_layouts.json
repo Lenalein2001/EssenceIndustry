@@ -1,0 +1,4561 @@
+{
+  "fuel_enricher": {
+    "dimensions": [
+      5,
+      7,
+      5
+    ],
+    "blocks": [
+      {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 21
+      },
+      {
+        "pos": [
+          0,
+          1,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 17
+      },
+      {
+        "pos": [
+          0,
+          2,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 17
+      },
+      {
+        "pos": [
+          0,
+          3,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 17
+      },
+      {
+        "pos": [
+          0,
+          4,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 25
+      },
+      {
+        "pos": [
+          0,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          1
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          2,
+          1
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          0,
+          3,
+          1
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          0,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          2
+        ],
+        "kind": "fuel_input",
+        "facing": "west"
+      },
+      {
+        "pos": [
+          0,
+          2,
+          2
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          0,
+          3,
+          2
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          0,
+          4,
+          2
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          2,
+          3
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          0,
+          3,
+          3
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          0,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          2,
+          4
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          0,
+          3,
+          4
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          0,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          5
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          5
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          2,
+          5
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          0,
+          3,
+          5
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          0,
+          4,
+          5
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          6
+        ],
+        "kind": "pressure_panel",
+        "shell": 37
+      },
+      {
+        "pos": [
+          0,
+          1,
+          6
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 33
+      },
+      {
+        "pos": [
+          0,
+          2,
+          6
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 33
+      },
+      {
+        "pos": [
+          0,
+          3,
+          6
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 33
+      },
+      {
+        "pos": [
+          0,
+          4,
+          6
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 41
+      },
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          1,
+          1,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 16
+      },
+      {
+        "pos": [
+          1,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          1,
+          3,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          1,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 24
+      },
+      {
+        "pos": [
+          1,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          5
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          6
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          1,
+          1,
+          6
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 32
+      },
+      {
+        "pos": [
+          1,
+          2,
+          6
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          1,
+          3,
+          6
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          1,
+          4,
+          6
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 40
+      },
+      {
+        "pos": [
+          2,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          2,
+          1,
+          0
+        ],
+        "kind": "controller"
+      },
+      {
+        "pos": [
+          2,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          2,
+          3,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          2,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 24
+      },
+      {
+        "pos": [
+          2,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          5
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          6
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          2,
+          1,
+          6
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 32
+      },
+      {
+        "pos": [
+          2,
+          2,
+          6
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          2,
+          3,
+          6
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          2,
+          4,
+          6
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 40
+      },
+      {
+        "pos": [
+          3,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          3,
+          1,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 16
+      },
+      {
+        "pos": [
+          3,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          3,
+          3,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          3,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 24
+      },
+      {
+        "pos": [
+          3,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          5
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          6
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          3,
+          1,
+          6
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 32
+      },
+      {
+        "pos": [
+          3,
+          2,
+          6
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          3,
+          3,
+          6
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          3,
+          4,
+          6
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 40
+      },
+      {
+        "pos": [
+          4,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 22
+      },
+      {
+        "pos": [
+          4,
+          1,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 18
+      },
+      {
+        "pos": [
+          4,
+          2,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 18
+      },
+      {
+        "pos": [
+          4,
+          3,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 18
+      },
+      {
+        "pos": [
+          4,
+          4,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 26
+      },
+      {
+        "pos": [
+          4,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          4,
+          1,
+          1
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 2
+      },
+      {
+        "pos": [
+          4,
+          2,
+          1
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          4,
+          3,
+          1
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          4,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 10
+      },
+      {
+        "pos": [
+          4,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          4,
+          1,
+          2
+        ],
+        "kind": "energy_out",
+        "facing": "east"
+      },
+      {
+        "pos": [
+          4,
+          2,
+          2
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          4,
+          3,
+          2
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          4,
+          4,
+          2
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 10
+      },
+      {
+        "pos": [
+          4,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          4,
+          1,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 2
+      },
+      {
+        "pos": [
+          4,
+          2,
+          3
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          4,
+          3,
+          3
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          4,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 10
+      },
+      {
+        "pos": [
+          4,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          4,
+          1,
+          4
+        ],
+        "kind": "waste_output",
+        "facing": "east"
+      },
+      {
+        "pos": [
+          4,
+          2,
+          4
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          4,
+          3,
+          4
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          4,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 10
+      },
+      {
+        "pos": [
+          4,
+          0,
+          5
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          4,
+          1,
+          5
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 2
+      },
+      {
+        "pos": [
+          4,
+          2,
+          5
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          4,
+          3,
+          5
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          4,
+          4,
+          5
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 10
+      },
+      {
+        "pos": [
+          4,
+          0,
+          6
+        ],
+        "kind": "pressure_panel",
+        "shell": 38
+      },
+      {
+        "pos": [
+          4,
+          1,
+          6
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 34
+      },
+      {
+        "pos": [
+          4,
+          2,
+          6
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 34
+      },
+      {
+        "pos": [
+          4,
+          3,
+          6
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 34
+      },
+      {
+        "pos": [
+          4,
+          4,
+          6
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 42
+      },
+      {
+        "pos": [
+          1,
+          1,
+          2
+        ],
+        "kind": "centrifuge",
+        "bottom": true,
+        "top": false
+      },
+      {
+        "pos": [
+          1,
+          2,
+          2
+        ],
+        "kind": "centrifuge",
+        "bottom": false,
+        "top": false
+      },
+      {
+        "pos": [
+          1,
+          3,
+          2
+        ],
+        "kind": "centrifuge",
+        "bottom": false,
+        "top": true
+      },
+      {
+        "pos": [
+          3,
+          1,
+          2
+        ],
+        "kind": "centrifuge",
+        "bottom": true,
+        "top": false
+      },
+      {
+        "pos": [
+          3,
+          2,
+          2
+        ],
+        "kind": "centrifuge",
+        "bottom": false,
+        "top": false
+      },
+      {
+        "pos": [
+          3,
+          3,
+          2
+        ],
+        "kind": "centrifuge",
+        "bottom": false,
+        "top": true
+      },
+      {
+        "pos": [
+          1,
+          1,
+          4
+        ],
+        "kind": "centrifuge",
+        "bottom": true,
+        "top": false
+      },
+      {
+        "pos": [
+          1,
+          2,
+          4
+        ],
+        "kind": "centrifuge",
+        "bottom": false,
+        "top": false
+      },
+      {
+        "pos": [
+          1,
+          3,
+          4
+        ],
+        "kind": "centrifuge",
+        "bottom": false,
+        "top": true
+      },
+      {
+        "pos": [
+          3,
+          1,
+          4
+        ],
+        "kind": "centrifuge",
+        "bottom": true,
+        "top": false
+      },
+      {
+        "pos": [
+          3,
+          2,
+          4
+        ],
+        "kind": "centrifuge",
+        "bottom": false,
+        "top": false
+      },
+      {
+        "pos": [
+          3,
+          3,
+          4
+        ],
+        "kind": "centrifuge",
+        "bottom": false,
+        "top": true
+      },
+      {
+        "pos": [
+          1,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          1,
+          4,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          1,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          1,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          1,
+          4,
+          5
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          2,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          2,
+          4,
+          2
+        ],
+        "kind": "actuator"
+      },
+      {
+        "pos": [
+          2,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          2,
+          4,
+          4
+        ],
+        "kind": "actuator"
+      },
+      {
+        "pos": [
+          2,
+          4,
+          5
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          4,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          4,
+          5
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      }
+    ]
+  },
+  "fuel_reprocessor": {
+    "dimensions": [
+      7,
+      5,
+      5
+    ],
+    "blocks": [
+      {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 21
+      },
+      {
+        "pos": [
+          0,
+          1,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 17
+      },
+      {
+        "pos": [
+          0,
+          2,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 17
+      },
+      {
+        "pos": [
+          0,
+          3,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 17
+      },
+      {
+        "pos": [
+          0,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 25
+      },
+      {
+        "pos": [
+          0,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          1
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          2,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          3,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          2
+        ],
+        "kind": "fuel_input",
+        "facing": "west"
+      },
+      {
+        "pos": [
+          0,
+          2,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          3,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          4,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          2,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          3,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 37
+      },
+      {
+        "pos": [
+          0,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 33
+      },
+      {
+        "pos": [
+          0,
+          2,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 33
+      },
+      {
+        "pos": [
+          0,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 33
+      },
+      {
+        "pos": [
+          0,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 41
+      },
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          1,
+          1,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 16
+      },
+      {
+        "pos": [
+          1,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          1,
+          3,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          1,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 24
+      },
+      {
+        "pos": [
+          1,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          1,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          1,
+          2,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          1,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          1,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 40
+      },
+      {
+        "pos": [
+          2,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          2,
+          1,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 16
+      },
+      {
+        "pos": [
+          2,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          2,
+          3,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          2,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 24
+      },
+      {
+        "pos": [
+          2,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          2,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          2,
+          2,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          2,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          2,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 40
+      },
+      {
+        "pos": [
+          3,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          3,
+          1,
+          0
+        ],
+        "kind": "controller"
+      },
+      {
+        "pos": [
+          3,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          3,
+          3,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          3,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 24
+      },
+      {
+        "pos": [
+          3,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          3,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          3,
+          2,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          3,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          3,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 40
+      },
+      {
+        "pos": [
+          4,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          4,
+          1,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 16
+      },
+      {
+        "pos": [
+          4,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          4,
+          3,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          4,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 24
+      },
+      {
+        "pos": [
+          4,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          4,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          4,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          4,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          4,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          4,
+          2,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          4,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          4,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 40
+      },
+      {
+        "pos": [
+          5,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          5,
+          1,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 16
+      },
+      {
+        "pos": [
+          5,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": true,
+        "bottom": false
+      },
+      {
+        "pos": [
+          5,
+          3,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": false,
+        "bottom": true
+      },
+      {
+        "pos": [
+          5,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 24
+      },
+      {
+        "pos": [
+          5,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          5,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          5,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          5,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          5,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          5,
+          2,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          5,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 32
+      },
+      {
+        "pos": [
+          5,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 40
+      },
+      {
+        "pos": [
+          6,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 22
+      },
+      {
+        "pos": [
+          6,
+          1,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 18
+      },
+      {
+        "pos": [
+          6,
+          2,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 18
+      },
+      {
+        "pos": [
+          6,
+          3,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 18
+      },
+      {
+        "pos": [
+          6,
+          4,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 26
+      },
+      {
+        "pos": [
+          6,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          6,
+          1,
+          1
+        ],
+        "kind": "energy_out",
+        "facing": "east"
+      },
+      {
+        "pos": [
+          6,
+          2,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 2
+      },
+      {
+        "pos": [
+          6,
+          3,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 2
+      },
+      {
+        "pos": [
+          6,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 10
+      },
+      {
+        "pos": [
+          6,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          6,
+          1,
+          2
+        ],
+        "kind": "waste_output",
+        "facing": "east"
+      },
+      {
+        "pos": [
+          6,
+          2,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 2
+      },
+      {
+        "pos": [
+          6,
+          3,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 2
+      },
+      {
+        "pos": [
+          6,
+          4,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 10
+      },
+      {
+        "pos": [
+          6,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          6,
+          1,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 2
+      },
+      {
+        "pos": [
+          6,
+          2,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 2
+      },
+      {
+        "pos": [
+          6,
+          3,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 2
+      },
+      {
+        "pos": [
+          6,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 10
+      },
+      {
+        "pos": [
+          6,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 38
+      },
+      {
+        "pos": [
+          6,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 34
+      },
+      {
+        "pos": [
+          6,
+          2,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 34
+      },
+      {
+        "pos": [
+          6,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 34
+      },
+      {
+        "pos": [
+          6,
+          4,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 42
+      },
+      {
+        "pos": [
+          2,
+          1,
+          2
+        ],
+        "kind": "treatment_vessel",
+        "bottom": true,
+        "top": false
+      },
+      {
+        "pos": [
+          2,
+          2,
+          2
+        ],
+        "kind": "treatment_vessel",
+        "bottom": false,
+        "top": false
+      },
+      {
+        "pos": [
+          2,
+          3,
+          2
+        ],
+        "kind": "treatment_vessel",
+        "bottom": false,
+        "top": true
+      },
+      {
+        "pos": [
+          4,
+          1,
+          2
+        ],
+        "kind": "treatment_vessel",
+        "bottom": true,
+        "top": false
+      },
+      {
+        "pos": [
+          4,
+          2,
+          2
+        ],
+        "kind": "treatment_vessel",
+        "bottom": false,
+        "top": false
+      },
+      {
+        "pos": [
+          4,
+          3,
+          2
+        ],
+        "kind": "treatment_vessel",
+        "bottom": false,
+        "top": true
+      },
+      {
+        "pos": [
+          1,
+          1,
+          3
+        ],
+        "kind": "cooling_channel",
+        "north": false,
+        "south": false,
+        "east": true,
+        "west": false,
+        "up": false,
+        "down": false
+      },
+      {
+        "pos": [
+          2,
+          1,
+          3
+        ],
+        "kind": "cooling_channel",
+        "north": false,
+        "south": false,
+        "east": true,
+        "west": true,
+        "up": false,
+        "down": false
+      },
+      {
+        "pos": [
+          3,
+          1,
+          3
+        ],
+        "kind": "cooling_channel",
+        "north": false,
+        "south": false,
+        "east": true,
+        "west": true,
+        "up": false,
+        "down": false
+      },
+      {
+        "pos": [
+          4,
+          1,
+          3
+        ],
+        "kind": "cooling_channel",
+        "north": false,
+        "south": false,
+        "east": true,
+        "west": true,
+        "up": false,
+        "down": false
+      },
+      {
+        "pos": [
+          5,
+          1,
+          3
+        ],
+        "kind": "cooling_channel",
+        "north": false,
+        "south": false,
+        "east": false,
+        "west": true,
+        "up": false,
+        "down": false
+      },
+      {
+        "pos": [
+          1,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          1,
+          4,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          1,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          2,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          2,
+          4,
+          2
+        ],
+        "kind": "actuator"
+      },
+      {
+        "pos": [
+          2,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          4,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          4,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          4,
+          4,
+          2
+        ],
+        "kind": "actuator"
+      },
+      {
+        "pos": [
+          4,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          5,
+          4,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          5,
+          4,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          5,
+          4,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      }
+    ]
+  },
+  "fuel_fabricator": {
+    "dimensions": [
+      7,
+      5,
+      4
+    ],
+    "blocks": [
+      {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 21
+      },
+      {
+        "pos": [
+          0,
+          1,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 17
+      },
+      {
+        "pos": [
+          0,
+          2,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 17
+      },
+      {
+        "pos": [
+          0,
+          3,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 25
+      },
+      {
+        "pos": [
+          0,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          1
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          2,
+          1
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          0,
+          3,
+          1
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          2
+        ],
+        "kind": "fuel_input",
+        "facing": "west"
+      },
+      {
+        "pos": [
+          0,
+          2,
+          2
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          0,
+          3,
+          2
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 5
+      },
+      {
+        "pos": [
+          0,
+          1,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 1
+      },
+      {
+        "pos": [
+          0,
+          2,
+          3
+        ],
+        "kind": "glass",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          0,
+          3,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "west",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 9
+      },
+      {
+        "pos": [
+          0,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 37
+      },
+      {
+        "pos": [
+          0,
+          1,
+          4
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 33
+      },
+      {
+        "pos": [
+          0,
+          2,
+          4
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 33
+      },
+      {
+        "pos": [
+          0,
+          3,
+          4
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 41
+      },
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          1,
+          1,
+          0
+        ],
+        "kind": "fuel_input"
+      },
+      {
+        "pos": [
+          1,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          1,
+          3,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 24
+      },
+      {
+        "pos": [
+          1,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          1,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          1,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 32
+      },
+      {
+        "pos": [
+          1,
+          2,
+          4
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          1,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 40
+      },
+      {
+        "pos": [
+          2,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          2,
+          1,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 16
+      },
+      {
+        "pos": [
+          2,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          2,
+          3,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 24
+      },
+      {
+        "pos": [
+          2,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          2,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          2,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 32
+      },
+      {
+        "pos": [
+          2,
+          2,
+          4
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          2,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 40
+      },
+      {
+        "pos": [
+          3,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          3,
+          1,
+          0
+        ],
+        "kind": "controller"
+      },
+      {
+        "pos": [
+          3,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          3,
+          3,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 24
+      },
+      {
+        "pos": [
+          3,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          3,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          3,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 32
+      },
+      {
+        "pos": [
+          3,
+          2,
+          4
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          3,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 40
+      },
+      {
+        "pos": [
+          4,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          4,
+          1,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 16
+      },
+      {
+        "pos": [
+          4,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          4,
+          3,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 24
+      },
+      {
+        "pos": [
+          4,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          4,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          4,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          4,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          4,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 32
+      },
+      {
+        "pos": [
+          4,
+          2,
+          4
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          4,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 40
+      },
+      {
+        "pos": [
+          5,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 20
+      },
+      {
+        "pos": [
+          5,
+          1,
+          0
+        ],
+        "kind": "waste_output"
+      },
+      {
+        "pos": [
+          5,
+          2,
+          0
+        ],
+        "kind": "glass",
+        "facing": "north",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          5,
+          3,
+          0
+        ],
+        "kind": "pressure_panel",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 24
+      },
+      {
+        "pos": [
+          5,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          5,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          5,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 4
+      },
+      {
+        "pos": [
+          5,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 36
+      },
+      {
+        "pos": [
+          5,
+          1,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 32
+      },
+      {
+        "pos": [
+          5,
+          2,
+          4
+        ],
+        "kind": "glass",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          5,
+          3,
+          4
+        ],
+        "kind": "pressure_panel",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 40
+      },
+      {
+        "pos": [
+          6,
+          0,
+          0
+        ],
+        "kind": "pressure_panel",
+        "shell": 22
+      },
+      {
+        "pos": [
+          6,
+          1,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 18
+      },
+      {
+        "pos": [
+          6,
+          2,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 18
+      },
+      {
+        "pos": [
+          6,
+          3,
+          0
+        ],
+        "kind": "frame",
+        "facing": "north",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 26
+      },
+      {
+        "pos": [
+          6,
+          0,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          6,
+          1,
+          1
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 2
+      },
+      {
+        "pos": [
+          6,
+          2,
+          1
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          6,
+          3,
+          1
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 10
+      },
+      {
+        "pos": [
+          6,
+          0,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          6,
+          1,
+          2
+        ],
+        "kind": "energy_out",
+        "facing": "east"
+      },
+      {
+        "pos": [
+          6,
+          2,
+          2
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          6,
+          3,
+          2
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 10
+      },
+      {
+        "pos": [
+          6,
+          0,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 6
+      },
+      {
+        "pos": [
+          6,
+          1,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 2
+      },
+      {
+        "pos": [
+          6,
+          2,
+          3
+        ],
+        "kind": "glass",
+        "facing": "east",
+        "axis": "y",
+        "left": true,
+        "right": false,
+        "top": false,
+        "bottom": false
+      },
+      {
+        "pos": [
+          6,
+          3,
+          3
+        ],
+        "kind": "pressure_panel",
+        "facing": "east",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 10
+      },
+      {
+        "pos": [
+          6,
+          0,
+          4
+        ],
+        "kind": "pressure_panel",
+        "shell": 38
+      },
+      {
+        "pos": [
+          6,
+          1,
+          4
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 34
+      },
+      {
+        "pos": [
+          6,
+          2,
+          4
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 34
+      },
+      {
+        "pos": [
+          6,
+          3,
+          4
+        ],
+        "kind": "frame",
+        "facing": "south",
+        "axis": "y",
+        "left": false,
+        "right": false,
+        "top": false,
+        "bottom": false,
+        "shell": 42
+      },
+      {
+        "pos": [
+          1,
+          1,
+          2
+        ],
+        "kind": "fabrication_bed",
+        "left": false,
+        "right": true
+      },
+      {
+        "pos": [
+          2,
+          1,
+          2
+        ],
+        "kind": "fabrication_bed",
+        "left": true,
+        "right": true
+      },
+      {
+        "pos": [
+          3,
+          1,
+          2
+        ],
+        "kind": "fabrication_bed",
+        "left": true,
+        "right": true
+      },
+      {
+        "pos": [
+          4,
+          1,
+          2
+        ],
+        "kind": "fabrication_bed",
+        "left": true,
+        "right": true
+      },
+      {
+        "pos": [
+          5,
+          1,
+          2
+        ],
+        "kind": "fabrication_bed",
+        "left": true,
+        "right": false
+      },
+      {
+        "pos": [
+          2,
+          2,
+          2
+        ],
+        "kind": "fabrication_head"
+      },
+      {
+        "pos": [
+          5,
+          2,
+          2
+        ],
+        "kind": "treatment_vessel",
+        "bottom": true,
+        "top": true
+      },
+      {
+        "pos": [
+          1,
+          3,
+          1
+        ],
+        "kind": "roof_window",
+        "north": false,
+        "south": true,
+        "west": false,
+        "east": false
+      },
+      {
+        "pos": [
+          1,
+          3,
+          2
+        ],
+        "kind": "roof_window",
+        "north": true,
+        "south": true,
+        "west": false,
+        "east": false
+      },
+      {
+        "pos": [
+          1,
+          3,
+          3
+        ],
+        "kind": "roof_window",
+        "north": true,
+        "south": false,
+        "west": false,
+        "east": false
+      },
+      {
+        "pos": [
+          2,
+          3,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          2,
+          3,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          2,
+          3,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          3,
+          1
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          3,
+          2
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          3,
+          3,
+          3
+        ],
+        "kind": "pressure_panel",
+        "shell": 8
+      },
+      {
+        "pos": [
+          4,
+          3,
+          1
+        ],
+        "kind": "roof_window",
+        "north": false,
+        "south": true,
+        "west": false,
+        "east": true
+      },
+      {
+        "pos": [
+          4,
+          3,
+          2
+        ],
+        "kind": "roof_window",
+        "north": true,
+        "south": true,
+        "west": false,
+        "east": true
+      },
+      {
+        "pos": [
+          4,
+          3,
+          3
+        ],
+        "kind": "roof_window",
+        "north": true,
+        "south": false,
+        "west": false,
+        "east": true
+      },
+      {
+        "pos": [
+          5,
+          3,
+          1
+        ],
+        "kind": "roof_window",
+        "north": false,
+        "south": true,
+        "west": true,
+        "east": false
+      },
+      {
+        "pos": [
+          5,
+          3,
+          2
+        ],
+        "kind": "roof_window",
+        "north": true,
+        "south": true,
+        "west": true,
+        "east": false
+      },
+      {
+        "pos": [
+          5,
+          3,
+          3
+        ],
+        "kind": "roof_window",
+        "north": true,
+        "south": false,
+        "west": true,
+        "east": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "variants": {
+    "north=false,south=false,west=false,east=false,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_0"
+    },
+    "north=true,south=false,west=false,east=false,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_1"
+    },
+    "north=false,south=true,west=false,east=false,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_2"
+    },
+    "north=true,south=true,west=false,east=false,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_3"
+    },
+    "north=false,south=false,west=true,east=false,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_4"
+    },
+    "north=true,south=false,west=true,east=false,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_5"
+    },
+    "north=false,south=true,west=true,east=false,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_6"
+    },
+    "north=true,south=true,west=true,east=false,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_7"
+    },
+    "north=false,south=false,west=false,east=true,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_8"
+    },
+    "north=true,south=false,west=false,east=true,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_9"
+    },
+    "north=false,south=true,west=false,east=true,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_10"
+    },
+    "north=true,south=true,west=false,east=true,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_11"
+    },
+    "north=false,south=false,west=true,east=true,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_12"
+    },
+    "north=true,south=false,west=true,east=true,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_13"
+    },
+    "north=false,south=true,west=true,east=true,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_14"
+    },
+    "north=true,south=true,west=true,east=true,up=false,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_15"
+    },
+    "north=false,south=false,west=false,east=false,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_16"
+    },
+    "north=true,south=false,west=false,east=false,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_17"
+    },
+    "north=false,south=true,west=false,east=false,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_18"
+    },
+    "north=true,south=true,west=false,east=false,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_19"
+    },
+    "north=false,south=false,west=true,east=false,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_20"
+    },
+    "north=true,south=false,west=true,east=false,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_21"
+    },
+    "north=false,south=true,west=true,east=false,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_22"
+    },
+    "north=true,south=true,west=true,east=false,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_23"
+    },
+    "north=false,south=false,west=false,east=true,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_24"
+    },
+    "north=true,south=false,west=false,east=true,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_25"
+    },
+    "north=false,south=true,west=false,east=true,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_26"
+    },
+    "north=true,south=true,west=false,east=true,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_27"
+    },
+    "north=false,south=false,west=true,east=true,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_28"
+    },
+    "north=true,south=false,west=true,east=true,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_29"
+    },
+    "north=false,south=true,west=true,east=true,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_30"
+    },
+    "north=true,south=true,west=true,east=true,up=true,down=false": {
+      "model": "essenceindustry:block/reactor/channel_connected_31"
+    },
+    "north=false,south=false,west=false,east=false,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_32"
+    },
+    "north=true,south=false,west=false,east=false,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_33"
+    },
+    "north=false,south=true,west=false,east=false,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_34"
+    },
+    "north=true,south=true,west=false,east=false,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_35"
+    },
+    "north=false,south=false,west=true,east=false,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_36"
+    },
+    "north=true,south=false,west=true,east=false,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_37"
+    },
+    "north=false,south=true,west=true,east=false,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_38"
+    },
+    "north=true,south=true,west=true,east=false,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_39"
+    },
+    "north=false,south=false,west=false,east=true,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_40"
+    },
+    "north=true,south=false,west=false,east=true,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_41"
+    },
+    "north=false,south=true,west=false,east=true,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_42"
+    },
+    "north=true,south=true,west=false,east=true,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_43"
+    },
+    "north=false,south=false,west=true,east=true,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_44"
+    },
+    "north=true,south=false,west=true,east=true,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_45"
+    },
+    "north=false,south=true,west=true,east=true,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_46"
+    },
+    "north=true,south=true,west=true,east=true,up=false,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_47"
+    },
+    "north=false,south=false,west=false,east=false,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_48"
+    },
+    "north=true,south=false,west=false,east=false,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_49"
+    },
+    "north=false,south=true,west=false,east=false,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_50"
+    },
+    "north=true,south=true,west=false,east=false,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_51"
+    },
+    "north=false,south=false,west=true,east=false,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_52"
+    },
+    "north=true,south=false,west=true,east=false,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_53"
+    },
+    "north=false,south=true,west=true,east=false,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_54"
+    },
+    "north=true,south=true,west=true,east=false,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_55"
+    },
+    "north=false,south=false,west=false,east=true,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_56"
+    },
+    "north=true,south=false,west=false,east=true,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_57"
+    },
+    "north=false,south=true,west=false,east=true,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_58"
+    },
+    "north=true,south=true,west=false,east=true,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_59"
+    },
+    "north=false,south=false,west=true,east=true,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_60"
+    },
+    "north=true,south=false,west=true,east=true,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_61"
+    },
+    "north=false,south=true,west=true,east=true,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_62"
+    },
+    "north=true,south=true,west=true,east=true,up=true,down=true": {
+      "model": "essenceindustry:block/reactor/channel_connected_63"
+    }
+  }
+}

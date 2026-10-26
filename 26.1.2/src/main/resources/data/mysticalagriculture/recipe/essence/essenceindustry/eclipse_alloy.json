@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:eclipse_alloy"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "justdirethings:raw_eclipsealloy"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:eclipse_alloy_essence"
+  },
+  "result": {
+    "id": "justdirethings:raw_eclipsealloy",
+    "count": 1
+  }
+}

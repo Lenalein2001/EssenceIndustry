@@ -1,0 +1,49 @@
+{
+  "values": [
+    {
+      "id": "mysticalagriculture:draconic_chunk_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:magentite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ludicrite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:blutonium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:celestigem_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:tungsten_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:plutonium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:adamant_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:duratium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:energite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:aeternium_seeds",
+      "required": false
+    }
+  ],
+  "replace": false
+}

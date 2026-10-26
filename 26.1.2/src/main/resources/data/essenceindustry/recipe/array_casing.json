@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IQI",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "Q": "ae2:quartz_glass"
+  },
+  "result": {
+    "id": "essenceindustry:array_casing",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "GFG",
+    "ICI"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "F": "essenceindustry:reactor_casing",
+    "G": "minecraft:glass",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_treatment_vessel",
+    "count": 2
+  }
+}

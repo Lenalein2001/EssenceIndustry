@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "side": "essenceindustry:block/dark_machines/body",
+    "front": "essenceindustry:block/dark_machines/body",
+    "top": "essenceindustry:block/dark_machines/thunder",
+    "bottom": "essenceindustry:block/dark_machines/body",
+    "particle": "essenceindustry:block/dark_machines/body"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        13,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#front"
+        },
+        "south": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side"
+        },
+        "west": {
+          "texture": "#side"
+        },
+        "up": {
+          "texture": "#top"
+        },
+        "down": {
+          "texture": "#bottom"
+        }
+      }
+    }
+  ]
+}

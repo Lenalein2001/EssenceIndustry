@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "essenceindustry:celestial_controller",
+          "functions": [
+            {
+              "function": "minecraft:copy_state",
+              "block": "essenceindustry:celestial_controller",
+              "properties": [
+                "mode"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

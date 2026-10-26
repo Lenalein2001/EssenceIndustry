@@ -1,0 +1,284 @@
+{
+  "variants": {
+    "facing=north,array_formed=false,array_part=0": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=1": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=2": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=3": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=4": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=5": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=6": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=0": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=1": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=2": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=3": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=4": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=5": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=6": {
+      "model": "essenceindustry:block/array/formed_rack_upper",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=0": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=1": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=2": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=3": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=4": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=5": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=6": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=0": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=1": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=2": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=3": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=4": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=5": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=6": {
+      "model": "essenceindustry:block/array/formed_rack_upper",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=0": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=1": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=2": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=3": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=4": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=5": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=6": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=0": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=1": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=2": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=3": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=4": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=5": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=6": {
+      "model": "essenceindustry:block/array/formed_rack_upper",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=0": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=1": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=2": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=3": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=4": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=5": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=6": {
+      "model": "essenceindustry:block/array/rack",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=0": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=1": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=2": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=3": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=4": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=5": {
+      "model": "essenceindustry:block/array/formed_rack_lower",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=6": {
+      "model": "essenceindustry:block/array/formed_rack_upper",
+      "y": 270,
+      "uvlock": true
+    }
+  }
+}

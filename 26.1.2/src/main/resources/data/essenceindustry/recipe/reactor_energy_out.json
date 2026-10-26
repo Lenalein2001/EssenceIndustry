@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CRC",
+    "RFR",
+    "CRC"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "F": "essenceindustry:reactor_casing",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_energy_out",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "key": {
+    "b": "minecraft:polished_blackstone",
+    "d": "minecraft:hay_block",
+    "i": "minecraft:iron_bars",
+    "q": "minecraft:gold_block"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pylons"
+    }
+  ],
+  "pattern": [
+    "qqq",
+    "idi",
+    "bbb"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "id": "essenceindustry:enhanced_harvesting_pylon",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AFA",
+    "CHC",
+    "AFA"
+  ],
+  "key": {
+    "A": "essenceindustry:quantum_alloy",
+    "F": "minecraft:copper_block",
+    "C": "essenceindustry:quantum_circuit",
+    "H": "essenceindustry:quantum_module_chassis"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_knockback_module",
+    "count": 1
+  }
+}

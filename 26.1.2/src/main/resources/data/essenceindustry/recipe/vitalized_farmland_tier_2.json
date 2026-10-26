@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "result": {
+    "id": "essenceindustry:vitalized_farmland_tier_2",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "value": "mysticalagriculture:prudentium_essence",
+      "type": "neoforge:registered"
+    }
+  ],
+  "ingredients": [
+    "minecraft:dirt",
+    "essenceindustry:vitalizing_fertilizer",
+    "mysticalagriculture:prudentium_essence"
+  ]
+}

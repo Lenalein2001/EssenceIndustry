@@ -1,0 +1,153 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivefarming"
+    }
+  ],
+  "values": {
+    "mysticalagriculture:chromium_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "chromium",
+          "owner": "mysticalcustomization",
+          "tier": 4
+        }
+      ],
+      "value": 0.03
+    },
+    "mysticalagriculture:cinnabar_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "cinnabar",
+          "owner": "mysticalcustomization",
+          "tier": 3
+        }
+      ],
+      "value": 0.04
+    },
+    "mysticalagriculture:dark_gem_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "dark_gem",
+          "owner": "mysticalcustomization",
+          "tier": 3
+        }
+      ],
+      "value": 0.04
+    },
+    "mysticalagriculture:desh_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "desh",
+          "owner": "mysticalcustomization",
+          "tier": 4
+        }
+      ],
+      "value": 0.03
+    },
+    "mysticalagriculture:hardened_blood_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "hardened_blood",
+          "owner": "mysticalcustomization",
+          "tier": 3
+        }
+      ],
+      "value": 0.04
+    },
+    "mysticalagriculture:iesnium_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "iesnium",
+          "owner": "mysticalcustomization",
+          "tier": 5
+        }
+      ],
+      "value": 0.02
+    },
+    "mysticalagriculture:moonstone_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "moonstone",
+          "owner": "mysticalcustomization",
+          "tier": 4
+        }
+      ],
+      "value": 0.03
+    },
+    "mysticalagriculture:niobium_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "niobium",
+          "owner": "mysticalcustomization",
+          "tier": 5
+        }
+      ],
+      "value": 0.02
+    },
+    "mysticalagriculture:redstone_crystal_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "redstone_crystal",
+          "owner": "mysticalcustomization",
+          "tier": 4
+        }
+      ],
+      "value": 0.03
+    },
+    "mysticalagriculture:salt_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "salt",
+          "owner": "mysticalcustomization",
+          "tier": 2
+        }
+      ],
+      "value": 0.05
+    },
+    "mysticalagriculture:vitae_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "vitae",
+          "owner": "mysticalcustomization",
+          "tier": 3
+        }
+      ],
+      "value": 0.04
+    },
+    "mysticalagriculture:xychorium_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "xychorium",
+          "owner": "mysticalcustomization",
+          "tier": 3
+        }
+      ],
+      "value": 0.04
+    },
+    "mysticalagriculture:entro_seeds": {
+      "neoforge:conditions": [
+        {
+          "type": "essenceindustry:crop_tier",
+          "crop": "entro",
+          "owner": "mysticalcustomization",
+          "tier": 4
+        }
+      ],
+      "value": 0.03
+    }
+  }
+}

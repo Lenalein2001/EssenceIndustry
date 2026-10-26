@@ -1,0 +1,245 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "mysticalagriculture:entro_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:prosperity_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:honey_treat_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ghostly_comb_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:milky_comb_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:powdery_comb_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:amber_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:draconic_chunk_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:anglesite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:benitoite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:magentite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ridiculite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:inanite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:insanite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ludicrite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:blutonium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:allthemodium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:vibranium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:unobtainium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:chaos_fragment_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:dragon_heart_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:plastic_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:fluxite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:oil_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ferricore_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:blazegold_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:celestigem_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:eclipse_alloy_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:edelwood_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:antimony_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:titanium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:tungsten_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:bauxite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:polymer_resin_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:carbon_fibre_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:sticky_resin_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:stainless_steel_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:plutonium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:adamant_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:duratium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:biosteel_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:energite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:chromium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:cinnabar_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:dark_gem_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:desh_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:hardened_blood_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:iesnium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:kivi_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:moonstone_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:niobium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:redstone_crystal_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:salt_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:vitae_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:xychorium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:adamantite_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:aeternium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:aurichalcum_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:boron_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:dimensional_shard_crop",
+      "required": false
+    }
+  ]
+}

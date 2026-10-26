@@ -1,0 +1,7 @@
+{
+  "parent": "essenceindustry:block/block_accelerator",
+  "textures": {
+    "side": "essenceindustry:block/block_accelerator/side_on",
+    "top": "essenceindustry:block/block_accelerator/top_on"
+  }
+}

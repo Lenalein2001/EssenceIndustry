@@ -1,0 +1,32 @@
+name: Discord release notification
+on:
+  release:
+    types: [published]
+permissions: {}
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Announce published release
+        env:
+          DISCORD_RELEASE_WEBHOOK: ${{ secrets.DISCORD_RELEASE_WEBHOOK }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          with open(os.environ['GITHUB_EVENT_PATH']) as f:
+              event = json.load(f)
+          release = event['release']
+          webhook = os.environ.get('DISCORD_RELEASE_WEBHOOK')
+          if not webhook:
+              raise SystemExit('DISCORD_RELEASE_WEBHOOK is not configured')
+          label = 'Prerelease' if release.get('prerelease') else 'Release'
+          title = (release.get('name') or release['tag_name'])[:200]
+          payload = {'content': f"Essence & Industry {label}: {title}\n{release['html_url']}", 'allowed_mentions': {'parse': []}}
+          request = urllib.request.Request(webhook, data=json.dumps(payload).encode(), headers={'Content-Type': 'application/json', 'User-Agent': 'EssenceIndustry-Release'}, method='POST')
+          try:
+              with urllib.request.urlopen(request, timeout=20) as response:
+                  if response.status not in (200, 204):
+                      raise SystemExit(f'Discord returned status {response.status}')
+          except Exception as error:
+              raise SystemExit(f'Discord delivery failed ({type(error).__name__}); webhook URL omitted') from None
+          PY

@@ -1,0 +1,7 @@
+{
+  "parent": "essenceindustry:block/growth_accelerator_tier_5",
+  "textures": {
+    "side": "essenceindustry:block/tier_5/growth_accelerator_side_on",
+    "top": "essenceindustry:block/tier_5/growth_accelerator_top_on"
+  }
+}

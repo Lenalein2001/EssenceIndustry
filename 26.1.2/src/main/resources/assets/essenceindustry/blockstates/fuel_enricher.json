@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "essenceindustry:block/fuel_enricher",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "essenceindustry:block/fuel_enricher",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "essenceindustry:block/fuel_enricher",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "essenceindustry:block/fuel_enricher",
+      "y": 270
+    }
+  }
+}

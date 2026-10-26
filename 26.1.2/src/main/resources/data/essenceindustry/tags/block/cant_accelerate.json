@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "essenceindustry:block_accelerator",
+      "required": false
+    },
+    {
+      "id": "ae2:growth_accelerator",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:growth_accelerator_tier_2",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:growth_accelerator_tier_3",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:growth_accelerator_tier_4",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:growth_accelerator_tier_5",
+      "required": false
+    },
+    {
+      "id": "#industrialforegoingsouls:cant_accelerate",
+      "required": false
+    },
+    {
+      "id": "#tiab:un_acceleratable",
+      "required": false
+    },
+    {
+      "id": "#mysticalagricultureextraseeds:cant_accelerate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "crop": "essenceindustry:antimony",
+      "type": "mysticalagriculture:crop_enabled"
+    },
+    {
+      "value": "ftbmaterials:antimony_ingot",
+      "type": "neoforge:registered"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:antimony_essence"
+  },
+  "result": {
+    "id": "ftbmaterials:antimony_ingot",
+    "count": 3
+  }
+}

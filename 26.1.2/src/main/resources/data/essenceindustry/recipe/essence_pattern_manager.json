@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "EPE",
+    "ICI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "G": "minecraft:gold_block",
+    "E": "mysticalagriculture:inferium_essence",
+    "P": "ae2:pattern_provider",
+    "C": "minecraft:crafting_table"
+  },
+  "result": {
+    "id": "essenceindustry:essence_pattern_manager"
+  }
+}

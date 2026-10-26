@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "oritech:adamant_ingot",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:adamant"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "oritech:adamant_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:adamant_essence"
+  },
+  "type": "minecraft:crafting_shaped"
+}

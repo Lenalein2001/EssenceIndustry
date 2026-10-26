@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DSD",
+    "AQA",
+    "DSD"
+  ],
+  "key": {
+    "D": "minecraft:diamond_block",
+    "S": "minecraft:netherite_ingot",
+    "A": "minecraft:gold_block",
+    "Q": "minecraft:quartz_block"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_alloy",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "advanced_ae"
+      }
+    }
+  ]
+}

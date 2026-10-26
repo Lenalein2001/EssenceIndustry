@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "crop": "essenceindustry:sticky_resin",
+      "type": "mysticalagriculture:crop_enabled"
+    },
+    {
+      "value": "ftbic:sticky_resin",
+      "type": "neoforge:registered"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "E": "mysticalagriculture:sticky_resin_essence"
+  },
+  "result": {
+    "id": "ftbic:sticky_resin",
+    "count": 4
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "variants": {
+    "shell=0": {
+      "model": "essenceindustry:block/reactor/shell_state_0"
+    },
+    "shell=1": {
+      "model": "essenceindustry:block/reactor/shell_state_1"
+    },
+    "shell=2": {
+      "model": "essenceindustry:block/reactor/shell_state_2"
+    },
+    "shell=3": {
+      "model": "essenceindustry:block/reactor/shell_state_3"
+    },
+    "shell=4": {
+      "model": "essenceindustry:block/reactor/shell_state_4"
+    },
+    "shell=5": {
+      "model": "essenceindustry:block/reactor/shell_state_5"
+    },
+    "shell=6": {
+      "model": "essenceindustry:block/reactor/shell_state_6"
+    },
+    "shell=7": {
+      "model": "essenceindustry:block/reactor/shell_state_7"
+    },
+    "shell=8": {
+      "model": "essenceindustry:block/reactor/shell_state_8"
+    },
+    "shell=9": {
+      "model": "essenceindustry:block/reactor/shell_state_9"
+    },
+    "shell=10": {
+      "model": "essenceindustry:block/reactor/shell_state_10"
+    },
+    "shell=11": {
+      "model": "essenceindustry:block/reactor/shell_state_11"
+    },
+    "shell=12": {
+      "model": "essenceindustry:block/reactor/shell_state_12"
+    },
+    "shell=13": {
+      "model": "essenceindustry:block/reactor/shell_state_13"
+    },
+    "shell=14": {
+      "model": "essenceindustry:block/reactor/shell_state_14"
+    },
+    "shell=15": {
+      "model": "essenceindustry:block/reactor/shell_state_15"
+    },
+    "shell=16": {
+      "model": "essenceindustry:block/reactor/shell_state_16"
+    },
+    "shell=17": {
+      "model": "essenceindustry:block/reactor/shell_state_17"
+    },
+    "shell=18": {
+      "model": "essenceindustry:block/reactor/shell_state_18"
+    },
+    "shell=19": {
+      "model": "essenceindustry:block/reactor/shell_state_19"
+    },
+    "shell=20": {
+      "model": "essenceindustry:block/reactor/shell_state_20"
+    },
+    "shell=21": {
+      "model": "essenceindustry:block/reactor/shell_state_21"
+    },
+    "shell=22": {
+      "model": "essenceindustry:block/reactor/shell_state_22"
+    },
+    "shell=23": {
+      "model": "essenceindustry:block/reactor/shell_state_23"
+    },
+    "shell=24": {
+      "model": "essenceindustry:block/reactor/shell_state_24"
+    },
+    "shell=25": {
+      "model": "essenceindustry:block/reactor/shell_state_25"
+    },
+    "shell=26": {
+      "model": "essenceindustry:block/reactor/shell_state_26"
+    },
+    "shell=27": {
+      "model": "essenceindustry:block/reactor/shell_state_27"
+    },
+    "shell=28": {
+      "model": "essenceindustry:block/reactor/shell_state_28"
+    },
+    "shell=29": {
+      "model": "essenceindustry:block/reactor/shell_state_29"
+    },
+    "shell=30": {
+      "model": "essenceindustry:block/reactor/shell_state_30"
+    },
+    "shell=31": {
+      "model": "essenceindustry:block/reactor/shell_state_31"
+    },
+    "shell=32": {
+      "model": "essenceindustry:block/reactor/shell_state_32"
+    },
+    "shell=33": {
+      "model": "essenceindustry:block/reactor/shell_state_33"
+    },
+    "shell=34": {
+      "model": "essenceindustry:block/reactor/shell_state_34"
+    },
+    "shell=35": {
+      "model": "essenceindustry:block/reactor/shell_state_35"
+    },
+    "shell=36": {
+      "model": "essenceindustry:block/reactor/shell_state_36"
+    },
+    "shell=37": {
+      "model": "essenceindustry:block/reactor/shell_state_37"
+    },
+    "shell=38": {
+      "model": "essenceindustry:block/reactor/shell_state_38"
+    },
+    "shell=39": {
+      "model": "essenceindustry:block/reactor/shell_state_39"
+    },
+    "shell=40": {
+      "model": "essenceindustry:block/reactor/shell_state_40"
+    },
+    "shell=41": {
+      "model": "essenceindustry:block/reactor/shell_state_41"
+    },
+    "shell=42": {
+      "model": "essenceindustry:block/reactor/shell_state_42"
+    },
+    "shell=43": {
+      "model": "essenceindustry:block/reactor/shell_state_43"
+    },
+    "shell=44": {
+      "model": "essenceindustry:block/reactor/shell_state_44"
+    },
+    "shell=45": {
+      "model": "essenceindustry:block/reactor/shell_state_45"
+    },
+    "shell=46": {
+      "model": "essenceindustry:block/reactor/shell_state_46"
+    },
+    "shell=47": {
+      "model": "essenceindustry:block/reactor/shell_state_47"
+    },
+    "shell=48": {
+      "model": "essenceindustry:block/reactor/shell_state_48"
+    },
+    "shell=49": {
+      "model": "essenceindustry:block/reactor/shell_state_49"
+    },
+    "shell=50": {
+      "model": "essenceindustry:block/reactor/shell_state_50"
+    },
+    "shell=51": {
+      "model": "essenceindustry:block/reactor/shell_state_51"
+    },
+    "shell=52": {
+      "model": "essenceindustry:block/reactor/shell_state_52"
+    },
+    "shell=53": {
+      "model": "essenceindustry:block/reactor/shell_state_53"
+    },
+    "shell=54": {
+      "model": "essenceindustry:block/reactor/shell_state_54"
+    },
+    "shell=55": {
+      "model": "essenceindustry:block/reactor/shell_state_55"
+    },
+    "shell=56": {
+      "model": "essenceindustry:block/reactor/shell_state_56"
+    },
+    "shell=57": {
+      "model": "essenceindustry:block/reactor/shell_state_57"
+    },
+    "shell=58": {
+      "model": "essenceindustry:block/reactor/shell_state_58"
+    },
+    "shell=59": {
+      "model": "essenceindustry:block/reactor/shell_state_59"
+    },
+    "shell=60": {
+      "model": "essenceindustry:block/reactor/shell_state_60"
+    },
+    "shell=61": {
+      "model": "essenceindustry:block/reactor/shell_state_61"
+    },
+    "shell=62": {
+      "model": "essenceindustry:block/reactor/shell_state_62"
+    },
+    "shell=63": {
+      "model": "essenceindustry:block/reactor/shell_state_63"
+    }
+  }
+}

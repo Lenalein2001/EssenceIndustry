@@ -1,0 +1,1079 @@
+{
+  "dimensions": [
+    5,
+    5,
+    5
+  ],
+  "blocks": [
+    {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "kind": "frame",
+      "shell": 21
+    },
+    {
+      "pos": [
+        0,
+        0,
+        1
+      ],
+      "kind": "frame",
+      "shell": 5
+    },
+    {
+      "pos": [
+        0,
+        0,
+        2
+      ],
+      "kind": "frame",
+      "shell": 5
+    },
+    {
+      "pos": [
+        0,
+        0,
+        3
+      ],
+      "kind": "frame",
+      "shell": 5
+    },
+    {
+      "pos": [
+        0,
+        0,
+        4
+      ],
+      "kind": "frame",
+      "shell": 37
+    },
+    {
+      "pos": [
+        0,
+        1,
+        0
+      ],
+      "kind": "frame",
+      "shell": 17
+    },
+    {
+      "pos": [
+        0,
+        1,
+        1
+      ],
+      "kind": "glass",
+      "facing": "west",
+      "right": false,
+      "left": true,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        0,
+        1,
+        2
+      ],
+      "kind": "glass",
+      "facing": "west",
+      "right": true,
+      "left": true,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        0,
+        1,
+        3
+      ],
+      "kind": "glass",
+      "facing": "west",
+      "right": true,
+      "left": false,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        0,
+        1,
+        4
+      ],
+      "kind": "frame",
+      "shell": 33
+    },
+    {
+      "pos": [
+        0,
+        2,
+        0
+      ],
+      "kind": "frame",
+      "shell": 17
+    },
+    {
+      "pos": [
+        0,
+        2,
+        1
+      ],
+      "kind": "glass",
+      "facing": "west",
+      "right": false,
+      "left": true,
+      "top": true,
+      "bottom": true
+    },
+    {
+      "pos": [
+        0,
+        2,
+        2
+      ],
+      "kind": "glass",
+      "facing": "west",
+      "right": true,
+      "left": true,
+      "top": true,
+      "bottom": true
+    },
+    {
+      "pos": [
+        0,
+        2,
+        3
+      ],
+      "kind": "glass",
+      "facing": "west",
+      "right": true,
+      "left": false,
+      "top": true,
+      "bottom": true
+    },
+    {
+      "pos": [
+        0,
+        2,
+        4
+      ],
+      "kind": "frame",
+      "shell": 33
+    },
+    {
+      "pos": [
+        0,
+        3,
+        0
+      ],
+      "kind": "frame",
+      "shell": 17
+    },
+    {
+      "pos": [
+        0,
+        3,
+        1
+      ],
+      "kind": "glass",
+      "facing": "west",
+      "right": false,
+      "left": true,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        0,
+        3,
+        2
+      ],
+      "kind": "glass",
+      "facing": "west",
+      "right": true,
+      "left": true,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        0,
+        3,
+        3
+      ],
+      "kind": "glass",
+      "facing": "west",
+      "right": true,
+      "left": false,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        0,
+        3,
+        4
+      ],
+      "kind": "frame",
+      "shell": 33
+    },
+    {
+      "pos": [
+        0,
+        4,
+        0
+      ],
+      "kind": "frame",
+      "shell": 25
+    },
+    {
+      "pos": [
+        0,
+        4,
+        1
+      ],
+      "kind": "frame",
+      "shell": 9
+    },
+    {
+      "pos": [
+        0,
+        4,
+        2
+      ],
+      "kind": "frame",
+      "shell": 9
+    },
+    {
+      "pos": [
+        0,
+        4,
+        3
+      ],
+      "kind": "frame",
+      "shell": 9
+    },
+    {
+      "pos": [
+        0,
+        4,
+        4
+      ],
+      "kind": "frame",
+      "shell": 41
+    },
+    {
+      "pos": [
+        1,
+        0,
+        0
+      ],
+      "kind": "frame",
+      "shell": 20
+    },
+    {
+      "pos": [
+        1,
+        0,
+        1
+      ],
+      "kind": "casing",
+      "shell": 4
+    },
+    {
+      "pos": [
+        1,
+        0,
+        2
+      ],
+      "kind": "casing",
+      "shell": 4
+    },
+    {
+      "pos": [
+        1,
+        0,
+        3
+      ],
+      "kind": "casing",
+      "shell": 4
+    },
+    {
+      "pos": [
+        1,
+        0,
+        4
+      ],
+      "kind": "frame",
+      "shell": 36
+    },
+    {
+      "pos": [
+        1,
+        1,
+        0
+      ],
+      "kind": "fuel_input",
+      "facing": "north"
+    },
+    {
+      "pos": [
+        1,
+        1,
+        4
+      ],
+      "kind": "glass",
+      "facing": "south",
+      "right": false,
+      "left": false,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        1,
+        2,
+        0
+      ],
+      "kind": "glass",
+      "facing": "north",
+      "right": true,
+      "left": false,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        1,
+        2,
+        4
+      ],
+      "kind": "glass",
+      "facing": "south",
+      "right": false,
+      "left": true,
+      "top": true,
+      "bottom": true
+    },
+    {
+      "pos": [
+        1,
+        3,
+        0
+      ],
+      "kind": "glass",
+      "facing": "north",
+      "right": true,
+      "left": false,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        1,
+        3,
+        4
+      ],
+      "kind": "glass",
+      "facing": "south",
+      "right": false,
+      "left": true,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        1,
+        4,
+        0
+      ],
+      "kind": "frame",
+      "shell": 24
+    },
+    {
+      "pos": [
+        1,
+        4,
+        1
+      ],
+      "kind": "roof_window",
+      "north": false,
+      "south": false,
+      "east": true,
+      "west": false
+    },
+    {
+      "pos": [
+        1,
+        4,
+        2
+      ],
+      "kind": "actuator",
+      "facing": "north"
+    },
+    {
+      "pos": [
+        1,
+        4,
+        3
+      ],
+      "kind": "roof_window",
+      "north": false,
+      "south": false,
+      "east": true,
+      "west": false
+    },
+    {
+      "pos": [
+        1,
+        4,
+        4
+      ],
+      "kind": "frame",
+      "shell": 40
+    },
+    {
+      "pos": [
+        2,
+        0,
+        0
+      ],
+      "kind": "frame",
+      "shell": 20
+    },
+    {
+      "pos": [
+        2,
+        0,
+        1
+      ],
+      "kind": "casing",
+      "shell": 4
+    },
+    {
+      "pos": [
+        2,
+        0,
+        2
+      ],
+      "kind": "casing",
+      "shell": 4
+    },
+    {
+      "pos": [
+        2,
+        0,
+        3
+      ],
+      "kind": "casing",
+      "shell": 4
+    },
+    {
+      "pos": [
+        2,
+        0,
+        4
+      ],
+      "kind": "frame",
+      "shell": 36
+    },
+    {
+      "pos": [
+        2,
+        1,
+        0
+      ],
+      "kind": "controller",
+      "facing": "north"
+    },
+    {
+      "pos": [
+        2,
+        1,
+        4
+      ],
+      "kind": "energy_out",
+      "facing": "south"
+    },
+    {
+      "pos": [
+        2,
+        2,
+        0
+      ],
+      "kind": "glass",
+      "facing": "north",
+      "right": true,
+      "left": true,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        2,
+        2,
+        4
+      ],
+      "kind": "glass",
+      "facing": "south",
+      "right": true,
+      "left": true,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        2,
+        3,
+        0
+      ],
+      "kind": "glass",
+      "facing": "north",
+      "right": true,
+      "left": true,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        2,
+        3,
+        4
+      ],
+      "kind": "glass",
+      "facing": "south",
+      "right": true,
+      "left": true,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        2,
+        4,
+        0
+      ],
+      "kind": "frame",
+      "shell": 24
+    },
+    {
+      "pos": [
+        2,
+        4,
+        1
+      ],
+      "kind": "roof_window",
+      "north": false,
+      "south": true,
+      "east": true,
+      "west": true
+    },
+    {
+      "pos": [
+        2,
+        4,
+        2
+      ],
+      "kind": "roof_window",
+      "north": true,
+      "south": true,
+      "east": true,
+      "west": false
+    },
+    {
+      "pos": [
+        2,
+        4,
+        3
+      ],
+      "kind": "roof_window",
+      "north": true,
+      "south": false,
+      "east": true,
+      "west": true
+    },
+    {
+      "pos": [
+        2,
+        4,
+        4
+      ],
+      "kind": "frame",
+      "shell": 40
+    },
+    {
+      "pos": [
+        3,
+        0,
+        0
+      ],
+      "kind": "frame",
+      "shell": 20
+    },
+    {
+      "pos": [
+        3,
+        0,
+        1
+      ],
+      "kind": "casing",
+      "shell": 4
+    },
+    {
+      "pos": [
+        3,
+        0,
+        2
+      ],
+      "kind": "casing",
+      "shell": 4
+    },
+    {
+      "pos": [
+        3,
+        0,
+        3
+      ],
+      "kind": "casing",
+      "shell": 4
+    },
+    {
+      "pos": [
+        3,
+        0,
+        4
+      ],
+      "kind": "frame",
+      "shell": 36
+    },
+    {
+      "pos": [
+        3,
+        1,
+        0
+      ],
+      "kind": "waste_output",
+      "facing": "north"
+    },
+    {
+      "pos": [
+        3,
+        1,
+        4
+      ],
+      "kind": "glass",
+      "facing": "south",
+      "right": false,
+      "left": false,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        3,
+        2,
+        0
+      ],
+      "kind": "glass",
+      "facing": "north",
+      "right": false,
+      "left": true,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        3,
+        2,
+        4
+      ],
+      "kind": "glass",
+      "facing": "south",
+      "right": true,
+      "left": false,
+      "top": true,
+      "bottom": true
+    },
+    {
+      "pos": [
+        3,
+        3,
+        0
+      ],
+      "kind": "glass",
+      "facing": "north",
+      "right": false,
+      "left": true,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        3,
+        3,
+        4
+      ],
+      "kind": "glass",
+      "facing": "south",
+      "right": true,
+      "left": false,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        3,
+        4,
+        0
+      ],
+      "kind": "frame",
+      "shell": 24
+    },
+    {
+      "pos": [
+        3,
+        4,
+        1
+      ],
+      "kind": "roof_window",
+      "north": false,
+      "south": true,
+      "east": false,
+      "west": true
+    },
+    {
+      "pos": [
+        3,
+        4,
+        2
+      ],
+      "kind": "roof_window",
+      "north": true,
+      "south": true,
+      "east": false,
+      "west": true
+    },
+    {
+      "pos": [
+        3,
+        4,
+        3
+      ],
+      "kind": "roof_window",
+      "north": true,
+      "south": false,
+      "east": false,
+      "west": true
+    },
+    {
+      "pos": [
+        3,
+        4,
+        4
+      ],
+      "kind": "frame",
+      "shell": 40
+    },
+    {
+      "pos": [
+        4,
+        0,
+        0
+      ],
+      "kind": "frame",
+      "shell": 22
+    },
+    {
+      "pos": [
+        4,
+        0,
+        1
+      ],
+      "kind": "frame",
+      "shell": 6
+    },
+    {
+      "pos": [
+        4,
+        0,
+        2
+      ],
+      "kind": "frame",
+      "shell": 6
+    },
+    {
+      "pos": [
+        4,
+        0,
+        3
+      ],
+      "kind": "frame",
+      "shell": 6
+    },
+    {
+      "pos": [
+        4,
+        0,
+        4
+      ],
+      "kind": "frame",
+      "shell": 38
+    },
+    {
+      "pos": [
+        4,
+        1,
+        0
+      ],
+      "kind": "frame",
+      "shell": 18
+    },
+    {
+      "pos": [
+        4,
+        1,
+        1
+      ],
+      "kind": "glass",
+      "facing": "east",
+      "right": true,
+      "left": false,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        4,
+        1,
+        2
+      ],
+      "kind": "glass",
+      "facing": "east",
+      "right": true,
+      "left": true,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        4,
+        1,
+        3
+      ],
+      "kind": "glass",
+      "facing": "east",
+      "right": false,
+      "left": true,
+      "top": true,
+      "bottom": false
+    },
+    {
+      "pos": [
+        4,
+        1,
+        4
+      ],
+      "kind": "frame",
+      "shell": 34
+    },
+    {
+      "pos": [
+        4,
+        2,
+        0
+      ],
+      "kind": "frame",
+      "shell": 18
+    },
+    {
+      "pos": [
+        4,
+        2,
+        1
+      ],
+      "kind": "glass",
+      "facing": "east",
+      "right": true,
+      "left": false,
+      "top": true,
+      "bottom": true
+    },
+    {
+      "pos": [
+        4,
+        2,
+        2
+      ],
+      "kind": "glass",
+      "facing": "east",
+      "right": true,
+      "left": true,
+      "top": true,
+      "bottom": true
+    },
+    {
+      "pos": [
+        4,
+        2,
+        3
+      ],
+      "kind": "glass",
+      "facing": "east",
+      "right": false,
+      "left": true,
+      "top": true,
+      "bottom": true
+    },
+    {
+      "pos": [
+        4,
+        2,
+        4
+      ],
+      "kind": "frame",
+      "shell": 34
+    },
+    {
+      "pos": [
+        4,
+        3,
+        0
+      ],
+      "kind": "frame",
+      "shell": 18
+    },
+    {
+      "pos": [
+        4,
+        3,
+        1
+      ],
+      "kind": "glass",
+      "facing": "east",
+      "right": true,
+      "left": false,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        4,
+        3,
+        2
+      ],
+      "kind": "glass",
+      "facing": "east",
+      "right": true,
+      "left": true,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        4,
+        3,
+        3
+      ],
+      "kind": "glass",
+      "facing": "east",
+      "right": false,
+      "left": true,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        4,
+        3,
+        4
+      ],
+      "kind": "frame",
+      "shell": 34
+    },
+    {
+      "pos": [
+        4,
+        4,
+        0
+      ],
+      "kind": "frame",
+      "shell": 26
+    },
+    {
+      "pos": [
+        4,
+        4,
+        1
+      ],
+      "kind": "frame",
+      "shell": 10
+    },
+    {
+      "pos": [
+        4,
+        4,
+        2
+      ],
+      "kind": "frame",
+      "shell": 10
+    },
+    {
+      "pos": [
+        4,
+        4,
+        3
+      ],
+      "kind": "frame",
+      "shell": 10
+    },
+    {
+      "pos": [
+        4,
+        4,
+        4
+      ],
+      "kind": "frame",
+      "shell": 42
+    },
+    {
+      "pos": [
+        1,
+        1,
+        2
+      ],
+      "kind": "fuel_assembly",
+      "fuel": 0,
+      "level": 4,
+      "top": false,
+      "bottom": true
+    },
+    {
+      "pos": [
+        1,
+        2,
+        2
+      ],
+      "kind": "fuel_assembly",
+      "fuel": 0,
+      "level": 4,
+      "top": false,
+      "bottom": false
+    },
+    {
+      "pos": [
+        1,
+        3,
+        2
+      ],
+      "kind": "fuel_assembly",
+      "fuel": 0,
+      "level": 4,
+      "top": true,
+      "bottom": false
+    }
+  ]
+}

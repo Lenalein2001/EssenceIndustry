@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "essenceindustry:item/crop_speed_upgrade"
+  }
+}

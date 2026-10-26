@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:edelwood"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "forbidden_arcanus:edelwood_log"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:edelwood_essence"
+  },
+  "result": {
+    "id": "forbidden_arcanus:edelwood_log",
+    "count": 4
+  }
+}

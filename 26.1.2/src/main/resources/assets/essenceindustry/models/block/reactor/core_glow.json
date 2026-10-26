@@ -1,0 +1,37 @@
+{
+  "ambientocclusion": true,
+  "textures": {
+    "core_glow": "essenceindustry:block/reactor/core_glow",
+    "particle": "essenceindustry:block/reactor/steel"
+  },
+  "elements": [
+    {
+      "from": [
+        3,
+        0,
+        3
+      ],
+      "to": [
+        13,
+        16,
+        13
+      ],
+      "faces": {
+        "north": {
+          "texture": "#core_glow"
+        },
+        "south": {
+          "texture": "#core_glow"
+        },
+        "east": {
+          "texture": "#core_glow"
+        },
+        "west": {
+          "texture": "#core_glow"
+        }
+      },
+      "light_emission": 15
+    }
+  ],
+  "render_type": "neoforge:translucent"
+}

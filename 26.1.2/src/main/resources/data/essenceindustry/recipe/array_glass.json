@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CGC",
+    "GGG",
+    "CGC"
+  ],
+  "key": {
+    "C": "essenceindustry:array_casing",
+    "G": "minecraft:glass"
+  },
+  "result": {
+    "id": "essenceindustry:array_glass",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}

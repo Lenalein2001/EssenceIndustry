@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "essenceindustry:block/fuel_reprocessor",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "essenceindustry:block/fuel_reprocessor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "essenceindustry:block/fuel_reprocessor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "essenceindustry:block/fuel_reprocessor",
+      "y": 270
+    }
+  }
+}

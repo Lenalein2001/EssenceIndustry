@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IRI",
+    "GMG",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone",
+    "G": "minecraft:glass_pane",
+    "M": "minecraft:sugar"
+  },
+  "result": {
+    "id": "essenceindustry:crop_speed_upgrade",
+    "count": 1
+  }
+}

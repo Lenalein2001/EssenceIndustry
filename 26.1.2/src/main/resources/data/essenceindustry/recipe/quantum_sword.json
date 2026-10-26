@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    " A ",
+    " C "
+  ],
+  "key": {
+    "A": "essenceindustry:quantum_alloy",
+    "C": "essenceindustry:quantum_core"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_sword",
+    "count": 1
+  }
+}

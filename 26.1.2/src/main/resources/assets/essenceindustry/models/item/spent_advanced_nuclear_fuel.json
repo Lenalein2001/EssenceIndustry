@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "essenceindustry:item/spent_advanced_nuclear_fuel"
+  }
+}

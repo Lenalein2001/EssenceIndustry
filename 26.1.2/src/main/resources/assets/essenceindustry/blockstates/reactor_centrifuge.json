@@ -1,0 +1,132 @@
+{
+  "variants": {
+    "facing=north,bottom=false,top=false,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_0",
+      "y": 0
+    },
+    "facing=north,bottom=false,top=false,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_0_off",
+      "y": 0
+    },
+    "facing=north,bottom=true,top=false,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_1",
+      "y": 0
+    },
+    "facing=north,bottom=true,top=false,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_1_off",
+      "y": 0
+    },
+    "facing=north,bottom=false,top=true,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_2",
+      "y": 0
+    },
+    "facing=north,bottom=false,top=true,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_2_off",
+      "y": 0
+    },
+    "facing=north,bottom=true,top=true,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_3",
+      "y": 0
+    },
+    "facing=north,bottom=true,top=true,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_3_off",
+      "y": 0
+    },
+    "facing=east,bottom=false,top=false,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_0",
+      "y": 90
+    },
+    "facing=east,bottom=false,top=false,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_0_off",
+      "y": 90
+    },
+    "facing=east,bottom=true,top=false,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_1",
+      "y": 90
+    },
+    "facing=east,bottom=true,top=false,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_1_off",
+      "y": 90
+    },
+    "facing=east,bottom=false,top=true,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_2",
+      "y": 90
+    },
+    "facing=east,bottom=false,top=true,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_2_off",
+      "y": 90
+    },
+    "facing=east,bottom=true,top=true,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_3",
+      "y": 90
+    },
+    "facing=east,bottom=true,top=true,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_3_off",
+      "y": 90
+    },
+    "facing=south,bottom=false,top=false,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_0",
+      "y": 180
+    },
+    "facing=south,bottom=false,top=false,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_0_off",
+      "y": 180
+    },
+    "facing=south,bottom=true,top=false,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_1",
+      "y": 180
+    },
+    "facing=south,bottom=true,top=false,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_1_off",
+      "y": 180
+    },
+    "facing=south,bottom=false,top=true,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_2",
+      "y": 180
+    },
+    "facing=south,bottom=false,top=true,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_2_off",
+      "y": 180
+    },
+    "facing=south,bottom=true,top=true,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_3",
+      "y": 180
+    },
+    "facing=south,bottom=true,top=true,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_3_off",
+      "y": 180
+    },
+    "facing=west,bottom=false,top=false,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_0",
+      "y": 270
+    },
+    "facing=west,bottom=false,top=false,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_0_off",
+      "y": 270
+    },
+    "facing=west,bottom=true,top=false,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_1",
+      "y": 270
+    },
+    "facing=west,bottom=true,top=false,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_1_off",
+      "y": 270
+    },
+    "facing=west,bottom=false,top=true,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_2",
+      "y": 270
+    },
+    "facing=west,bottom=false,top=true,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_2_off",
+      "y": 270
+    },
+    "facing=west,bottom=true,top=true,powered=true": {
+      "model": "essenceindustry:block/reactor/centrifuge_3",
+      "y": 270
+    },
+    "facing=west,bottom=true,top=true,powered=false": {
+      "model": "essenceindustry:block/reactor/centrifuge_3_off",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IRI",
+    "PFP",
+    "CQC"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "F": "essenceindustry:reactor_casing",
+    "I": "minecraft:iron_ingot",
+    "P": "minecraft:piston",
+    "Q": "minecraft:quartz",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_fabrication_head",
+    "count": 1
+  }
+}

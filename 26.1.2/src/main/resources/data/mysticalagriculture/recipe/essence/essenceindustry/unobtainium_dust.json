@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:unobtainium"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "allthemodium:unobtainium_dust"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:unobtainium_essence"
+  },
+  "result": {
+    "id": "allthemodium:unobtainium_dust",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FCF",
+    "GPG",
+    "FCF"
+  ],
+  "key": {
+    "C": "ae2:engineering_processor",
+    "F": "essenceindustry:quantum_core",
+    "P": "essenceindustry:array_speed_upgrade_5",
+    "G": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "id": "essenceindustry:array_speed_upgrade_6",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}

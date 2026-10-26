@@ -1,0 +1,6 @@
+{
+  "parent": "essenceindustry:block/vitalized_farmland_base",
+  "textures": {
+    "top": "minecraft:block/farmland"
+  }
+}

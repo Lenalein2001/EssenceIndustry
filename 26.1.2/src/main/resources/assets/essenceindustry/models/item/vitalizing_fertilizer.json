@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "layer0": "essenceindustry:item/vitalizing_fertilizer"
+  },
+  "parent": "minecraft:item/generated"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:dimensional_shard"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "ftbmaterials:dimensional_shard_gem"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:dimensional_shard_essence"
+  },
+  "result": {
+    "id": "ftbmaterials:dimensional_shard_gem",
+    "count": 4
+  }
+}

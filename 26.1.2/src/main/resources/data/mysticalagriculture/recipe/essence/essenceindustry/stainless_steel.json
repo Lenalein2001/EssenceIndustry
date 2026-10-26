@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "ftbmaterials:stainless_steel_ingot",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:stainless_steel"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "ftbmaterials:stainless_steel_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:stainless_steel_essence"
+  },
+  "type": "minecraft:crafting_shaped"
+}

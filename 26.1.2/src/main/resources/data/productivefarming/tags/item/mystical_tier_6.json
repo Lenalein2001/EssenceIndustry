@@ -1,0 +1,45 @@
+{
+  "values": [
+    {
+      "id": "mysticalagriculture:ridiculite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:inanite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:insanite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:allthemodium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:vibranium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:unobtainium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:chaos_fragment_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:dragon_heart_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:eclipse_alloy_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:aurichalcum_seeds",
+      "required": false
+    }
+  ],
+  "replace": false
+}

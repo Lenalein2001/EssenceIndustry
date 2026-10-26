@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "crop": "essenceindustry:carbon_fibre",
+      "type": "mysticalagriculture:crop_enabled"
+    },
+    {
+      "value": "oritech:carbon_fibre_strands",
+      "type": "neoforge:registered"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "E": "mysticalagriculture:carbon_fibre_essence"
+  },
+  "result": {
+    "id": "oritech:carbon_fibre_strands",
+    "count": 3
+  }
+}

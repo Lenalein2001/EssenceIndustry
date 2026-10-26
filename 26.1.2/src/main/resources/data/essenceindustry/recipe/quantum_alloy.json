@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DSD",
+    "AQA",
+    "DSD"
+  ],
+  "key": {
+    "D": "minecraft:diamond_block",
+    "S": "advanced_ae:shattered_singularity",
+    "A": "advanced_ae:quantum_alloy",
+    "Q": "ae2:singularity"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_alloy",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "advanced_ae"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GDG",
+    "FSF",
+    "IRI"
+  ],
+  "key": {
+    "G": "minecraft:glass",
+    "D": "minecraft:diamond_block",
+    "F": [
+      "essenceindustry:vitalized_farmland_tier_5",
+      "essenceindustry:vitalized_farmland_tier_6"
+    ],
+    "S": "essenceindustry:seed_crafter",
+    "I": "minecraft:iron_block",
+    "R": "minecraft:redstone_block"
+  },
+  "result": {
+    "id": "essenceindustry:crop_simulator",
+    "count": 1
+  }
+}

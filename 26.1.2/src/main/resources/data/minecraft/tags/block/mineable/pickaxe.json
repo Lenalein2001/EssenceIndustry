@@ -1,0 +1,106 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "essenceindustry:growth_accelerator_tier_2",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:growth_accelerator_tier_3",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:growth_accelerator_tier_4",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:growth_accelerator_tier_5",
+      "required": false
+    },
+    {
+      "required": false,
+      "id": "essenceindustry:enhanced_harvesting_pylon"
+    },
+    {
+      "id": "essenceindustry:essence_converter",
+      "required": false
+    },
+    "essenceindustry:seed_library",
+    "essenceindustry:celestial_controller",
+    "essenceindustry:rain_sensor",
+    {
+      "id": "essenceindustry:bulk_disk_manager",
+      "required": false
+    },
+    "essenceindustry:seed_crafter",
+    {
+      "id": "essenceindustry:processing_array",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:array_casing",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:array_glass",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:array_rack",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:array_pattern_hatch",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:array_output_port",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:fuel_enricher",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:fuel_reprocessor",
+      "required": false
+    },
+    {
+      "id": "essenceindustry:fuel_fabricator",
+      "required": false
+    },
+    "essenceindustry:reactor_casing",
+    "essenceindustry:reactor_pressure_panel",
+    "essenceindustry:reactor_frame",
+    "essenceindustry:reactor_glass",
+    "essenceindustry:reactor_roof_window",
+    "essenceindustry:reactor_controller",
+    "essenceindustry:reactor_fuel_input",
+    "essenceindustry:reactor_waste_output",
+    "essenceindustry:reactor_coolant_in",
+    "essenceindustry:reactor_coolant_out",
+    "essenceindustry:reactor_energy_out",
+    "essenceindustry:reactor_moderator",
+    "essenceindustry:reactor_reflector",
+    "essenceindustry:reactor_fuel_assembly",
+    "essenceindustry:reactor_actuator",
+    "essenceindustry:reactor_cooling_channel",
+    "essenceindustry:reactor_centrifuge",
+    "essenceindustry:reactor_treatment_vessel",
+    "essenceindustry:reactor_fabrication_bed",
+    "essenceindustry:reactor_fabrication_head",
+    "essenceindustry:turbine_controller",
+    "essenceindustry:turbine_shaft",
+    "essenceindustry:turbine_blade",
+    "essenceindustry:turbine_bearing",
+    "essenceindustry:turbine_condenser",
+    "essenceindustry:turbine_foot",
+    "essenceindustry:turbine_light",
+    "essenceindustry:turbine_coil_copper",
+    "essenceindustry:turbine_coil_uranium",
+    "essenceindustry:turbine_coil_enriched",
+    "essenceindustry:turbine_coil_mox",
+    "essenceindustry:turbine_coil_plutonium",
+    "essenceindustry:turbine_coil_advanced"
+  ]
+}

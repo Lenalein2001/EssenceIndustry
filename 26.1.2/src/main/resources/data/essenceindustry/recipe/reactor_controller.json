@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "RLR",
+    "CFC"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "F": "essenceindustry:reactor_casing",
+    "G": "minecraft:glass",
+    "I": "minecraft:iron_ingot",
+    "L": "minecraft:lapis_lazuli",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_controller",
+    "count": 1
+  }
+}

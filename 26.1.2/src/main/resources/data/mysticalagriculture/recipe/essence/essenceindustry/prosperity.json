@@ -1,0 +1,22 @@
+{
+    "type":  "crafting_shaped",
+    "neoforge:conditions":  [
+                                {
+                                    "type":  "mysticalagriculture:crop_enabled",
+                                    "crop":  "essenceindustry:prosperity"
+                                }
+                            ],
+    "pattern":  [
+                    "EEE",
+                    "   ",
+                    "   "
+                ],
+    "key":  {
+                "E":  "mysticalagriculture:prosperity_essence"
+            },
+    "result":  {
+                   "id":  "mysticalagriculture:prosperity_shard",
+                   "count":  8
+               }
+}
+

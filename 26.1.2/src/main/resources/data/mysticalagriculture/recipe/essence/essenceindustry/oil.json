@@ -1,0 +1,33 @@
+{
+  "type": "oritech:centrifuge_fluid",
+  "neoforge:conditions": [
+    {
+      "values": [
+        {
+          "crop": "essenceindustry:oil",
+          "type": "mysticalagriculture:crop_enabled"
+        },
+        {
+          "crop": "mysticalcustomization:oil",
+          "type": "mysticalagriculture:crop_enabled"
+        }
+      ],
+      "type": "neoforge:or"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "itemInputs": [
+    "mysticalagriculture:oil_essence"
+  ],
+  "itemResults": [],
+  "fluidOutputs": [
+    {
+      "id": "oritech:still_oil",
+      "amount": 125
+    }
+  ],
+  "time": 20
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "GCG",
+    "RAR",
+    "SQS"
+  ],
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "C": "minecraft:clock",
+    "R": "minecraft:redstone",
+    "A": "minecraft:amethyst_shard",
+    "S": "minecraft:smooth_stone",
+    "Q": "minecraft:quartz"
+  },
+  "result": {
+    "id": "essenceindustry:celestial_controller",
+    "count": 1
+  }
+}

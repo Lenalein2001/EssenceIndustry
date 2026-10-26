@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EAE",
+    "ACA",
+    "EAE"
+  ],
+  "key": {
+    "E": "minecraft:iron_block",
+    "A": "essenceindustry:quantum_alloy",
+    "C": "essenceindustry:quantum_circuit"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_module_chassis",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "extendedae"
+      }
+    }
+  ]
+}

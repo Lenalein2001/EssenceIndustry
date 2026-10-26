@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "GFG",
+    " G "
+  ],
+  "key": {
+    "F": "essenceindustry:reactor_casing",
+    "G": "minecraft:glass"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_glass",
+    "count": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "essenceindustry:block/dark_machines/body",
+    "up": "essenceindustry:block/dark_machines/model_copier",
+    "down": "essenceindustry:block/dark_machines/body",
+    "north": "essenceindustry:block/dark_machines/model_copier",
+    "south": "essenceindustry:block/dark_machines/model_copier",
+    "east": "essenceindustry:block/dark_machines/model_copier",
+    "west": "essenceindustry:block/dark_machines/model_copier"
+  }
+}

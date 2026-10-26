@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "essenceindustry:vitalized_farmland",
+    "essenceindustry:vitalized_farmland_tier_2",
+    "essenceindustry:vitalized_farmland_tier_3",
+    "essenceindustry:vitalized_farmland_tier_4",
+    "essenceindustry:vitalized_farmland_tier_5",
+    {
+      "id": "#mysticalagricultureextraseeds:farmland_below_tier_6",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:insanite"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "bigreactors:insanite_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:insanite_essence"
+  },
+  "result": {
+    "id": "bigreactors:insanite_ingot",
+    "count": 1
+  }
+}

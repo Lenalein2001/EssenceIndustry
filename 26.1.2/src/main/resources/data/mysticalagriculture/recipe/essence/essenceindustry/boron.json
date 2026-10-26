@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:boron"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "colossal_reactors:boron_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:boron_essence"
+  },
+  "result": {
+    "id": "colossal_reactors:boron_ingot",
+    "count": 3
+  }
+}

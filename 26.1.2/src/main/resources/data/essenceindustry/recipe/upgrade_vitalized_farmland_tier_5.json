@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "value": "mysticalagriculture:supremium_essence"
+    }
+  ],
+  "ingredients": [
+    "#essenceindustry:farmland_below_tier_5",
+    "mysticalagriculture:supremium_essence"
+  ],
+  "result": {
+    "id": "essenceindustry:vitalized_farmland_tier_5",
+    "count": 1
+  }
+}

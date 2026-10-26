@@ -1,0 +1,44 @@
+{
+  "variants": {
+    "facing=north,array_formed=false": {
+      "model": "essenceindustry:block/array/controller",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_controller",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false": {
+      "model": "essenceindustry:block/array/controller",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_controller",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false": {
+      "model": "essenceindustry:block/array/controller",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_controller",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false": {
+      "model": "essenceindustry:block/array/controller",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_controller",
+      "y": 270,
+      "uvlock": true
+    }
+  }
+}

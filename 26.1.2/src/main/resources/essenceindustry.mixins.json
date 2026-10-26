@@ -1,0 +1,35 @@
+{
+  "required": true,
+  "package": "com.neolena.essenceindustry.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "ConstructionBlockChangeMixin",
+    "EssencePatternExecutionMixin",
+    "VitalizedSeedDropsMixin",
+    "HnnTrainingMixin",
+    "HnnTrainingInventoryMixin",
+    "HnnDataCenterInventoryMixin",
+    "HnnAe2ExportMixin",
+    "HnnAdvancedAeBusMixin",
+    "SimulationGeneticsMixin",
+    "SimulationCropEnvironmentMixin",
+    "SimulationInferiumSoilMixin",
+    "ServerConfigMigrationMixin",
+    "LegacyCropIdsMixin",
+    "BuilderWirelessInventoryMixin",
+    "BuilderWirelessSlotMixin",
+    "BuilderWirelessPointMixin",
+    "BuilderWirelessSignalMixin",
+    "BuilderWirelessMenuMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "plugin": "com.neolena.essenceindustry.mixin.OptionalIntegrationMixins",
+  "client": [
+    "ExtendedCreativeItemsMixin",
+    "MaCreativeEssenceMixin",
+    "ArrayGuiAccessor",
+    "BuilderWirelessScreenMixin"
+  ]
+}

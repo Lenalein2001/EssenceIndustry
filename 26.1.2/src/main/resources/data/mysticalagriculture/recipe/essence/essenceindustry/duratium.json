@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "oritech:duratium_ingot",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:duratium"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "oritech:duratium_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:duratium_essence"
+  },
+  "type": "minecraft:crafting_shaped"
+}

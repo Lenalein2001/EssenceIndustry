@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:draconic_chunk"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "productivebees:draconic_chunk"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:draconic_chunk_essence"
+  },
+  "result": {
+    "id": "productivebees:draconic_chunk",
+    "count": 1
+  }
+}

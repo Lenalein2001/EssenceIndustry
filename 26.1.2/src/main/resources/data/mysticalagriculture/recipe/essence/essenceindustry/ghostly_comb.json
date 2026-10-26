@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:ghostly_comb"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "productivebees:comb_ghostly"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "E": "mysticalagriculture:ghostly_comb_essence"
+  },
+  "result": {
+    "id": "productivebees:comb_ghostly",
+    "count": 2
+  }
+}

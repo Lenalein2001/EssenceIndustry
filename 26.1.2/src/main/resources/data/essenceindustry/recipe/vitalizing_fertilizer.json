@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "result": {
+    "id": "essenceindustry:vitalizing_fertilizer",
+    "count": 4
+  },
+  "ingredients": [
+    "minecraft:bone_meal",
+    "minecraft:redstone",
+    "mysticalagriculture:inferium_essence",
+    "minecraft:wheat_seeds"
+  ]
+}

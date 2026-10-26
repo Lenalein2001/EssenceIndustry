@@ -1,0 +1,84 @@
+{
+  "variants": {
+    "facing=north,powered=false,vertical=false": {
+      "model": "essenceindustry:block/turbine/shaft",
+      "y": 0,
+      "x": 0
+    },
+    "facing=north,powered=false,vertical=true": {
+      "model": "essenceindustry:block/turbine/shaft",
+      "y": 0,
+      "x": 90
+    },
+    "facing=north,powered=true,vertical=false": {
+      "model": "essenceindustry:block/turbine/empty",
+      "y": 0,
+      "x": 0
+    },
+    "facing=north,powered=true,vertical=true": {
+      "model": "essenceindustry:block/turbine/empty",
+      "y": 0,
+      "x": 90
+    },
+    "facing=east,powered=false,vertical=false": {
+      "model": "essenceindustry:block/turbine/shaft",
+      "y": 90,
+      "x": 0
+    },
+    "facing=east,powered=false,vertical=true": {
+      "model": "essenceindustry:block/turbine/shaft",
+      "y": 90,
+      "x": 90
+    },
+    "facing=east,powered=true,vertical=false": {
+      "model": "essenceindustry:block/turbine/empty",
+      "y": 90,
+      "x": 0
+    },
+    "facing=east,powered=true,vertical=true": {
+      "model": "essenceindustry:block/turbine/empty",
+      "y": 90,
+      "x": 90
+    },
+    "facing=south,powered=false,vertical=false": {
+      "model": "essenceindustry:block/turbine/shaft",
+      "y": 180,
+      "x": 0
+    },
+    "facing=south,powered=false,vertical=true": {
+      "model": "essenceindustry:block/turbine/shaft",
+      "y": 180,
+      "x": 90
+    },
+    "facing=south,powered=true,vertical=false": {
+      "model": "essenceindustry:block/turbine/empty",
+      "y": 180,
+      "x": 0
+    },
+    "facing=south,powered=true,vertical=true": {
+      "model": "essenceindustry:block/turbine/empty",
+      "y": 180,
+      "x": 90
+    },
+    "facing=west,powered=false,vertical=false": {
+      "model": "essenceindustry:block/turbine/shaft",
+      "y": 270,
+      "x": 0
+    },
+    "facing=west,powered=false,vertical=true": {
+      "model": "essenceindustry:block/turbine/shaft",
+      "y": 270,
+      "x": 90
+    },
+    "facing=west,powered=true,vertical=false": {
+      "model": "essenceindustry:block/turbine/empty",
+      "y": 270,
+      "x": 0
+    },
+    "facing=west,powered=true,vertical=true": {
+      "model": "essenceindustry:block/turbine/empty",
+      "y": 270,
+      "x": 90
+    }
+  }
+}

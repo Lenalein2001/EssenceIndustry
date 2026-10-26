@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "RAR",
+    "PIP"
+  ],
+  "key": {
+    "P": "mysticalagriculture:infusion_pedestal",
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone",
+    "A": "mysticalagriculture:infusion_altar"
+  },
+  "result": {
+    "id": "essenceindustry:seed_crafter"
+  }
+}

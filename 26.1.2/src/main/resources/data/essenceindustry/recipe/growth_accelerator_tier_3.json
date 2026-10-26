@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "pattern": [
+    "ECE",
+    "BAB",
+    "DFD"
+  ],
+  "key": {
+    "A": "essenceindustry:growth_accelerator_tier_2",
+    "B": "#c:ingots/gold",
+    "C": "ae2:fluix_pearl",
+    "D": "#c:ingots/netherite",
+    "E": "ae2:speed_card",
+    "F": "ae2:formation_core"
+  },
+  "result": {
+    "id": "essenceindustry:growth_accelerator_tier_3",
+    "count": 1
+  }
+}

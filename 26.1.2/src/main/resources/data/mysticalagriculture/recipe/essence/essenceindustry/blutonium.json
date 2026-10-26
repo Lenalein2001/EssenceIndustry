@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:blutonium"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "bigreactors:blutonium_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:blutonium_essence"
+  },
+  "result": {
+    "id": "bigreactors:blutonium_ingot",
+    "count": 1
+  }
+}

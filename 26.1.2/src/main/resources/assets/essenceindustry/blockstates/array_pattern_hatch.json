@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "facing=north,array_formed=false": {
+      "model": "essenceindustry:block/array/pattern_hatch",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_pattern_hatch",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false": {
+      "model": "essenceindustry:block/array/pattern_hatch",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_pattern_hatch",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false": {
+      "model": "essenceindustry:block/array/pattern_hatch",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_pattern_hatch",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false": {
+      "model": "essenceindustry:block/array/pattern_hatch",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_pattern_hatch",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=up,array_formed=false": {
+      "model": "essenceindustry:block/array/pattern_hatch",
+      "y": 0,
+      "x": 270,
+      "uvlock": true
+    },
+    "facing=up,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_pattern_hatch",
+      "y": 0,
+      "x": 270,
+      "uvlock": true
+    },
+    "facing=down,array_formed=false": {
+      "model": "essenceindustry:block/array/pattern_hatch",
+      "y": 0,
+      "x": 90,
+      "uvlock": true
+    },
+    "facing=down,array_formed=true": {
+      "model": "essenceindustry:block/array/formed_pattern_hatch",
+      "y": 0,
+      "x": 90,
+      "uvlock": true
+    }
+  }
+}

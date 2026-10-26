@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:anglesite"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "bigreactors:anglesite_crystal"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:anglesite_essence"
+  },
+  "result": {
+    "id": "bigreactors:anglesite_crystal",
+    "count": 2
+  }
+}

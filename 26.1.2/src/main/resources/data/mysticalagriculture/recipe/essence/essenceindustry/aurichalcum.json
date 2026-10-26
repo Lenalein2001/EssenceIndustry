@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:aurichalcum"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "ftbarmory:aurichalcum_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:aurichalcum_essence"
+  },
+  "result": {
+    "id": "ftbarmory:aurichalcum_ingot",
+    "count": 1
+  }
+}

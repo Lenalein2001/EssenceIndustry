@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:amber"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "productivebees:amber"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:amber_essence"
+  },
+  "result": {
+    "id": "productivebees:amber",
+    "count": 2
+  }
+}

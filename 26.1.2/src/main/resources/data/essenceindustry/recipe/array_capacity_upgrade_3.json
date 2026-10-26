@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FCF",
+    "GPG",
+    "FCF"
+  ],
+  "key": {
+    "C": "ae2:engineering_processor",
+    "F": "minecraft:diamond_block",
+    "P": "essenceindustry:array_capacity_upgrade_2",
+    "G": "minecraft:gold_block"
+  },
+  "result": {
+    "id": "essenceindustry:array_capacity_upgrade_3",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "essenceindustry:crop_tier",
+      "crop": "depleted_uranium",
+      "owner": "essenceindustry",
+      "tier": 4
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:depleted_uranium_essence"
+  },
+  "result": {
+    "id": "essenceindustry:depleted_uranium",
+    "count": 4
+  }
+}

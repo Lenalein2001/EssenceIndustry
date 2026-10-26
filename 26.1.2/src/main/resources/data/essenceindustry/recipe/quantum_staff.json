@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ACA",
+    " A "
+  ],
+  "key": {
+    "A": "essenceindustry:quantum_alloy",
+    "C": "essenceindustry:quantum_core"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_staff",
+    "count": 1
+  }
+}

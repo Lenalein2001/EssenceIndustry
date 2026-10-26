@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CEC",
+    "TIT",
+    "CCC"
+  ],
+  "key": {
+    "C": "essenceindustry:array_casing",
+    "E": "ae2:engineering_processor",
+    "T": "ae2:calculation_processor",
+    "I": "ae2:interface"
+  },
+  "result": {
+    "id": "essenceindustry:processing_array",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}

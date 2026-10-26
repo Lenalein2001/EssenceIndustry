@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:milky_comb"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "productivebees:comb_milky"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "E": "mysticalagriculture:milky_comb_essence"
+  },
+  "result": {
+    "id": "productivebees:comb_milky",
+    "count": 2
+  }
+}

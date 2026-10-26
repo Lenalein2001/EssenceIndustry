@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "ftbmaterials:plutonium_ingot",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:plutonium"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "ftbmaterials:plutonium_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:plutonium_essence"
+  },
+  "type": "minecraft:crafting_shaped"
+}

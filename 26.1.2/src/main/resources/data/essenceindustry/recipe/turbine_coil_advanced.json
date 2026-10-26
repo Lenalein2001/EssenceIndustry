@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "CMC",
+    "ICI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot",
+    "M": "essenceindustry:advanced_nuclear_fuel"
+  },
+  "result": {
+    "id": "essenceindustry:turbine_coil_advanced",
+    "count": 1
+  }
+}

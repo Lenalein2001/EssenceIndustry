@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C C",
+    "CBC",
+    "C C"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "B": "minecraft:bucket"
+  },
+  "result": {
+    "id": "essenceindustry:turbine_condenser",
+    "count": 1
+  }
+}

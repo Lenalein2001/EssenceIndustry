@@ -1,0 +1,13 @@
+{
+  "values": [
+    {
+      "id": "mysticalagriculture:prosperity_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:sticky_resin_seeds",
+      "required": false
+    }
+  ],
+  "replace": false
+}

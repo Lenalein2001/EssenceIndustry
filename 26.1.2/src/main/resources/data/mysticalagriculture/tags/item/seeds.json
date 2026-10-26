@@ -1,0 +1,189 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "mysticalagriculture:prosperity_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:honey_treat_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ghostly_comb_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:milky_comb_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:powdery_comb_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:amber_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:draconic_chunk_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:anglesite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:benitoite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:magentite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ridiculite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:inanite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:insanite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ludicrite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:blutonium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:allthemodium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:vibranium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:unobtainium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:chaos_fragment_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:dragon_heart_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:plastic_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:fluxite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:oil_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ferricore_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:blazegold_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:celestigem_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:eclipse_alloy_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:edelwood_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:antimony_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:titanium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:tungsten_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:bauxite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:polymer_resin_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:carbon_fibre_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:sticky_resin_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:stainless_steel_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:plutonium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:adamant_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:duratium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:biosteel_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:energite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:adamantite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:aeternium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:aurichalcum_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:boron_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:dimensional_shard_seeds",
+      "required": false
+    }
+  ]
+}

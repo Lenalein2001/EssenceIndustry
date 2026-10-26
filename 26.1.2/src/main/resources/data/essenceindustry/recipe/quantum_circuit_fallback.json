@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RPR",
+    "EAE",
+    "RPR"
+  ],
+  "key": {
+    "R": "minecraft:redstone_block",
+    "P": "minecraft:diamond",
+    "E": "minecraft:gold_block",
+    "A": "essenceindustry:quantum_alloy"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_circuit",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "extendedae"
+      }
+    }
+  ]
+}

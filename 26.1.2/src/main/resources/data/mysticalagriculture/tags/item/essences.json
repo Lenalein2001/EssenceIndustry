@@ -1,0 +1,169 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "mysticalagriculture:prosperity_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:honey_treat_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ghostly_comb_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:milky_comb_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:powdery_comb_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:amber_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:draconic_chunk_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:insanite_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ludicrite_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:blutonium_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:allthemodium_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:vibranium_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:unobtainium_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:chaos_fragment_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:dragon_heart_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:plastic_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:fluxite_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:oil_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:ferricore_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:blazegold_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:celestigem_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:eclipse_alloy_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:edelwood_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:antimony_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:titanium_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:tungsten_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:bauxite_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:polymer_resin_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:carbon_fibre_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:sticky_resin_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:stainless_steel_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:plutonium_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:adamant_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:duratium_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:biosteel_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:energite_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:adamantite_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:aeternium_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:aurichalcum_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:boron_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:dimensional_shard_essence",
+      "required": false
+    }
+  ]
+}

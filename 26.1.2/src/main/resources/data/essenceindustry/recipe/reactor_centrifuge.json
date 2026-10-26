@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IBI",
+    "PFP",
+    "CRC"
+  ],
+  "key": {
+    "B": "minecraft:iron_bars",
+    "C": "minecraft:copper_ingot",
+    "F": "essenceindustry:reactor_casing",
+    "I": "minecraft:iron_ingot",
+    "P": "minecraft:piston",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_centrifuge",
+    "count": 2
+  }
+}

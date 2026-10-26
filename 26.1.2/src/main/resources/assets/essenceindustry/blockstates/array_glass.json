@@ -1,0 +1,284 @@
+{
+  "variants": {
+    "facing=north,array_formed=false,array_part=0": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=1": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=2": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=3": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=4": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=5": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=false,array_part=6": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=0": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=1": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=2": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=3": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=4": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=5": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=north,array_formed=true,array_part=6": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=0": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=1": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=2": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=3": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=4": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=5": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=false,array_part=6": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=0": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=1": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=2": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=3": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=4": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=5": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,array_formed=true,array_part=6": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=0": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=1": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=2": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=3": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=4": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=5": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=false,array_part=6": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=0": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=1": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=2": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=3": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=4": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=5": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,array_formed=true,array_part=6": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=0": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=1": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=2": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=3": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=4": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=5": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=false,array_part=6": {
+      "model": "essenceindustry:block/array/glass",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=0": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=1": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=2": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=3": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=4": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=5": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,array_formed=true,array_part=6": {
+      "model": "essenceindustry:block/array/formed_hidden",
+      "y": 270,
+      "uvlock": true
+    }
+  }
+}

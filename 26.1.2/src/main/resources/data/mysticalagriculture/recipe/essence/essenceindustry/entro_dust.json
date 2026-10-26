@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:registered",
+      "value": "mysticalagriculture:entro_essence"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "extendedae:entro_dust"
+    }
+  ],
+  "pattern": [
+    "   ",
+    "EEE",
+    "   "
+  ],
+  "key": {
+    "E": "mysticalagriculture:entro_essence"
+  },
+  "result": {
+    "id": "extendedae:entro_dust",
+    "count": 3
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:blazegold"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "justdirethings:blazegold_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:blazegold_essence"
+  },
+  "result": {
+    "id": "justdirethings:blazegold_ingot",
+    "count": 4
+  }
+}

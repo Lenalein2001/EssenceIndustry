@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "essenceindustry:seed_library",
+          "functions": [
+            {
+              "function": "minecraft:copy_components",
+              "source": "block_entity",
+              "include": [
+                "essenceindustry:seed_library_contents",
+                "essenceindustry:stored_inventory_recovery"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

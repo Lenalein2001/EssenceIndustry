@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SWS",
+    "FCF",
+    "SWS"
+  ],
+  "key": {
+    "S": "ae2:singularity",
+    "W": "ae2:wireless_booster",
+    "F": "ae2:fluix_pearl",
+    "C": "essenceindustry:quantum_core"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_wireless_booster",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}

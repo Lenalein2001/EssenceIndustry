@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "essenceindustry:crop_tier",
+      "crop": "enriched_uranium",
+      "owner": "essenceindustry",
+      "tier": 5
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:enriched_uranium_essence"
+  },
+  "result": {
+    "id": "essenceindustry:enriched_uranium_fuel",
+    "count": 1
+  }
+}

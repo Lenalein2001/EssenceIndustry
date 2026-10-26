@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:chaos_fragment"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "draconicevolution:small_chaos_frag"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:chaos_fragment_essence"
+  },
+  "result": {
+    "id": "draconicevolution:small_chaos_frag",
+    "count": 1
+  }
+}

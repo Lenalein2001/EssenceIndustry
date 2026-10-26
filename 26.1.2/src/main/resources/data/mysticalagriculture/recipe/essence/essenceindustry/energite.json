@@ -1,0 +1,25 @@
+{
+  "result": {
+    "id": "oritech:energite_ingot",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:energite"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "oritech:energite_ingot"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:energite_essence"
+  },
+  "type": "minecraft:crafting_shaped"
+}

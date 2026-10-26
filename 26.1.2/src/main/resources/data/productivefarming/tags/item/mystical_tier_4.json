@@ -1,0 +1,57 @@
+{
+  "values": [
+    {
+      "id": "mysticalagriculture:ghostly_comb_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:milky_comb_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:powdery_comb_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:amber_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:anglesite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:benitoite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:blazegold_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:edelwood_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:titanium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:stainless_steel_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:biosteel_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:adamantite_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:dimensional_shard_seeds",
+      "required": false
+    }
+  ],
+  "replace": false
+}

@@ -1,0 +1,49 @@
+{
+  "ambientocclusion": true,
+  "textures": {
+    "shell_15": "essenceindustry:block/reactor/shell_15",
+    "shell_13": "essenceindustry:block/reactor/shell_13",
+    "shell_14": "essenceindustry:block/reactor/shell_14",
+    "particle": "essenceindustry:block/reactor/steel"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#shell_14",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#shell_13",
+          "cullface": "south"
+        },
+        "east": {
+          "texture": "#shell_15",
+          "cullface": "east"
+        },
+        "west": {
+          "texture": "#shell_15",
+          "cullface": "west"
+        },
+        "up": {
+          "texture": "#shell_13",
+          "cullface": "up"
+        },
+        "down": {
+          "texture": "#shell_13",
+          "cullface": "down"
+        }
+      }
+    }
+  ]
+}

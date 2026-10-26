@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "result": {
+    "id": "essenceindustry:vitalized_farmland",
+    "count": 1
+  },
+  "ingredients": [
+    "minecraft:dirt",
+    "essenceindustry:vitalizing_fertilizer"
+  ]
+}

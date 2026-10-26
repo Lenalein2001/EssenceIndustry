@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "CMC",
+    "ICI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot",
+    "M": "minecraft:iron_block"
+  },
+  "result": {
+    "id": "essenceindustry:turbine_shaft",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "crop": "essenceindustry:bauxite",
+      "type": "mysticalagriculture:crop_enabled"
+    },
+    {
+      "value": "ftbmaterials:bauxite_dust",
+      "type": "neoforge:registered"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "E": "mysticalagriculture:bauxite_essence"
+  },
+  "result": {
+    "id": "ftbmaterials:bauxite_dust",
+    "count": 3
+  }
+}

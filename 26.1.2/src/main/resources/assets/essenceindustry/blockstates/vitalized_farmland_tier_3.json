@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "essenceindustry:block/vitalized_farmland_tier_3"
+    },
+    "moisture=1": {
+      "model": "essenceindustry:block/vitalized_farmland_tier_3"
+    },
+    "moisture=3": {
+      "model": "essenceindustry:block/vitalized_farmland_tier_3"
+    },
+    "moisture=7": {
+      "model": "essenceindustry:block/vitalized_farmland_tier_3_wet"
+    },
+    "moisture=4": {
+      "model": "essenceindustry:block/vitalized_farmland_tier_3"
+    },
+    "moisture=2": {
+      "model": "essenceindustry:block/vitalized_farmland_tier_3"
+    },
+    "moisture=6": {
+      "model": "essenceindustry:block/vitalized_farmland_tier_3"
+    },
+    "moisture=5": {
+      "model": "essenceindustry:block/vitalized_farmland_tier_3"
+    }
+  }
+}

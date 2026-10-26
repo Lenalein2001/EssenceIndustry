@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "essenceindustry:celestigem"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "justdirethings:celestigem"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:celestigem_essence"
+  },
+  "result": {
+    "id": "justdirethings:celestigem",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "mysticalagriculture:draconium"
+    },
+    {
+      "type": "neoforge:registered",
+      "value": "draconicevolution:draconium_dust"
+    }
+  ],
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:draconium_essence"
+  },
+  "result": {
+    "id": "draconicevolution:draconium_dust",
+    "count": 1
+  }
+}

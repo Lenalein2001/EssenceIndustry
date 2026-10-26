@@ -1,0 +1,19 @@
+{
+  "type": "essenceindustry:ae2_flawless_budding_drops",
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "items": "#minecraft:pickaxes",
+        "predicates": {
+          "minecraft:enchantments": [
+            { "enchantments": "minecraft:silk_touch", "levels": { "min": 1 } }
+          ]
+        }
+      }
+    }
+  ],
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "ae2" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IKI",
+    "KFK",
+    "IKI"
+  ],
+  "key": {
+    "F": "essenceindustry:reactor_casing",
+    "I": "minecraft:iron_ingot",
+    "K": "minecraft:coal"
+  },
+  "result": {
+    "id": "essenceindustry:reactor_moderator",
+    "count": 2
+  }
+}

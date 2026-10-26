@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "upgrade=false": {
+      "model": "essenceindustry:block/essence_converter_down"
+    },
+    "upgrade=true": {
+      "model": "essenceindustry:block/essence_converter"
+    }
+  }
+}
