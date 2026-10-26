@@ -14,6 +14,7 @@ Build larger processing systems, prepare reactor fuel, and power your machinery.
 
 - [Build your first reactor](reactor_building.md)
 - [Start and control a reactor](reactor.md)
+- [Calculate fuel use, rod insertion and neighbour bonuses](reactor_calculations.md)
 - [Generate power with a steam turbine](turbine.md)
 - [Follow the fuel cycle](nuclear_fuels.md)
 - [Build an enrichment plant](fuel_enricher.md)

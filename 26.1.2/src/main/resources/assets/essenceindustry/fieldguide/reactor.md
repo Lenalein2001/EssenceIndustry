@@ -47,7 +47,7 @@ The reactor removes heat passively. **Direct FE** mode generates power and does 
 
 For **Steam** mode, place two Fluid Ports and right-click them to set one to **Input** and the other to **Output**. Supply ordinary water to the input and extract steam from the output. The ports communicate with the reactor directly; no internal pipe connection or perimeter ring is needed. Stop the reactor, select Steam at the top of the controller, then start again.
 
-Every 1 mB of water becomes 1 mB of steam. Steam mode produces **no new FE** in the reactor; the energy leaves as vapor. Existing FE remains available for extraction. Steam production follows the reactor's fuel output, available water and free steam capacity. Water and steam tanks grow with fuel segments, from 64,000 mB up to 1,000,000,000 mB.
+Every 1 mB of water becomes 1 mB of steam. Steam mode produces **no new FE** in the reactor; the energy leaves as vapor. Existing FE remains available for extraction. Steam production follows the reactor's fuel output and available water; excess steam is vented when storage is full. Water and steam tanks grow with fuel segments, from 64,000 mB up to 1,000,000,000 mB.
 
 The starter produces about **500 mB/t** at 0% rod insertion. A dry inlet or missing fluid port pauses the burn. If the steam tank is full, excess steam is vented and the reactor keeps running. Mode changes require the reactor to be stopped and the vapor outlet drained. Fractional output is preserved, including through mode changes and saves.
 
@@ -89,7 +89,7 @@ Old separate Control Rod blocks and items convert one-for-one to Reactor Moderat
 
 ## Output and scale
 
-At default balance, the 5 by 5 by 5 starter has one fuel column containing three segments. With ordinary uranium and **0% rod insertion**, it generates approximately **50,000 FE/t**. The default 50% insertion gives about 25,000 FE/t. One uranium ingot lasts about ten minutes at maximum starter output; one block lasts about ninety minutes.
+At default balance, the 5 by 5 by 5 starter has one fuel column containing three segments. With ordinary uranium and **0% rod insertion**, it generates approximately **50,000 FE/t**. The default 50% insertion gives about 25,000 FE/t. One uranium ingot lasts about 5 hours 20 minutes at maximum starter output; one block lasts about 48 hours.
 
 Output scales with complete fuel segments, not empty shell volume. A column contains outside height minus two segments. These examples assume 0% insertion, no reflectors, default configuration and enough output capacity:
 
@@ -104,3 +104,5 @@ Output scales with complete fuel segments, not empty shell volume. A column cont
 These are example populations, not maximum capacities. Steam estimates require enough water supply and steam extraction. Stronger fuels may need moderators or increased rod insertion to run continuously. [Compare fuel outputs](nuclear_fuels.md).
 
 Control rod buttons move by **1%** per click or **10%** with Shift held. Input ports can actively pull from the block they face; output ports can actively push into it. Open a port to toggle **Active transfer**. External pipes work even when active transfer is off.
+
+[Calculate insertion, neighbour bonuses, fuel lifetime and output](reactor_calculations.md).

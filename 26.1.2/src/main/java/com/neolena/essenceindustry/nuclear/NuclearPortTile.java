@@ -36,6 +36,13 @@ public final class NuclearPortTile extends BlockEntity {
  private <R extends net.neoforged.neoforge.transfer.resource.Resource> void move(ResourceHandler<R> source,ResourceHandler<R> target,int maximum){
   for(int probe=0;probe<Math.min(source.size(),64);probe++){int slot=Math.floorMod(sourceCursor++,source.size());
    var resource=source.getResource(slot);int offered=(int)Math.min(maximum,source.getAmountAsLong(slot));if(resource.isEmpty()||offered<=0)continue;
+   // Respect extraction limits before reserving destination space. The probe rolls back.
+   try(var simulation=net.neoforged.neoforge.transfer.transaction.Transaction.openRoot()){
+    int available=source.extract(slot,resource,offered,simulation);
+    if(available<0||available>offered)throw new IllegalStateException("Invalid simulated active port extraction");
+    offered=available;
+   }
+   if(offered==0)continue;
    try(var tx=net.neoforged.neoforge.transfer.transaction.Transaction.openRoot()){
     int accepted=target.insert(resource,offered,tx);if(accepted<0||accepted>offered)throw new IllegalStateException("Invalid active port insert count");
     if(accepted>0){int extracted=source.extract(slot,resource,accepted,tx);if(extracted<0||extracted>accepted)throw new IllegalStateException("Invalid active port extract count");if(extracted==accepted){tx.commit();return;}}

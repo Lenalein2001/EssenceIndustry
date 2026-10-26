@@ -25,6 +25,28 @@ Uranium ingots in `c:ingots/uranium` supply 1,000 mB each. Blocks in `c:storage_
 
 Start with ordinary uranium in a [reactor](reactor.md). Its solid spent fuel is the starting material for reprocessing. Enrichment and fabrication open stronger fuel options through the chain below.
 
+## Which fuel should I make?
+
+| Goal | Start here |
+| --- | --- |
+| First power, no processing plants | Put a tagged uranium ingot directly in the reactor. |
+| Stronger fuel without waiting for spent fuel | Enrich nine uranium ingots into one Enriched Uranium Fuel. Store the eight Depleted Uranium byproducts. |
+| Reuse the first spent fuel | Collect eight matching Spent Uranium or Spent Enriched Uranium items, then reprocess them into Recovered Plutonium. |
+| Turn that plutonium into more fuel items | Select MOX in the Fabricator; combine one Recovered Plutonium with three Depleted Uranium for four MOX Fuel. |
+| Reach Advanced Nuclear Fuel | Burn a prepared plutonium, MOX, thorium or advanced fuel, then reprocess eight matching spent items to get Recovered Fissile Material. Combine it with enriched fuel and thorium fuel. |
+
+Recovered Plutonium is a fabrication ingredient, not ready-to-burn Plutonium Fuel. Recovered Fissile Material is a different ingredient. Do not mix different spent types in one reprocessing batch.
+
+## First batch of Advanced Nuclear Fuel
+
+1. Make two Enriched Uranium Fuel in the Enricher using 18 uranium ingots. Keep these for fabrication.
+2. Select Thorium in the Fabricator and turn one tagged thorium ingot into one Thorium Fuel. Keep it too.
+3. Separately obtain and burn enough MOX, Plutonium Fuel or Thorium Fuel to collect eight matching spent items. Burning ordinary or enriched uranium produces the plutonium recovery branch instead.
+4. Reprocess those eight spent items into one Recovered Fissile Material and seven Nuclear Waste.
+5. Select Advanced in the Fabricator. Supply one Recovered Fissile Material, two Enriched Uranium Fuel and one Thorium Fuel. The result is four Advanced Nuclear Fuel.
+
+The two enriched items and one thorium item are ingredients, not the fuel burned in step 3. There is no self-starting advanced-fuel loop: the first recovered material must come from an earlier fuel. With longer fuel lifetimes, spent material arrives slowly; count your fuel's burned volume rather than expecting immediate reprocessing output.
+
 ## The fuel chain
 
 **Uranium -> Enricher -> Enriched fuel + Depleted uranium**
@@ -33,7 +55,7 @@ Start with ordinary uranium in a [reactor](reactor.md). Its solid spent fuel is 
 
 **Recovered material -> Fabricator -> Prepared fuel -> Reactor**
 
-Each processor is a multiblock with a distinct interior and fixed process layout. Build the [Enricher](fuel_enricher.md), [Reprocessor](fuel_reprocessor.md) or [Fabricator](fuel_fabricator.md) from its layer guide. Craft Item Ports for both ingredients and products; right-click each port to choose **Input** or **Output**. Every controller accepts ingredients and FE. The Enricher and Fabricator also have an Energy Port; supply the Reprocessor directly through its controller.
+Each processor is a multiblock with a distinct interior and required component counts. The illustrated layouts are examples; valid shell ports and internal components can be rearranged. Build the [Enricher](fuel_enricher.md), [Reprocessor](fuel_reprocessor.md) or [Fabricator](fuel_fabricator.md) from its layer guide. Craft Item Ports for both ingredients and products; right-click each port to choose **Input** or **Output**. Every controller accepts ingredients and FE. All three auto-build layouts include an Energy Port. Controllers also accept FE. Energy Ports automatically pull power when Active; Passive leaves transfer to external cables.
 
 Pipes and AE2 Pattern Providers both work. Use processing patterns with all products and byproducts. Each plant stores 1,000,000 FE. A reserved batch keeps its ingredients and progress through a power interruption or incomplete structure; blocked outputs wait rather than discard products.
 
@@ -99,3 +121,5 @@ Fuel lasts approximately 32 times longer than in Beta 1, at the same power and s
 Server owners and single-player users can edit `config/essenceindustry-reactor-server.toml` in the server or game instance folder while the world is stopped. Under `[reactor]`, `energyProductionMultiplier = 1.0` controls FE and steam output without changing fuel consumption. `fuelEfficiencyMultiplier = 1.0` controls fuel lifetime without changing output: 2.0 lasts twice as long. Both accept 0.25 through 8.0. These multiply the per-fuel settings and use fixed-point rounding and safety limits. Turbine coil ratings are unchanged. Restart the world after editing.
 
 Untouched earlier fuel presets migrate automatically. Customized per-fuel presets are preserved.
+
+For layout bonuses and your own estimates, see [Reactor calculations](reactor_calculations.md).
