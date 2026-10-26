@@ -164,6 +164,18 @@
     {
       "id": "mysticalagriculture:dimensional_shard_essence",
       "required": false
+    },
+    {
+      "id": "mysticalagriculture:depleted_uranium_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:thorium_fuel_essence",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:enriched_uranium_essence",
+      "required": false
     }
   ]
 }

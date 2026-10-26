@@ -43,6 +43,10 @@
     {
       "id": "mysticalagriculture:aeternium_seeds",
       "required": false
+    },
+    {
+      "id": "mysticalagriculture:enriched_uranium_seeds",
+      "required": false
     }
   ],
   "replace": false

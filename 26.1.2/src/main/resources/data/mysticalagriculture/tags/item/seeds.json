@@ -184,6 +184,18 @@
     {
       "id": "mysticalagriculture:dimensional_shard_seeds",
       "required": false
+    },
+    {
+      "id": "mysticalagriculture:depleted_uranium_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:thorium_fuel_seeds",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:enriched_uranium_seeds",
+      "required": false
     }
   ]
 }

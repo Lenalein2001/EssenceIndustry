@@ -240,6 +240,18 @@
     {
       "id": "mysticalagriculture:dimensional_shard_crop",
       "required": false
+    },
+    {
+      "id": "mysticalagriculture:depleted_uranium_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:thorium_fuel_crop",
+      "required": false
+    },
+    {
+      "id": "mysticalagriculture:enriched_uranium_crop",
+      "required": false
     }
   ]
 }
