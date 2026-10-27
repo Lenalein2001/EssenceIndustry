@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "essenceindustry:block/turbine/controller_off"
+    "model": "essenceindustry:item/turbine_controller"
   }
 }
