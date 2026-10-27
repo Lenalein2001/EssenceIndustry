@@ -179,11 +179,13 @@ Set Item Ports: **1 Input / 1 Output**.
 
 ## Run the plant
 
-9 uranium ingots become 1 Enriched Uranium Fuel and 8 Depleted Uranium. A batch takes 10 seconds at full power and consumes 64,000 FE.
+9 uranium ingots become 1 Enriched Uranium Fuel and 8 Depleted Uranium. Tagged uranium ingots from different mods can share the same batch, including across several input slots. A batch takes 10 seconds at full power and consumes 64,000 FE.
 
 Connect FE to the Energy Port or controller. Craft the same Item Port for both directions. Right-click each port and select **Input** for ingredients or **Output** for products, matching the arrows in the layer scenes. The controller also accepts ingredients. You can use ordinary pipes or an AE2 Pattern Provider with a processing pattern; include both products and byproducts.
 
-The progress display shows the current batch. Missing power or an incomplete or unloaded structure pauses a reserved batch without losing its inputs or progress. Keep space for every output.
+Inputs are a shared buffer, not a crafting grid. You may supply ingredients for several recipes together. The plant processes one complete batch of each ready recipe in turn; incomplete recipes wait without blocking other ready batches. This is a repeating recipe order, not the order in which individual items arrived.
+
+**Current batch** shows the reserved work and its progress. **Next batch** shows the next complete recipe in the input buffer; the ready count includes waiting batches only. It counts available ingredients, so power or output space may still be needed. Keep space for every product and byproduct. Missing power, a blocked output, or an incomplete or unloaded structure pauses the reserved batch without losing its ingredients or progress.
 
 
 [All fuel recipes and quantities](nuclear_fuels.md)

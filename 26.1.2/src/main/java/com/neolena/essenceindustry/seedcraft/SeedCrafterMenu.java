@@ -7,7 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.transfer.item.ItemStacksResourceHandler;
 public final class SeedCrafterMenu extends AbstractContainerMenu {
  private final SeedCrafterTile tile;private final ContainerLevelAccess access;private final net.minecraft.world.level.block.Block expected;private int status,fuelMode,fuelEnergy;
- private final ContainerData fuelData=new SimpleContainerData(18);
+ private final ContainerData fuelData=new SimpleContainerData(28);
  private final ItemStacksResourceHandler displayInventory;private final Inventory playerInventory;private boolean compactFuelLayout;
  public SeedCrafterMenu(int id,Inventory player,RegistryFriendlyByteBuf buffer){this(id,player,buffer.readBlockPos(),null,net.minecraft.core.registries.BuiltInRegistries.BLOCK.byId(buffer.readVarInt()));}
  public SeedCrafterMenu(int id,Inventory player,SeedCrafterTile tile){this(id,player,tile.getBlockPos(),tile,tile.getBlockState().getBlock());}
@@ -25,7 +25,7 @@ public final class SeedCrafterMenu extends AbstractContainerMenu {
   addDataSlot(new DataSlot(){public int get(){return tile instanceof com.neolena.essenceindustry.nuclear.FuelProcessorTile f?(int)(f.energy().getAmountAsLong()/1000):fuelEnergy;}public void set(int value){fuelEnergy=value;}});
   addDataSlot(new DataSlot(){public int get(){return tile instanceof com.neolena.essenceindustry.nuclear.FuelProcessorTile f?f.fabricationMode():fuelMode;}public void set(int value){fuelMode=value;}});
   addDataSlot(new DataSlot(){public int get(){return tile==null?status:tile.status();}public void set(int value){status=value;}});
-  for(int i=0;i<18;i++){int part=i;addDataSlot(new DataSlot(){public int get(){if(!(tile instanceof com.neolena.essenceindustry.nuclear.FuelProcessorTile f))return fuelData.get(part);int value=switch(part/2){case 0->f.progress();case 1->f.durationTicks();case 2->f.formed()?1:0;case 3->f.issue().getX();case 4->f.issue().getY();case 5->f.issue().getZ();case 6->f.issueItem();case 7->f.issueFound();default->f.issueRequired();};return part%2==0?value&65535:value>>>16;}public void set(int value){fuelData.set(part,value);}});}
+  for(int i=0;i<28;i++){int part=i;addDataSlot(new DataSlot(){public int get(){if(!(tile instanceof com.neolena.essenceindustry.nuclear.FuelProcessorTile f))return fuelData.get(part);int value=switch(part/2){case 0->f.progress();case 1->f.durationTicks();case 2->f.formed()?1:0;case 3->f.issue().getX();case 4->f.issue().getY();case 5->f.issue().getZ();case 6->f.issueItem();case 7->f.issueFound();case 8->f.issueRequired();case 9->f.currentProductId();case 10->f.nextProductId();case 11->f.currentInputId();case 12->f.nextInputId();default->f.readyBatches();};return part%2==0?value&65535:value>>>16;}public void set(int value){fuelData.set(part,value);}});}
 
  }
  /** Client coordinates only. Slot IDs and the underlying inventories stay unchanged. */
@@ -42,6 +42,10 @@ public final class SeedCrafterMenu extends AbstractContainerMenu {
  public ItemStack missingComponent(){return new ItemStack(net.minecraft.core.registries.BuiltInRegistries.ITEM.byId(fuelStat(6)));}
  public int foundComponents(){return fuelStat(7);}public int requiredComponents(){return fuelStat(8);}
  public int fuelEnergy(){return fuelEnergy;}
+ public ItemStack currentProduct(){return displayItem(fuelStat(9));}public ItemStack nextProduct(){return displayItem(fuelStat(10));}
+ public ItemStack currentInput(){return displayItem(fuelStat(11));}public ItemStack nextInput(){return displayItem(fuelStat(12));}
+ public int readyBatches(){return fuelStat(13);}
+ private static ItemStack displayItem(int id){return id<=0?ItemStack.EMPTY:new ItemStack(net.minecraft.core.registries.BuiltInRegistries.ITEM.byId(id));}
  public int fuelMode(){return fuelMode;}
  private int fuelStat(int index){return (fuelData.get(index*2)&65535)|(fuelData.get(index*2+1)&65535)<<16;}
  public int fuelProgress(){return fuelStat(0);}

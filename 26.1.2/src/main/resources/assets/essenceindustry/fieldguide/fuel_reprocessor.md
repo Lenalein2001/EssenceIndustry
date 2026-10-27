@@ -179,11 +179,13 @@ Set Item Ports: **1 Input / 1 Output**.
 
 ## Run the plant
 
-Supply 8 items of one spent-fuel type. Uranium and enriched uranium produce 1 Recovered Plutonium plus 7 Nuclear Waste. Other supported spent fuels produce 1 Recovered Fissile Material plus 7 Nuclear Waste. A batch takes 20 seconds and consumes 128,000 FE.
+Each batch needs 8 items of one spent-fuel type. Different spent-fuel types can occupy the input buffer at the same time; they are processed as separate batches and are never blended. Uranium and enriched uranium produce 1 Recovered Plutonium plus 7 Nuclear Waste. Other supported spent fuels produce 1 Recovered Fissile Material plus 7 Nuclear Waste. A batch takes 20 seconds and consumes 128,000 FE.
 
 Connect FE to the Energy Port or controller. Craft the same Item Port for both directions. Right-click each port and select **Input** for ingredients or **Output** for products, matching the arrows in the layer scenes. The controller also accepts ingredients. You can use ordinary pipes or an AE2 Pattern Provider with a processing pattern; include both products and byproducts.
 
-The progress display shows the current batch. Missing power or an incomplete or unloaded structure pauses a reserved batch without losing its inputs or progress. Keep space for every output.
+Inputs are a shared buffer, not a crafting grid. You may supply ingredients for several recipes together. The plant processes one complete batch of each ready recipe in turn; incomplete recipes wait without blocking other ready batches. This is a repeating recipe order, not the order in which individual items arrived.
+
+**Current batch** shows the reserved work and its progress. **Next batch** shows the next complete recipe in the input buffer; the ready count includes waiting batches only. It counts available ingredients, so power or output space may still be needed. Keep space for every product and byproduct. Missing power, a blocked output, or an incomplete or unloaded structure pauses the reserved batch without losing its ingredients or progress.
 
 
 [All fuel recipes and quantities](nuclear_fuels.md)

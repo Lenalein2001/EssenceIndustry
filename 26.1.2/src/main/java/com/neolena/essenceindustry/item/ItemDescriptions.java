@@ -26,7 +26,7 @@ public final class ItemDescriptions {
             case "seed_library" -> "seed_library";
             case "enhanced_harvesting_pylon" -> "pylon";
             case "vitalizing_fertilizer" -> "fertilizer";
-            case "block_accelerator" -> "block_accelerator";
+            case "block_accelerator", "block_accelerator_part" -> path;
             case "enriched_uranium_fuel", "plutonium_fuel", "mox_fuel", "thorium_fuel", "advanced_nuclear_fuel" -> "prepared_nuclear_fuel";
             case "spent_uranium_fuel", "spent_enriched_uranium_fuel", "spent_plutonium_fuel", "spent_mox_fuel", "spent_thorium_fuel", "spent_advanced_nuclear_fuel" -> "spent_nuclear_fuel";
             case "depleted_uranium", "recovered_plutonium", "recovered_fissile_material", "nuclear_waste",

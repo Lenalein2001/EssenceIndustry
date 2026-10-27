@@ -25,12 +25,48 @@ public final class FuelProcessorTile extends SeedCrafterTile implements NuclearH
   private Job next(int ticks){int progress=Math.min(duration,this.progress+ticks);return new Job(product,inputs,outputs,duration,progress,energy,(int)((long)energy*progress/duration));}
  }
  private Job job;private Dynamic<?> jobRecovery;private int jobSchema=1;
+ private String lastRecipe="";
+ private long queueRevision=Long.MIN_VALUE;private String queueCursor="";private int queueMode=-1,readyCount,nextProduct,nextInput;
+ private record Candidate(FuelCycle.Process recipe,int[] used,String key){}
+ private List<FuelCycle.Process> recipes(){return FuelCycle.PROCESSES.stream().filter(p->p.machine().equals(machine())).toList();}
+ private static String recipeKey(FuelCycle.Process p){return p.inputs().stream().map(i->i.ingredient()+"="+i.count()).collect(java.util.stream.Collectors.joining(";"))+"->"+p.outputs().getFirst().item();}
+ /** Fair round-robin among ready recipes; a complete specific recipe owns its shared inputs. */
+ private Candidate select(int[] amounts,String cursor){
+  var recipes=recipes();var matches=new ArrayList<Candidate>();
+  for(var recipe:recipes){
+   if(machine().equals("fuel_fabricator")&&fabricationMode<4&&!recipe.outputs().getFirst().item().equals(List.of("plutonium_fuel","mox_fuel","thorium_fuel","advanced_nuclear_fuel").get(fabricationMode)))continue;
+   int[] used=new int[INPUTS];boolean matched=true;
+   for(var input:recipe.inputs()){int needed=input.count();for(int i=0;i<INPUTS&&needed>0;i++)if(input.matches(inventory().getResource(i).toStack())){int n=Math.min(needed,amounts[i]-used[i]);used[i]+=n;needed-=n;}if(needed>0){matched=false;break;}}
+   if(matched)matches.add(new Candidate(recipe,used,recipeKey(recipe)));
+  }
+  int start=0;for(int i=0;i<recipes.size();i++)if(recipeKey(recipes.get(i)).equals(cursor)){start=(i+1)%recipes.size();break;}
+  for(int offset=0;offset<recipes.size();offset++){
+   var recipe=recipes.get((start+offset)%recipes.size());Candidate candidate=null;for(var c:matches)if(c.recipe==recipe){candidate=c;break;}if(candidate==null)continue;
+   boolean specific=false;for(var other:matches)if(other.recipe.inputs().size()>recipe.inputs().size())for(int i=0;i<INPUTS;i++)if(other.used[i]>0&&candidate.used[i]>0){specific=true;break;}
+   if(!specific)return candidate;
+  }
+  return null;
+ }
+ private int[] inputAmounts(){int[] amounts=new int[INPUTS];for(int i=0;i<INPUTS;i++)amounts[i]=inventory().getAmountAsInt(i);return amounts;}
+ private void refreshQueue(){
+  if(queueRevision==revision()&&queueMode==fabricationMode&&queueCursor.equals(lastRecipe))return;
+  queueRevision=revision();queueMode=fabricationMode;queueCursor=lastRecipe;readyCount=0;nextProduct=nextInput=0;
+  int[] amounts=inputAmounts();String cursor=lastRecipe;
+  // Nine input stacks bound the number of one-item batches to 576.
+  for(int n=0;n<INPUTS*64;n++){var candidate=select(amounts,cursor);if(candidate==null)break;if(readyCount==0){nextProduct=BuiltInRegistries.ITEM.getId(NuclearFuels.stack(candidate.recipe.outputs().getFirst().item(),1).getItem());for(int i=0;i<INPUTS;i++)if(candidate.used[i]>0){nextInput=BuiltInRegistries.ITEM.getId(inventory().getResource(i).toStack().getItem());break;}}readyCount++;for(int i=0;i<INPUTS;i++)amounts[i]-=candidate.used[i];cursor=candidate.key;}
+ }
+ public int readyBatches(){refreshQueue();return readyCount;}
+ public int nextProductId(){refreshQueue();return nextProduct;}
+ public int nextInputId(){refreshQueue();return nextInput;}
+ public int currentProductId(){return job==null?0:BuiltInRegistries.ITEM.getId(job.outputs.getFirst().getItem());}
+ public int currentInputId(){return job==null?0:BuiltInRegistries.ITEM.getId(job.inputs.getFirst().getItem());}
+
  private record JobState(Job value){}
  private List<BlockPos> transferPorts=List.of();
  private long lastPortTransfer=Long.MIN_VALUE;private int pullCursor;
  private int issueItem,issueFound,issueRequired;
  public int issueItem(){return issueItem;}public int issueFound(){return issueFound;}public int issueRequired(){return issueRequired;}
- private int fabricationMode,fuelStatus=5;private boolean processing,formed,structureDirty=true,running,visualRunning;private long lastStructureCheck=Long.MIN_VALUE,attemptedRevision=-1,attemptedEnergy=-1;private BlockPos issue=BlockPos.ZERO;
+ private int fabricationMode=4,fuelStatus=5;private boolean processing,formed,structureDirty=true,running,visualRunning;private long lastStructureCheck=Long.MIN_VALUE,attemptedRevision=-1,attemptedEnergy=-1;private BlockPos issue=BlockPos.ZERO;
  private final SnapshotJournal<JobState> journal=new SnapshotJournal<>(){protected JobState createSnapshot(){return new JobState(job);}protected void revertToSnapshot(JobState before){job=before.value;}protected void onRootCommit(JobState before){setChanged();}};
  private final SimpleEnergyHandler energy=new SimpleEnergyHandler(1000000,1000000,1000000){@Override protected void onEnergyChanged(int old){setChanged();wake(5);}};
  private final ResourceHandler<ItemResource> inputPort=createPort(true),outputPort=createPort(false);
@@ -46,7 +82,7 @@ public final class FuelProcessorTile extends SeedCrafterTile implements NuclearH
  public Direction facing(){return com.neolena.essenceindustry.blueprint.ControllerPlacement.facing(this,getBlockState().getValue(FuelProcessorBlock.FACING));}
  public FuelPlantLayout.Layout layout(){return FuelPlantLayout.get(machine());}
  public int fabricationMode(){return fabricationMode;}
- public void cycleMode(){if(available()&&job==null){fabricationMode=(fabricationMode+1)%4;attemptedRevision=-1;setChanged();wake(5);}}
+ public void cycleMode(){if(available()){fabricationMode=(fabricationMode+1)%5;attemptedRevision=-1;setChanged();wake(5);}}
  public EnergyHandler energy(){return energy;}
  public boolean hasJob(){return job!=null;}
  public int progress(){return job==null?0:1000*job.progress/job.duration;}
@@ -118,19 +154,16 @@ public final class FuelProcessorTile extends SeedCrafterTile implements NuclearH
   if(job!=null)return advance();
   if(attemptedRevision==revision()&&attemptedEnergy==energy.getAmountAsLong())return false;
   attemptedRevision=revision();attemptedEnergy=energy.getAmountAsLong();
-  for(var recipe:FuelCycle.PROCESSES.stream().filter(p->p.machine().equals(machine())).sorted(Comparator.comparingInt((FuelCycle.Process p)->p.inputs().size()).reversed()).toList()){
-   if(machine().equals("fuel_fabricator")&&!recipe.outputs().getFirst().item().equals(List.of("plutonium_fuel","mox_fuel","thorium_fuel","advanced_nuclear_fuel").get(fabricationMode)))continue;
-   int[] used=new int[INPUTS];boolean matched=true;
-   for(var input:recipe.inputs()){int needed=input.count();for(int i=0;i<INPUTS&&needed>0;i++)if(input.matches(inventory().getResource(i).toStack())){int n=Math.min(needed,inventory().getAmountAsInt(i)-used[i]);used[i]+=n;needed-=n;}if(needed>0){matched=false;break;}}
-   if(!matched)continue;
-   for(int i=0;i<INPUTS;i++)if(inventory().getAmountAsInt(i)>0){var stack=inventory().getResource(i).toStack();if(recipe.inputs().stream().noneMatch(in->in.matches(stack))){matched=false;break;}}if(!matched)continue;
+  var candidate=select(inputAmounts(),lastRecipe);
+  if(candidate!=null){
+   var recipe=candidate.recipe;var used=candidate.used;
    int duration=duration(recipe);if(energy.getAmountAsLong()<(long)recipe.energy()*Math.min(5,duration)/duration){fuelStatus=4;return false;}
    var outputs=recipe.outputs().stream().map(o->NuclearFuels.stack(o.item(),o.count())).toList();if(!canReserve(outputs)){fuelStatus=2;return false;}
    var inputs=new ArrayList<ItemStack>();for(int i=0;i<INPUTS;i++)if(used[i]>0)inputs.add(inventory().getResource(i).toStack(used[i]));
    processing=true;
    try(var tx=Transaction.openRoot()){
     for(int i=0;i<INPUTS;i++)if(used[i]>0&&inventory().extract(i,inventory().getResource(i),used[i],tx)!=used[i])return false;
-    journal.updateSnapshots(tx);job=new Job(recipe.outputs().getFirst().item(),List.copyOf(inputs),outputs,duration,0,recipe.energy(),0);tx.commit();fuelStatus=0;return true;
+    journal.updateSnapshots(tx);job=new Job(recipe.outputs().getFirst().item(),List.copyOf(inputs),outputs,duration,0,recipe.energy(),0);tx.commit();lastRecipe=candidate.key;setChanged();fuelStatus=0;return true;
    }finally{processing=false;}
   }
   fuelStatus=1;return false;
@@ -158,9 +191,9 @@ public final class FuelProcessorTile extends SeedCrafterTile implements NuclearH
   int count=value.inputs.stream().mapToInt(ItemStack::getCount).sum();if(count!=recipe.inputs().stream().mapToInt(FuelCycle.Input::count).sum()||value.inputs.stream().anyMatch(s->s.isEmpty()||s.getCount()>64))return false;
   int[] consumed=new int[value.inputs.size()];for(var ingredient:recipe.inputs()){int remaining=ingredient.count();for(int i=0;i<value.inputs.size()&&remaining>0;i++)if(ingredient.matches(value.inputs.get(i))){int n=Math.min(remaining,value.inputs.get(i).getCount()-consumed[i]);consumed[i]+=n;remaining-=n;}if(remaining>0)return false;}return true;
  }
- @Override protected void saveAdditional(ValueOutput out){super.saveAdditional(out);out.putInt("fuelProcessorEnergy",energy.getAmountAsInt());out.putInt("fabricationMode",fabricationMode);if(jobRecovery!=null||job!=null)out.putInt("fuelJobSchema",jobSchema);if(jobRecovery!=null)out.store("fuelJob",Codec.PASSTHROUGH,jobRecovery);else if(job!=null)out.store("fuelJob",Job.CODEC,job);}
+ @Override protected void saveAdditional(ValueOutput out){super.saveAdditional(out);out.putInt("fuelProcessorEnergy",energy.getAmountAsInt());out.putInt("fabricationMode",fabricationMode);out.putString("fuelLastRecipe",lastRecipe);if(jobRecovery!=null||job!=null)out.putInt("fuelJobSchema",jobSchema);if(jobRecovery!=null)out.store("fuelJob",Codec.PASSTHROUGH,jobRecovery);else if(job!=null)out.store("fuelJob",Job.CODEC,job);}
  @Override protected void loadAdditional(ValueInput in){
-  super.loadAdditional(in);fabricationMode=Math.clamp(in.getIntOr("fabricationMode",0),0,3);energy.set(Math.clamp(in.getIntOr("fuelProcessorEnergy",0),0,1000000));job=null;jobRecovery=null;jobSchema=in.getIntOr("fuelJobSchema",1);
+  super.loadAdditional(in);fabricationMode=Math.clamp(in.getIntOr("fabricationMode",0),0,4);lastRecipe=in.getStringOr("fuelLastRecipe","");queueRevision=Long.MIN_VALUE;energy.set(Math.clamp(in.getIntOr("fuelProcessorEnergy",0),0,1000000));job=null;jobRecovery=null;jobSchema=in.getIntOr("fuelJobSchema",1);
   var raw=in.read("fuelJob",Codec.PASSTHROUGH);if(raw.isPresent()){var decoded=Job.CODEC.parse(raw.get());if(jobSchema==1&&decoded.result().isPresent()&&validJob(decoded.result().get()))job=decoded.result().get();else jobRecovery=raw.get();}
   attemptedRevision=-1;attemptedEnergy=-1;structureDirty=true;formed=false;running=false;visualRunning=false;
  }

@@ -155,13 +155,17 @@ Set Item Ports: **2 Input / 1 Output**.
 
 ## Run the plant
 
-Choose Plutonium, MOX, Thorium or Advanced mode before inserting ingredients. Ordinary batches take 5 seconds; Advanced takes 20 seconds. The selected mode prevents a partial MOX delivery from being consumed by the Plutonium recipe.
+New Fabricators start in **Automatic** mode and can process different ready fuel recipes in turn. Ordinary batches take 5 seconds; Advanced takes 20 seconds. Existing machines keep their saved mode.
+
+Automatic mode chooses a complete MOX recipe before the simpler Plutonium recipe when both need the same recovered plutonium. If your pipes deliver the MOX ingredients in separate steps, select **MOX** explicitly before supplying them: Automatic can make Plutonium Fuel while depleted uranium is still missing. The Plutonium, MOX, Thorium and Advanced modes restrict production to that one fuel.
 
 Connect FE to the Energy Port or controller. Craft the same Item Port for both directions. Right-click each port and select **Input** for ingredients or **Output** for products, matching the arrows in the layer scenes. The controller also accepts ingredients. You can use ordinary pipes or an AE2 Pattern Provider with a processing pattern; include both products and byproducts.
 
-The progress display shows the current batch. Missing power or an incomplete or unloaded structure pauses a reserved batch without losing its inputs or progress. Keep space for every output.
+Inputs are a shared buffer, not a crafting grid. You may supply ingredients for several recipes together. The plant processes one complete batch of each ready recipe in turn; incomplete recipes wait without blocking other ready batches. This is a repeating recipe order, not the order in which individual items arrived.
 
-You cannot change Fabricator mode during a batch.
+**Current batch** shows the reserved work and its progress. **Next batch** shows the next complete recipe in the input buffer; the ready count includes waiting batches only. It counts available ingredients, so power or output space may still be needed. Keep space for every product and byproduct. Missing power, a blocked output, or an incomplete or unloaded structure pauses the reserved batch without losing its ingredients or progress.
+
+You can change Fabricator mode while it runs. The current reserved batch finishes unchanged; the new mode applies to upcoming batches.
 
 
 [All fuel recipes and quantities](nuclear_fuels.md)

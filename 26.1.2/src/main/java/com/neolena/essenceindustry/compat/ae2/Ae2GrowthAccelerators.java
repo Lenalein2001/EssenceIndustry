@@ -74,6 +74,8 @@ public final class Ae2GrowthAccelerators {
         "block_accelerator",
         properties -> new BlockItem(BLOCK_ACCELERATOR.get(), properties.useBlockDescriptionPrefix())
     );
+    public static final DeferredHolder<Item, appeng.items.parts.PartItem<BlockAcceleratorPart>> BLOCK_ACCELERATOR_PART = ITEMS.registerItem(
+        "block_accelerator_part", properties -> new appeng.items.parts.PartItem<>(properties, BlockAcceleratorPart.class, BlockAcceleratorPart::new));
     public static final DeferredHolder<MenuType<?>, MenuType<BlockAcceleratorMenu>> BLOCK_ACCELERATOR_MENU =
         MENU_TYPES.register(
             "block_accelerator",
@@ -134,6 +136,7 @@ public final class Ae2GrowthAccelerators {
             event.accept(TIER_4_ITEM.get());
             event.accept(TIER_5_ITEM.get());
             event.accept(BLOCK_ACCELERATOR_ITEM.get());
+            event.accept(BLOCK_ACCELERATOR_PART.get());
         }
     }
 

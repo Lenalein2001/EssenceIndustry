@@ -6,7 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
-import net.minecraft.world.inventory.ContainerLevelAccess;
+
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
@@ -15,11 +15,11 @@ public final class BlockAcceleratorMenu extends AbstractContainerMenu {
     private static final int SPEED_DATA_INDEX = 0;
     private static final int DATA_COUNT = 1;
 
-    private final ContainerLevelAccess access;
+    private final BlockPos acceleratorPos;
     private final BlockPos targetPos;
     private final ContainerData data;
     @Nullable
-    private final BlockAcceleratorBlockEntity accelerator;
+    private final AcceleratorDevice accelerator;
 
     public BlockAcceleratorMenu(int containerId, Inventory inventory, RegistryFriendlyByteBuf buffer) {
         this(
@@ -35,13 +35,13 @@ public final class BlockAcceleratorMenu extends AbstractContainerMenu {
     public BlockAcceleratorMenu(
         int containerId,
         Inventory inventory,
-        BlockAcceleratorBlockEntity accelerator
+        AcceleratorDevice accelerator
     ) {
         this(
             containerId,
             inventory,
             accelerator,
-            accelerator.getBlockPos(),
+            accelerator.acceleratorPos(),
             accelerator.getTargetPos(),
             createData(accelerator)
         );
@@ -50,13 +50,13 @@ public final class BlockAcceleratorMenu extends AbstractContainerMenu {
     private BlockAcceleratorMenu(
         int containerId,
         Inventory inventory,
-        @Nullable BlockAcceleratorBlockEntity accelerator,
+        @Nullable AcceleratorDevice accelerator,
         BlockPos acceleratorPos,
         BlockPos targetPos,
         ContainerData data
     ) {
         super(Ae2GrowthAccelerators.BLOCK_ACCELERATOR_MENU.get(), containerId);
-        this.access = ContainerLevelAccess.create(inventory.player.level(), acceleratorPos);
+        this.acceleratorPos = acceleratorPos;
         this.targetPos = targetPos;
         this.data = data;
         this.accelerator = accelerator;
@@ -64,7 +64,7 @@ public final class BlockAcceleratorMenu extends AbstractContainerMenu {
         addDataSlots(data);
     }
 
-    private static ContainerData createData(BlockAcceleratorBlockEntity accelerator) {
+    private static ContainerData createData(AcceleratorDevice accelerator) {
         return new ContainerData() {
             @Override
             public int get(int index) {
@@ -112,6 +112,9 @@ public final class BlockAcceleratorMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player player) {
-        return stillValid(this.access, player, Ae2GrowthAccelerators.BLOCK_ACCELERATOR.get());
+        if(!player.isAlive()||!player.mayBuild()||!player.level().isLoaded(acceleratorPos)||player.distanceToSqr(acceleratorPos.getCenter())>64)return false;
+        if(accelerator==null)return player.level().isClientSide();
+        if(accelerator instanceof BlockAcceleratorPart part)return appeng.api.parts.PartHelper.getPart(player.level(),acceleratorPos,part.getSide())==part;
+        return player.level().getBlockEntity(acceleratorPos)==accelerator;
     }
 }

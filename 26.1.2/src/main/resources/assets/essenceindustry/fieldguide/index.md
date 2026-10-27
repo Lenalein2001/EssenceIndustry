@@ -38,6 +38,7 @@ Build one Array around a single machine type. Run different recipes together, wi
 ## Model automation
 
 - [Copy trained HNN models](model_copier.md)
+- [Accelerate a machine from an ME cable](block_acceleration.md)
 
 ## Make this book
 

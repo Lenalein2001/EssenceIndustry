@@ -7,7 +7,7 @@ import net.minecraft.world.item.ItemStack;
 public final class NuclearPortMenu extends AbstractContainerMenu {
  private final Inventory inventory;private final BlockPos pos;private final ContainerData data=new SimpleContainerData(4);
  public NuclearPortMenu(int id,Inventory inv,RegistryFriendlyByteBuf b){this(id,inv,b.readBlockPos());}
- public NuclearPortMenu(int id,Inventory inv,BlockPos pos){super(NuclearReactor.PORT_MENU.get(),id);inventory=inv;this.pos=pos;refresh();addDataSlots(data);}
+ public NuclearPortMenu(int id,Inventory inv,BlockPos pos){super(NuclearReactor.PORT_MENU.get(),id);inventory=inv;this.pos=pos;data.set(0,-1);refresh();addDataSlots(data);}
  private NuclearPortTile tile(){return inventory.player.level().getBlockEntity(pos) instanceof NuclearPortTile t?t:null;}
  private void refresh(){if(!inventory.player.level().isClientSide()&&tile()!=null){data.set(0,tile().type());data.set(1,tile().outputMode()?1:0);data.set(2,tile().connected()?1:0);data.set(3,tile().active()?1:0);}}
  public boolean activeTransfer(){return data.get(3)==1;}

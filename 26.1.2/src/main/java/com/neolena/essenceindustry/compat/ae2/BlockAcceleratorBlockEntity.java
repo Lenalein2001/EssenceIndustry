@@ -13,35 +13,24 @@ import appeng.api.orientation.BlockOrientation;
 import appeng.api.orientation.RelativeSide;
 import appeng.api.util.AECableType;
 import appeng.blockentity.grid.AENetworkedPoweredBlockEntity;
-import com.neolena.essenceindustry.EssenceIndustry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
-import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.TagKey;
 import net.minecraft.util.Mth;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.EnumSet;
 import java.util.Set;
 
-public final class BlockAcceleratorBlockEntity extends AENetworkedPoweredBlockEntity implements IPowerChannelState {
+public final class BlockAcceleratorBlockEntity extends AENetworkedPoweredBlockEntity implements IPowerChannelState, AcceleratorDevice {
     private static final double POWER_PER_TICK = 64.0;
     public static final int MIN_SPEED = 1;
     public static final int MAX_SPEED = 256;
     private static final String SPEED_TAG = "acceleratorSpeed";
     private static final String LEGACY_STRENGTH_TAG = "acceleratorStrength";
-    private static final TagKey<Block> CANT_ACCELERATE = TagKey.create(
-        Registries.BLOCK,
-        Identifier.fromNamespaceAndPath(EssenceIndustry.MOD_ID, "cant_accelerate")
-    );
 
     private int speed = MAX_SPEED;
 
@@ -80,39 +69,10 @@ public final class BlockAcceleratorBlockEntity extends AENetworkedPoweredBlockEn
             return;
         }
 
-        BlockPos targetPos = getTargetPos();
-        if (!level.isLoaded(targetPos)) {
-            return;
-        }
-
-        BlockState targetState = level.getBlockState(targetPos);
-        BlockEntity target = level.getBlockEntity(targetPos);
-        if (target == null || targetState.is(CANT_ACCELERATE) || this.speed <= 1
-                || targetState.getTicker(level, target.getType()) == null) {
-            return;
-        }
-
-        BlockAcceleratorBlockEntity leader = this;
-        for (Direction direction : Direction.values()) {
-            BlockPos neighborPos = targetPos.relative(direction);
-            if (!level.isLoaded(neighborPos)) continue;
-            BlockEntity neighbor = level.getBlockEntity(neighborPos);
-            if (neighbor instanceof BlockAcceleratorBlockEntity accelerator
-                && accelerator.getTargetPos().equals(targetPos)
-                && accelerator.isPowered()) {
-                if (accelerator.getBlockPos().compareTo(leader.getBlockPos()) < 0) {
-                    leader = accelerator;
-                }
-            }
-        }
-
-        if (leader != this) {
-            return;
-        }
-
-        if (!payOperationEnergy()) return;
-        tickTarget(level, targetPos, targetState, target, this.speed - 1);
+        AcceleratorEngine.tick(level,this);
     }
+
+    public BlockPos acceleratorPos(){return getBlockPos();}
 
     public BlockPos getTargetPos() {
         Direction top = getFront();
@@ -130,19 +90,10 @@ public final class BlockAcceleratorBlockEntity extends AENetworkedPoweredBlockEn
             return;
         }
 
-        BlockPos targetPos = getTargetPos();
-        for (Direction direction : Direction.values()) {
-            BlockPos neighborPos = targetPos.relative(direction);
-            if (!level.isLoaded(neighborPos)) continue;
-            BlockEntity neighbor = level.getBlockEntity(neighborPos);
-            if (neighbor instanceof BlockAcceleratorBlockEntity accelerator
-                && accelerator.getTargetPos().equals(targetPos)) {
-                accelerator.setSpeedDirect(clampedSpeed);
-            }
-        }
+        AcceleratorEngine.setSpeed(level,this,clampedSpeed);
     }
 
-    private void setSpeedDirect(int speed) {
+    public void setSpeedDirect(int speed) {
         if (this.speed != speed) {
             this.speed = speed;
             updatePowerCapacity();
@@ -172,33 +123,6 @@ public final class BlockAcceleratorBlockEntity extends AENetworkedPoweredBlockEn
         output.putInt(SPEED_TAG, this.speed);
     }
 
-    @SuppressWarnings({"rawtypes", "unchecked"})
-    private static void tickTarget(
-        ServerLevel level,
-        BlockPos targetPos,
-        BlockState initialState,
-        BlockEntity target,
-        int extraTicks
-    ) {
-        BlockEntityTicker ticker = initialState.getTicker(level, target.getType());
-        if (ticker == null) {
-            return;
-        }
-
-        Block targetBlock = initialState.getBlock();
-        for (int tick = 0; tick < extraTicks; tick++) {
-            if (!level.isLoaded(targetPos) || target.isRemoved()) break;
-            BlockState currentState = level.getBlockState(targetPos);
-            if (target.isRemoved()
-                || level.getBlockEntity(targetPos) != target
-                || currentState.getBlock() != targetBlock
-                || currentState.is(CANT_ACCELERATE)) {
-                break;
-            }
-            ticker.tick(level, targetPos, currentState, target);
-        }
-    }
-
     @Override
     public void onMainNodeStateChanged(IGridNodeListener.State reason) {
         if (reason == IGridNodeListener.State.POWER) {
@@ -211,7 +135,7 @@ public final class BlockAcceleratorBlockEntity extends AENetworkedPoweredBlockEn
         return AECableType.COVERED;
     }
 
-    private boolean payOperationEnergy() {
+    public boolean payOperationEnergy() {
         double cost = getEnergyUsage();
         var grid = getMainNode().getGrid();
         if (grid != null) {
