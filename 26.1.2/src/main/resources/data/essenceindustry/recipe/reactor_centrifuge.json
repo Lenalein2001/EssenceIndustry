@@ -11,7 +11,7 @@
     "F": "essenceindustry:reactor_casing",
     "I": "minecraft:iron_ingot",
     "P": "minecraft:piston",
-    "R": "minecraft:redstone"
+    "R": "essenceindustry:induction_winding"
   },
   "result": {
     "id": "essenceindustry:reactor_centrifuge",

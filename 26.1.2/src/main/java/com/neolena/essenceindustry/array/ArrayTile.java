@@ -221,7 +221,9 @@ public EnergyHandler energy(){return energy;}public ResourceHandler<ItemResource
  @Override public void setRemoved(){com.neolena.essenceindustry.blueprint.BlueprintAutomation.unloaded(this);ArrayOwners.remove(this);if(visualFormed)ArrayVisualTransition.enqueue(this,false);for(var p:outputPorts)if(level!=null&&level.isLoaded(p)&&level.getBlockEntity(p) instanceof ArrayConnectorTile endpoint)endpoint.disconnect();LOADED.remove(this);super.setRemoved();}
  public static void clearLoaded(){LOADED.clear();SCANS.clear();ArrayVisualTransition.clear();ArrayOwners.clear();ArrayHullShapes.clear();}
  public static void invalidateRecipes(){for(var t:List.copyOf(LOADED)){t.dirty=true;t.wake();}}
- public static void invalidateStructure(Level level,BlockPos pos){if(level.isClientSide())return;for(var t:ArrayOwners.at(level,pos)){t.visualReconcile=true;t.structureScan=null;t.requestStructureCheck();t.wake();com.neolena.essenceindustry.nuclear.StructureValidationQueue.request(t,()->{if(t.structureDirty&&t.usable()&&!t.working)t.checkStructure();});}}
+ public static void invalidateStructure(Level level,BlockPos pos){if(level.isClientSide())return;for(var t:ArrayOwners.at(level,pos))t.queueStructureCheck();}
+ static void chunkChanged(Level level,net.minecraft.world.level.ChunkPos chunk){for(var t:ArrayOwners.inChunk(level,chunk))if(!t.isRemoved())t.queueStructureCheck();}
+ private void queueStructureCheck(){visualReconcile=true;structureScan=null;requestStructureCheck();wake();com.neolena.essenceindustry.nuclear.StructureValidationQueue.request(this,()->{if(structureDirty&&usable()&&!working)checkStructure();});}
  public static ArrayTile owner(Level level,BlockPos pos){return ArrayOwners.owner(level,pos);}
 
  boolean contains(BlockPos p){var local=ArrayLayout.local(layoutAnchor(),ArrayLayout.facing(getBlockState()),p);return local.getX()>=0&&local.getX()<width&&local.getZ()>=0&&local.getZ()<depth&&local.getY()>=0&&local.getY()<height;}

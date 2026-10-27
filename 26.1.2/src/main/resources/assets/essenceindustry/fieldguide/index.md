@@ -12,6 +12,7 @@ Build larger processing systems, prepare reactor fuel, and power your machinery.
 
 ## Nuclear power
 
+- [Make shared industrial components](industrial_components.md)
 - [Build your first reactor](reactor_building.md)
 - [Start and control a reactor](reactor.md)
 - [Calculate fuel use, rod insertion and neighbour bonuses](reactor_calculations.md)
@@ -33,6 +34,10 @@ Build one Array around a single machine type. Run different recipes together, wi
 - [Check processing limits](limits.md)
 - [Find a stalled job](troubleshooting.md)
 - [Build with the Quantum Builder](construction.md)
+
+## Model automation
+
+- [Copy trained HNN models](model_copier.md)
 
 ## Make this book
 

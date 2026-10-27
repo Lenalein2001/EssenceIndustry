@@ -32,6 +32,7 @@ public final class EssenceIndustry {
         com.neolena.essenceindustry.library.SeedLibrary.register(modBus);
         VitalizedFarmlands.register(modBus);
         ItemDescriptions.register();
+        com.neolena.essenceindustry.item.IndustrialComponents.register(modBus);
         com.neolena.essenceindustry.guide.FieldGuide.register(modBus);
         com.neolena.essenceindustry.quantum.QuantumTools.register(modBus);
         com.neolena.essenceindustry.construction.QuantumBuilder.register(modBus);

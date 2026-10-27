@@ -29,6 +29,7 @@ public class SeedCrafterTile extends BlockEntity {
  private final Set<CrafterSlot> openSlots=Collections.newSetFromMap(new WeakHashMap<>());
  private final List<BlockCapabilityCache<ResourceHandler<ItemResource>,Direction>> neighbors=new ArrayList<>();
  private final ItemStacksResourceHandler inventory=new ItemStacksResourceHandler(SLOTS){
+  @Override public boolean isValid(int slot,ItemResource resource){return super.isValid(slot,resource)&&(slot>=INPUTS||acceptsInput(resource));}
   @Override protected void onContentsChanged(int slot,ItemStack previous){revision++;setChanged();for(var view:openSlots)view.changed();if(!working)wake(5);}
  };
  private final ResourceHandler<ItemResource> io=new ResourceHandler<>(){
@@ -44,6 +45,7 @@ public class SeedCrafterTile extends BlockEntity {
  public SeedCrafterTile(BlockPos pos,BlockState state){this(SeedCrafter.TILE.get(),pos,state);}
  public SeedCrafterTile(net.minecraft.world.level.block.entity.BlockEntityType<?> type,BlockPos pos,BlockState state){super(type,pos,state);}
  protected boolean copiesModels(){return false;}
+ protected boolean acceptsInput(ItemResource resource){return true;}
  public ItemStacksResourceHandler inventory(){return inventory;}
  public ResourceHandler<ItemResource> automation(){return guarded;}
  public boolean quarantined(){return recovery!=null;}

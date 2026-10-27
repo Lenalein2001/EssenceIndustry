@@ -9,7 +9,7 @@
     "I": "minecraft:iron_ingot",
     "G": "minecraft:glass",
     "R": "minecraft:redstone",
-    "C": "minecraft:copper_ingot",
+    "C": "essenceindustry:industrial_control_circuit",
     "M": "minecraft:cauldron"
   },
   "result": {

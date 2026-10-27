@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CRC",
+    "IQI",
+    "CRC"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "R": "minecraft:redstone",
+    "I": "minecraft:iron_ingot",
+    "Q": "minecraft:quartz"
+  },
+  "result": {
+    "id": "essenceindustry:industrial_control_circuit",
+    "count": 4
+  }
+}

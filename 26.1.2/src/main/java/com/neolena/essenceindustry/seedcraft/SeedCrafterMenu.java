@@ -13,7 +13,10 @@ public final class SeedCrafterMenu extends AbstractContainerMenu {
  public SeedCrafterMenu(int id,Inventory player,SeedCrafterTile tile){this(id,player,tile.getBlockPos(),tile,tile.getBlockState().getBlock());}
  private SeedCrafterMenu(int id,Inventory player,BlockPos pos,SeedCrafterTile tile,net.minecraft.world.level.block.Block menuBlock){
   super(SeedCrafter.MENU.get(),id);this.tile=tile;expected=menuBlock;access=ContainerLevelAccess.create(player.player.level(),pos);
-  var inv=tile==null?new ItemStacksResourceHandler(SeedCrafterTile.SLOTS):tile.inventory();displayInventory=inv;playerInventory=player;
+  boolean copier=expected instanceof com.neolena.essenceindustry.compat.hnn.ModelCopierBlock;
+  var inv=tile==null?new ItemStacksResourceHandler(SeedCrafterTile.SLOTS){
+   @Override public boolean isValid(int slot,net.neoforged.neoforge.transfer.item.ItemResource resource){return super.isValid(slot,resource)&&(slot>=SeedCrafterTile.INPUTS||!copier||resource.isEmpty()||com.neolena.essenceindustry.compat.hnn.ModelCopy.isIngredient(resource.toStack()));}
+  }:tile.inventory();displayInventory=inv;playerInventory=player;
   boolean fuel=expected instanceof com.neolena.essenceindustry.nuclear.FuelProcessorBlock;
   for(int i=0;i<9;i++)addSlot(new CrafterSlot(inv,i,fuel?24+i*18:24+(i%3)*18,fuel?153:49+(i/3)*18,tile));
   for(int i=0;i<10;i++)addSlot(new CrafterSlot(inv,9+i,(fuel?204:178)+(i%5)*18,(fuel?153:49)+(i/5)*18,tile));

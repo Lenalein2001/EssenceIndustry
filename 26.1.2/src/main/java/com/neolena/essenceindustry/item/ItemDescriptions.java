@@ -15,6 +15,7 @@ public final class ItemDescriptions {
         String path = id.getPath();
         String key = switch (path) {
             case "field_guide" -> "field_guide";
+            case "industrial_control_circuit", "induction_winding" -> path;
             case "processing_array", "array_casing", "array_glass", "array_rack", "array_pattern_hatch", "array_output_port" -> path;
             case "quantum_alloy", "quantum_circuit", "quantum_module_chassis", "quantum_core" -> path;
             case "essence_converter" -> "converter";

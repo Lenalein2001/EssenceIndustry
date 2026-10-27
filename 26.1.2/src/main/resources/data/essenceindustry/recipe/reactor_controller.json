@@ -11,7 +11,7 @@
     "G": "minecraft:glass",
     "I": "minecraft:iron_ingot",
     "L": "minecraft:lapis_lazuli",
-    "R": "minecraft:redstone"
+    "R": "essenceindustry:industrial_control_circuit"
   },
   "result": {
     "id": "essenceindustry:reactor_controller",

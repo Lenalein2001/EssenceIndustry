@@ -26,6 +26,7 @@ public final class ProcessingArray {
  public static final DeferredHolder<MenuType<?>,MenuType<ArrayMenu>> MENU=MENUS.register("processing_array",()->net.neoforged.neoforge.common.extensions.IMenuTypeExtension.create(ArrayMenu::new));
  static{for(var entry:java.util.List.of(CONTROLLER,CASING,GLASS,RACK,HATCH,PORT)){String path=entry.getId().getPath();ITEMS.registerItem(path,p->new BlockItem(entry.get(),p.useBlockDescriptionPrefix()));}ArrayUpgrades.register(ITEMS);}
  public static void register(IEventBus bus){
+  ArrayChunkLifecycle.register();
   BLOCKS.register(bus);ITEMS.register(bus);TILES.register(bus);MENUS.register(bus);
   bus.addListener((net.neoforged.fml.event.config.ModConfigEvent.Reloading event)->{if(event.getConfig().getSpec()==ArrayConfig.SPEC)LIMITS_CHANGED.set(true);});
   // Config file watchers need not run on the game thread. Touch loaded tiles only here.

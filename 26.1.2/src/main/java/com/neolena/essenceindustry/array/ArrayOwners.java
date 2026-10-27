@@ -30,6 +30,7 @@ final class ArrayOwners {
   ArrayTile fallback=null;for(var tile:candidates(level,pos))if(!tile.isRemoved()&&tile.contains(pos)){if(tile.formed())return tile;fallback=tile;}return fallback;
  }
  static synchronized List<ArrayTile> at(Level level,BlockPos pos){return candidates(level,pos).stream().filter(t->!t.isRemoved()&&t.contains(pos)).toList();}
+ static synchronized List<ArrayTile> inChunk(Level level,ChunkPos chunk){return List.copyOf(INDEX.getOrDefault(level,Map.of()).getOrDefault(ChunkPos.pack(chunk.x(),chunk.z()),Set.of()));}
  private static Set<ArrayTile> candidates(Level level,BlockPos pos){var index=INDEX.get(level);return index==null?Set.of():index.getOrDefault(ChunkPos.pack(pos),Set.of());}
  static synchronized void clear(){INDEX.clear();BOUNDS.clear();}
  private ArrayOwners(){}

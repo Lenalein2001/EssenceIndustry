@@ -2,13 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "ICI",
-    "CMC",
-    "ICI"
+    "RMR",
+    "IWI"
   ],
   "key": {
     "I": "minecraft:iron_ingot",
-    "C": "minecraft:copper_ingot",
-    "M": "minecraft:comparator"
+    "C": "essenceindustry:industrial_control_circuit",
+    "R": "minecraft:redstone",
+    "M": "minecraft:comparator",
+    "W": "essenceindustry:induction_winding"
   },
   "result": {
     "id": "essenceindustry:turbine_controller",

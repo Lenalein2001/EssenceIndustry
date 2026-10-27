@@ -6,11 +6,11 @@
     "ICI"
   ],
   "key": {
-    "C": "minecraft:copper_ingot",
+    "C": "essenceindustry:induction_winding",
     "F": "essenceindustry:reactor_casing",
     "I": "minecraft:iron_ingot",
     "P": "minecraft:piston",
-    "R": "minecraft:redstone"
+    "R": "essenceindustry:industrial_control_circuit"
   },
   "result": {
     "id": "essenceindustry:reactor_actuator",

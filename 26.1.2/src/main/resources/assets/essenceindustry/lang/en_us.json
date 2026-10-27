@@ -201,8 +201,8 @@
   "gui.essenceindustry.crop_simulator.me_status_2": "ME online",
   "gui.essenceindustry.crop_simulator.me_status_3": "AE2 not installed",
   "block.essenceindustry.model_copier": "Model Copier",
-  "tooltip.essenceindustry.model_copier": "Copies full HNN training. Keeps the source model.",
-  "gui.essenceindustry.seed_crafter.copy_hint": "Source kept. Cost: 1 framework + 1 diamond.",
+  "tooltip.essenceindustry.model_copier": "Copies full model training. Uses one Blank Data Model and one Quantum Circuit; keeps the source.",
+  "gui.essenceindustry.seed_crafter.copy_hint": "Keeps source. Cost: framework + Quantum Circuit.",
   "gui.essenceindustry.crop_simulator.speed": "Speed",
   "gui.essenceindustry.crop_simulator.yield": "Yield",
   "gui.essenceindustry.crop_simulator.multipliers": "Speed: %sx   Yield: %sx",
@@ -589,8 +589,8 @@
   "gui.mysticalagricultureextraseeds.crop_simulator.me_status_2": "ME online",
   "gui.mysticalagricultureextraseeds.crop_simulator.me_status_3": "AE2 not installed",
   "block.mysticalagricultureextraseeds.model_copier": "Model Copier",
-  "tooltip.mysticalagricultureextraseeds.model_copier": "Copies full HNN training. Keeps the source model.",
-  "gui.mysticalagricultureextraseeds.seed_crafter.copy_hint": "Source kept. Cost: 1 framework + 1 diamond.",
+  "tooltip.mysticalagricultureextraseeds.model_copier": "Copies full model training. Uses one Blank Data Model and one Quantum Circuit; keeps the source.",
+  "gui.mysticalagricultureextraseeds.seed_crafter.copy_hint": "Keeps source. Cost: framework + Quantum Circuit.",
   "gui.mysticalagricultureextraseeds.crop_simulator.speed": "Speed",
   "gui.mysticalagricultureextraseeds.crop_simulator.yield": "Yield",
   "gui.mysticalagricultureextraseeds.crop_simulator.multipliers": "Speed: %sx   Yield: %sx",
@@ -1364,5 +1364,9 @@
   "gui.essenceindustry.port.active_push": "Active: push energy",
   "gui.essenceindustry.port.active_pull": "Active: pull energy",
   "gui.essenceindustry.port.passive": "Passive: external transfer",
-  "gui.essenceindustry.port.passive_help": "External cables can always transfer."
+  "gui.essenceindustry.port.passive_help": "External cables can always transfer.",
+  "item.essenceindustry.industrial_control_circuit": "Industrial Control Circuit",
+  "item.essenceindustry.induction_winding": "Induction Winding",
+  "tooltip.essenceindustry.industrial_control_circuit": "Control electronics for ordinary machines and processors.",
+  "tooltip.essenceindustry.induction_winding": "Copper winding for motors, actuators and power transfer."
 }

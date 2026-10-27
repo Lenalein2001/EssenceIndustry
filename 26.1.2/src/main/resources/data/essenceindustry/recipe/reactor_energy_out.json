@@ -1,14 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "CRC",
+    "CWC",
     "RFR",
-    "CRC"
+    "CWC"
   ],
   "key": {
     "C": "minecraft:copper_ingot",
     "F": "essenceindustry:reactor_casing",
-    "R": "minecraft:redstone"
+    "R": "minecraft:redstone",
+    "W": "essenceindustry:induction_winding"
   },
   "result": {
     "id": "essenceindustry:reactor_energy_out",

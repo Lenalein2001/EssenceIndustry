@@ -6,4 +6,5 @@ import net.minecraft.world.level.block.state.BlockState;
 public final class ModelCopierTile extends SeedCrafterTile {
  public ModelCopierTile(BlockPos pos,BlockState state){super(HnnUtilities.TILE.get(),pos,state);}
  @Override protected boolean copiesModels(){return true;}
+ @Override protected boolean acceptsInput(net.neoforged.neoforge.transfer.item.ItemResource resource){return resource.isEmpty()||ModelCopy.isIngredient(resource.toStack());}
 }
