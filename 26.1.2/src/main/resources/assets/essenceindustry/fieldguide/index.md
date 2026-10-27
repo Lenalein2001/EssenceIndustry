@@ -34,6 +34,7 @@ Build one Array around a single machine type. Run different recipes together, wi
 - [Check processing limits](limits.md)
 - [Find a stalled job](troubleshooting.md)
 - [Build with the Quantum Builder](construction.md)
+- [Configure quantum tools and modules](quantum_tools.md)
 
 ## Model automation
 

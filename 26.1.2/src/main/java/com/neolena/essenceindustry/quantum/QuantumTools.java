@@ -37,8 +37,10 @@ public final class QuantumTools {
         NeoForge.EVENT_BUS.addListener(QuantumMining::stopped);
         NeoForge.EVENT_BUS.addListener(QuantumModuleSafety::anvil);
         NeoForge.EVENT_BUS.addListener(QuantumModuleSafety::grindstone);
-        NeoForge.EVENT_BUS.addListener(QuantumCombat::critical);
+        NeoForge.EVENT_BUS.addListener(net.neoforged.bus.api.EventPriority.LOWEST,QuantumCombat::critical);
+        NeoForge.EVENT_BUS.addListener(net.neoforged.bus.api.EventPriority.LOWEST,QuantumCombat::groundAttack);
         NeoForge.EVENT_BUS.addListener(QuantumCombat::lifeSteal);
+        NeoForge.EVENT_BUS.addListener(QuantumCombat::areaDamage);
         NeoForge.EVENT_BUS.addListener(QuantumCombat::experience);
         if (net.neoforged.fml.loading.FMLEnvironment.getDist().isClient()) QuantumToolScreen.register(bus);
     }

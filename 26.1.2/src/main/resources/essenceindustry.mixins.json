@@ -20,7 +20,10 @@
     "BuilderWirelessSlotMixin",
     "BuilderWirelessPointMixin",
     "BuilderWirelessSignalMixin",
-    "BuilderWirelessMenuMixin"
+    "BuilderWirelessMenuMixin",
+    "QuantumAttackTickerAccessor",
+    "QuantumAttackScopeMixin",
+    "QuantumApothicCriticalMixin"
   ],
   "injectors": {
     "defaultRequire": 1

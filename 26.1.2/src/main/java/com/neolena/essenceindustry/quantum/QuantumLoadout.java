@@ -40,7 +40,7 @@ public final class QuantumLoadout {
         var counts=new EnumMap<QuantumModule.Kind,Integer>(QuantumModule.Kind.class);
         for (var stack: modules) {
             if (stack.isEmpty()) continue;
-            if (!(stack.getItem() instanceof QuantumModule m) || stack.getCount()!=1 || m.kind.staff!=staff) return false;
+            if (!(stack.getItem() instanceof QuantumModule m) || stack.getCount()!=1 || !m.kind.accepts(staff)) return false;
             if (counts.merge(m.kind,1,Integer::sum)>m.kind.limit) return false;
         }
         boolean silk=counts.containsKey(QuantumModule.Kind.SILK_TOUCH), fortune=counts.containsKey(QuantumModule.Kind.FORTUNE);
@@ -59,7 +59,7 @@ public final class QuantumLoadout {
         var contents=tool.getOrDefault(QuantumTools.MODULES.get(), ItemContainerContents.EMPTY);
         if (contents.getSlots()>SLOTS) return 0;
         var counts=counts(contents);if(!counts.valid)return 0;
-        for(var k:QuantumModule.Kind.values())if(counts.values[k.ordinal()]>0 && k.staff!=item.staff)return 0;
+        for(var k:QuantumModule.Kind.values())if(counts.values[k.ordinal()]>0 && !k.accepts(item.staff))return 0;
         if(!enchantCompatible(tool,counts.values[QuantumModule.Kind.SILK_TOUCH.ordinal()]>0,counts.values[QuantumModule.Kind.FORTUNE.ordinal()]>0))return 0;
         return counts.values[kind.ordinal()];
     }

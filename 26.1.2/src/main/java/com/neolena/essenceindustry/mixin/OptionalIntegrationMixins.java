@@ -7,6 +7,7 @@ public final class OptionalIntegrationMixins implements IMixinConfigPlugin {
  public void onLoad(String p){} public String getRefMapperConfig(){return null;}
  public boolean shouldApplyMixin(String target,String mixin){
   if(mixin.substring(mixin.lastIndexOf('.')+1).startsWith("BuilderWireless"))return net.neoforged.fml.loading.LoadingModList.get().getModFileById("ae2")!=null;
+  if(mixin.endsWith("QuantumApothicCriticalMixin"))return net.neoforged.fml.loading.LoadingModList.get().getModFileById("apothic_attributes")!=null;
   if(mixin.endsWith("ExtendedCreativeItemsMixin"))return net.neoforged.fml.loading.LoadingModList.get().getModFileById("extendedae")!=null;
   if(mixin.endsWith("EssencePatternExecutionMixin"))return net.neoforged.fml.loading.LoadingModList.get().getModFileById("ae2")!=null;
   if(mixin.endsWith("SimulationGeneticsMixin"))return net.neoforged.fml.loading.LoadingModList.get().getModFileById("productivefarming")!=null;

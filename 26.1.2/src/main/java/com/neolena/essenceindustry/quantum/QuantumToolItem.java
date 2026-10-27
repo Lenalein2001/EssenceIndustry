@@ -53,26 +53,31 @@ public final class QuantumToolItem extends Item {
         b.add(Attributes.ATTACK_DAMAGE,new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID,(staff?7:28)+4*QuantumLoadout.count(stack,QuantumModule.Kind.DAMAGE)+32*QuantumLoadout.count(stack,QuantumModule.Kind.DAMAGE_AMPLIFIER),AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND);
         b.add(Attributes.ATTACK_SPEED,new AttributeModifier(Item.BASE_ATTACK_SPEED_ID,(staff?-3:-2.4)+0.2*QuantumLoadout.count(stack,QuantumModule.Kind.ATTACK_SPEED),AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND);
         int reach=QuantumLoadout.count(stack,QuantumModule.Kind.REACH);
-        if(reach>0)b.add(Attributes.ENTITY_INTERACTION_RANGE,new AttributeModifier(EssenceIndustry.id("quantum_reach"),0.5*reach,AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND);
+        if(reach>0) {
+            b.add(Attributes.ENTITY_INTERACTION_RANGE,new AttributeModifier(EssenceIndustry.id("quantum_reach"),reach,AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND);
+            b.add(Attributes.BLOCK_INTERACTION_RANGE,new AttributeModifier(EssenceIndustry.id("quantum_block_reach"),reach,AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND);
+        }
+        int submerged=QuantumLoadout.count(stack,QuantumModule.Kind.SUBMERGED_MINING);
+        if(submerged>0)b.add(Attributes.SUBMERGED_MINING_SPEED,new AttributeModifier(EssenceIndustry.id("quantum_submerged_mining"),0.2*submerged,AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND);
         int knockback=QuantumLoadout.count(stack,QuantumModule.Kind.KNOCKBACK);
         if(knockback>0)b.add(Attributes.ATTACK_KNOCKBACK,new AttributeModifier(EssenceIndustry.id("quantum_knockback"),0.25*knockback,AttributeModifier.Operation.ADD_VALUE),EquipmentSlotGroup.MAINHAND);
+        QuantumCombat.addCritAttributes(b,stack);
         return b.build();
     }
     @Override public boolean canPerformAction(ItemInstance s,ItemAbility a) {
-        return staff ? ItemAbilities.DEFAULT_AXE_ACTIONS.contains(a)||ItemAbilities.DEFAULT_SHOVEL_ACTIONS.contains(a) : a==ItemAbilities.SWORD_SWEEP;
+        return staff ? ItemAbilities.DEFAULT_AXE_ACTIONS.contains(a)||ItemAbilities.DEFAULT_SHOVEL_ACTIONS.contains(a) : false;
     }
     private static int effective(ItemInstance s,Holder<Enchantment> e) {
         int n=s.getTagEnchantments().getLevel(e);
         if(e.is(Enchantments.FORTUNE))n=Math.max(n,2*QuantumLoadout.count(s,QuantumModule.Kind.FORTUNE));
         if(e.is(Enchantments.SILK_TOUCH))n=Math.max(n,QuantumLoadout.count(s,QuantumModule.Kind.SILK_TOUCH));
-        if(e.is(Enchantments.SWEEPING_EDGE))n=Math.max(n,QuantumLoadout.count(s,QuantumModule.Kind.SWEEPING));
         if(e.is(Enchantments.LOOTING))n=Math.max(n,QuantumLoadout.count(s,QuantumModule.Kind.LOOTING));
         return n;
     }
     @Override public int getEnchantmentLevel(ItemInstance s,Holder<Enchantment> e) { return effective(s,e); }
     @Override public ItemEnchantments getAllEnchantments(ItemStack s,HolderLookup.RegistryLookup<Enchantment> lookup) {
         var result=new ItemEnchantments.Mutable(s.getTagEnchantments());
-        for(var key:java.util.List.of(Enchantments.FORTUNE,Enchantments.SILK_TOUCH,Enchantments.SWEEPING_EDGE,Enchantments.LOOTING)) { var e=lookup.getOrThrow(key);result.set(e,effective(s,e)); }
+        for(var key:java.util.List.of(Enchantments.FORTUNE,Enchantments.SILK_TOUCH,Enchantments.LOOTING)) { var e=lookup.getOrThrow(key);result.set(e,effective(s,e)); }
         return result.toImmutable();
     }
     @Override public InteractionResult use(Level level,Player player,InteractionHand hand) {

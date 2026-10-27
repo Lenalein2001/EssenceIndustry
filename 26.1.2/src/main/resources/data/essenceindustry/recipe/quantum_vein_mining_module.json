@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AMA",
+    "CHC",
+    "AIA"
+  ],
+  "key": {
+    "A": "essenceindustry:quantum_alloy",
+    "M": "minecraft:diamond_block",
+    "C": "essenceindustry:quantum_circuit",
+    "H": "essenceindustry:quantum_module_chassis",
+    "I": "essenceindustry:industrial_control_circuit"
+  },
+  "result": {
+    "id": "essenceindustry:quantum_vein_mining_module",
+    "count": 1
+  }
+}

@@ -11,7 +11,18 @@ import net.neoforged.neoforge.event.server.ServerStoppedEvent;
 /** Server-wide bounded work; native player destruction owns protection events, loot and XP. */
 public final class QuantumMining {
     public static final int GLOBAL_BUDGET=16, PLAYER_BUDGET=8;
-    private record Job(ServerPlayer player,ServerLevel level,ItemStack tool,ItemStack snapshot,BlockState original,BlockPos center,ArrayDeque<BlockPos> blocks) {}
+    private static final class Job {
+        final ServerPlayer player; final ServerLevel level; final ItemStack tool,snapshot; final BlockState original; final BlockPos center;
+        final ArrayDeque<BlockPos> blocks=new ArrayDeque<>(); final Set<BlockPos> seen=new HashSet<>(); final boolean vein; int remainingVein;
+        Job(ServerPlayer player,ItemStack tool,BlockState original,BlockPos center,int radius,int veinCount) {
+            this.player=player;this.level=player.level();this.tool=tool;this.snapshot=tool.copy();this.original=original;this.center=center.immutable();
+            vein=veinCount>0;remainingVein=16*veinCount;
+            if(vein){seen.add(this.center);expand(this.center);}else blocks.addAll(area(center,player.getNearestViewDirection().getAxis(),radius));
+        }
+        void expand(BlockPos pos) {
+            for(var direction:Direction.values()) {var next=pos.relative(direction);if(seen.add(next))blocks.addLast(next);}
+        }
+    }
     private static final LinkedHashMap<UUID,Job> JOBS=new LinkedHashMap<>();
     private static boolean breaking;
     public static List<BlockPos> area(BlockPos center,Direction.Axis normal,int radius) {
@@ -21,8 +32,8 @@ public final class QuantumMining {
     }
     public static void enqueue(ServerPlayer p,ItemStack tool,BlockPos pos,BlockState state) {
         if(breaking || p.isShiftKeyDown() || !p.gameMode.isSurvival() || p.isSpectator() || !p.mayBuild() || !QuantumToolItem.mineable(state))return;
-        int r=QuantumLoadout.count(tool,QuantumModule.Kind.AREA); if(r==0 || state.hasBlockEntity() || state.getDestroySpeed(p.level(),pos)<0 && state.getDestroyProgress(p,p.level(),pos)<=0)return;
-        JOBS.put(p.getUUID(),new Job(p,p.level(),tool,tool.copy(),state,pos.immutable(),new ArrayDeque<>(area(pos,p.getNearestViewDirection().getAxis(),r))));
+        int r=QuantumLoadout.count(tool,QuantumModule.Kind.AREA),vein=QuantumLoadout.count(tool,QuantumModule.Kind.VEIN_MINING); if((r==0 && vein==0) || state.hasBlockEntity() || state.getDestroySpeed(p.level(),pos)<0 && state.getDestroyProgress(p,p.level(),pos)<=0)return;
+        JOBS.put(p.getUUID(),new Job(p,tool,state,pos,r,vein));
     }
     public static int pending() {return JOBS.values().stream().mapToInt(j->j.blocks.size()).sum();}
     public static void tick(ServerTickEvent.Post event) {
@@ -38,8 +49,15 @@ public final class QuantumMining {
                 remaining--;var pos=j.blocks.removeFirst();
                 if(!j.level.hasChunkAt(pos) || !p.isWithinBlockInteractionRange(pos,3.0) || !j.level.mayInteract(p,pos))continue;
                 var state=j.level.getBlockState(pos);float hardness=state.getDestroySpeed(j.level,pos);
+                if(j.vein && !state.is(j.original.getBlock()))continue;
                 if(state.isAir() || state.hasBlockEntity() || hardness<0 && state.getDestroyProgress(p,j.level,pos)<=0 || hardness>Math.max(1,j.original.getDestroySpeed(j.level,j.center))*4 || !QuantumToolItem.mineable(state) || !j.tool.isCorrectToolForDrops(state))continue;
-                breaking=true;try {p.gameMode.destroyBlock(pos);} finally {breaking=false;}
+                boolean destroyed;
+                breaking=true;try {destroyed=p.gameMode.destroyBlock(pos);} finally {breaking=false;}
+                // Discover through successfully mined blocks only. Protected or changed blocks stop traversal.
+                if(j.vein && destroyed) {
+                    if(--j.remainingVein==0){j.blocks.clear();break;}
+                    j.expand(pos);
+                }
             }
             if(!j.blocks.isEmpty())JOBS.put(id,j);
         }

@@ -38,13 +38,16 @@ public final class QuantumToolScreen extends TextInputContainerScreen<QuantumToo
             g.text(font,text("fortune",2*QuantumLoadout.count(tool,QuantumModule.Kind.FORTUNE)),statsX,statsY+30,MUTED,false);
             g.text(font,text("silk",QuantumLoadout.count(tool,QuantumModule.Kind.SILK_TOUCH)>0?"On":"Off"),statsX,statsY+45,MUTED,false);
             g.text(font,text("experience",25*QuantumLoadout.count(tool,QuantumModule.Kind.EXPERIENCE)),statsX,statsY+60,MUTED,false);
+            g.text(font,text("reach",QuantumLoadout.count(tool,QuantumModule.Kind.REACH)),statsX,statsY+75,MUTED,false);
+            g.text(font,text("vein",16*QuantumLoadout.count(tool,QuantumModule.Kind.VEIN_MINING)),statsX,statsY+90,MUTED,false);
+            g.text(font,text("submerged",20*QuantumLoadout.count(tool,QuantumModule.Kind.SUBMERGED_MINING)),statsX,statsY+105,MUTED,false);
         } else {
             g.text(font,text("damage",29+4*QuantumLoadout.count(tool,QuantumModule.Kind.DAMAGE)+32*QuantumLoadout.count(tool,QuantumModule.Kind.DAMAGE_AMPLIFIER)),statsX,statsY,TEXT,false);
             g.text(font,text("attack_speed",String.format(java.util.Locale.ROOT,"%.1f",1.6+0.2*QuantumLoadout.count(tool,QuantumModule.Kind.ATTACK_SPEED))),statsX,statsY+12,TEXT,false);
-            g.text(font,text("reach",String.format(java.util.Locale.ROOT,"%.1f",0.5*QuantumLoadout.count(tool,QuantumModule.Kind.REACH))),statsX,statsY+24,MUTED,false);
-            g.text(font,text("sweeping",QuantumLoadout.count(tool,QuantumModule.Kind.SWEEPING)),statsX,statsY+36,MUTED,false);
+            g.text(font,text("reach",String.format(java.util.Locale.ROOT,"%.1f",1.0*QuantumLoadout.count(tool,QuantumModule.Kind.REACH))),statsX,statsY+24,MUTED,false);
+            g.text(font,text("sweeping",String.format(java.util.Locale.ROOT,"%.1f",QuantumCombat.aoeRadius(tool))),statsX,statsY+36,MUTED,false);
             g.text(font,text("crit_chance",QuantumCombat.critChance(tool)),statsX,statsY+48,TEXT,false);
-            g.text(font,text("crit_damage",String.format(java.util.Locale.ROOT,"%.2f",QuantumCombat.critMultiplier(tool))),statsX,statsY+60,TEXT,false);
+            g.text(font,text("crit_damage",String.format(java.util.Locale.ROOT,"%.2f",QuantumCombat.critMultiplier(tool)-1.5f)),statsX,statsY+60,TEXT,false);
             g.text(font,text("looting",QuantumLoadout.count(tool,QuantumModule.Kind.LOOTING)),statsX,statsY+72,MUTED,false);
             g.text(font,text("life_steal",QuantumLoadout.count(tool,QuantumModule.Kind.LIFE_STEAL)),statsX,statsY+84,MUTED,false);
             g.text(font,text("knockback",String.format(java.util.Locale.ROOT,"%.2f",0.25*QuantumLoadout.count(tool,QuantumModule.Kind.KNOCKBACK))),statsX,statsY+96,MUTED,false);
