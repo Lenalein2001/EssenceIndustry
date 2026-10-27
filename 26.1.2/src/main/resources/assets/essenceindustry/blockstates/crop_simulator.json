@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "essenceindustry:block/crop_simulator"
+    },
+    "facing=east": {
+      "model": "essenceindustry:block/crop_simulator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "essenceindustry:block/crop_simulator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "essenceindustry:block/crop_simulator",
+      "y": 270
     }
   }
 }

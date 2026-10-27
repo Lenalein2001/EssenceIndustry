@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "essenceindustry:block/model_copier"
+    },
+    "facing=east": {
+      "model": "essenceindustry:block/model_copier",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "essenceindustry:block/model_copier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "essenceindustry:block/model_copier",
+      "y": 270
     }
   }
 }

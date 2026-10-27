@@ -18,8 +18,11 @@ public final class ModelCopy {
   if(framework==Items.AIR)return null;
   for(int i=0;i<9;i++){var r=inv.getResource(i);if(r.isEmpty())continue;
    if(HnnUtilities.isModel(r.toStack())){if(source>=0)return null;source=i;}
-   else if(r.is(framework)){if(blank>=0)return null;blank=i;}
-   else if(r.is(catalyst())){if(circuit>=0)return null;circuit=i;}else return null;
+   // Each copy needs only one of each consumable. Additional stacks are supply,
+   // not competing recipes; consume the first occupied slot and continue there
+   // until it is empty before advancing to the next stack.
+   else if(r.is(framework)){if(blank<0)blank=i;}
+   else if(r.is(catalyst())){if(circuit<0)circuit=i;}else return null;
   }
   if(source<0 || blank<0 || circuit<0)return null;
   var copy=inv.getResource(source); // Exact immutable resource: model ID, data, iterations and custom components.

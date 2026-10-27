@@ -11,7 +11,12 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 public final class CropSimulationBlock extends Block implements EntityBlock {
- public CropSimulationBlock(Properties p){super(p.forceSolidOff().lightLevel(state->15).strength(2.5F).sound(SoundType.METAL).pushReaction(net.minecraft.world.level.material.PushReaction.BLOCK));}
+ public static final net.minecraft.world.level.block.state.properties.EnumProperty<net.minecraft.core.Direction> FACING=net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
+ @Override protected void createBlockStateDefinition(net.minecraft.world.level.block.state.StateDefinition.Builder<net.minecraft.world.level.block.Block,BlockState> builder){super.createBlockStateDefinition(builder);builder.add(FACING);}
+ @Override public BlockState getStateForPlacement(net.minecraft.world.item.context.BlockPlaceContext context){return defaultBlockState().setValue(FACING,context.getHorizontalDirection().getOpposite());}
+ @Override public BlockState rotate(BlockState state,net.minecraft.world.level.block.Rotation rotation){return state.setValue(FACING,rotation.rotate(state.getValue(FACING)));}
+ @Override public BlockState mirror(BlockState state,net.minecraft.world.level.block.Mirror mirror){return state.rotate(mirror.getRotation(state.getValue(FACING)));}
+ public CropSimulationBlock(Properties p){super(p.forceSolidOff().lightLevel(state->15).strength(2.5F).sound(SoundType.METAL).pushReaction(net.minecraft.world.level.material.PushReaction.BLOCK));registerDefaultState(defaultBlockState().setValue(FACING,net.minecraft.core.Direction.NORTH));}
  @Override public BlockEntity newBlockEntity(BlockPos pos,BlockState state){return new CropSimulationTile(pos,state);}
  @Override protected void tick(BlockState state,ServerLevel level,BlockPos pos,RandomSource random){if(level.getBlockEntity(pos) instanceof CropSimulationTile t)t.work();}
  @Override public boolean onDestroyedByPlayer(BlockState state,Level level,BlockPos pos,Player player,net.minecraft.world.item.ItemStack tool,boolean harvest,net.minecraft.world.level.material.FluidState fluid){if(com.neolena.essenceindustry.library.StorageBreakSafety.denyPlayerRemoval(level,pos,player))return false;return super.onDestroyedByPlayer(state,level,pos,player,tool,harvest,fluid);}

@@ -26,7 +26,7 @@ Find the Quantum Circuit's crafting recipe in JEI. Its materials depend on which
 
 ## Automate copies
 
-Keep one source model in an input slot, then supply Blank Data Models and Quantum Circuits through item pipes or AE2. Extract finished copies from the output slots. Use only one source model at a time, and do not split one ingredient across several input slots.
+Keep one source model in an input slot, then supply Blank Data Models and Quantum Circuits through item pipes or AE2. Extract finished copies from the output slots. Blank models and circuits may occupy several input slots; the copier consumes one of each per copy. Keep only one source model in the inputs so the copying target is unambiguous.
 
 The source can be untrained or already Self Aware. Copies inherit its current training. JEI shows the exact training of a model you look up and labels the original as retained.
 
