@@ -82,7 +82,8 @@ public final class FuelProcessorTile extends SeedCrafterTile implements NuclearH
  public Direction facing(){return com.neolena.essenceindustry.blueprint.ControllerPlacement.facing(this,getBlockState().getValue(FuelProcessorBlock.FACING));}
  public FuelPlantLayout.Layout layout(){return FuelPlantLayout.get(machine());}
  public int fabricationMode(){return fabricationMode;}
- public void cycleMode(){if(available()){fabricationMode=(fabricationMode+1)%5;attemptedRevision=-1;setChanged();wake(5);}}
+ private boolean hasStoredThorium(){for(int i=0;i<INPUTS;i++)if(inventory().getResource(i).toStack().is(NuclearFuels.MATERIALS.get("thorium_fuel").get()))return true;return false;}
+ public void cycleMode(){if(available()){do{fabricationMode=(fabricationMode+1)%5;}while((fabricationMode==2&&!FuelCycle.thoriumAvailable())||(fabricationMode==3&&!FuelCycle.thoriumAvailable()&&!hasStoredThorium()));attemptedRevision=-1;setChanged();wake(5);}}
  public EnergyHandler energy(){return energy;}
  public boolean hasJob(){return job!=null;}
  public int progress(){return job==null?0:1000*job.progress/job.duration;}

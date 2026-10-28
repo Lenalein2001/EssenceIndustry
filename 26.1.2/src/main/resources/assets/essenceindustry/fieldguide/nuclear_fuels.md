@@ -33,19 +33,8 @@ Start with ordinary uranium in a [reactor](reactor.md). Its solid spent fuel is 
 | Stronger fuel without waiting for spent fuel | Enrich nine uranium ingots into one Enriched Uranium Fuel. Store the eight Depleted Uranium byproducts. |
 | Reuse the first spent fuel | Collect eight matching Spent Uranium or Spent Enriched Uranium items, then reprocess them into Recovered Plutonium. |
 | Turn that plutonium into more fuel items | Select MOX in the Fabricator; combine one Recovered Plutonium with three Depleted Uranium for four MOX Fuel. |
-| Reach Advanced Nuclear Fuel | Burn a prepared plutonium, MOX, thorium or advanced fuel, then reprocess eight matching spent items to get Recovered Fissile Material. Combine it with enriched fuel and thorium fuel. |
 
 Recovered Plutonium is a fabrication ingredient, not ready-to-burn Plutonium Fuel. Recovered Fissile Material is a different ingredient. Do not mix different spent types in one reprocessing batch.
-
-## First batch of Advanced Nuclear Fuel
-
-1. Make two Enriched Uranium Fuel in the Enricher using 18 uranium ingots. Keep these for fabrication.
-2. Select Thorium in the Fabricator and turn one tagged thorium ingot into one Thorium Fuel. Keep it too.
-3. Separately obtain and burn enough MOX, Plutonium Fuel or Thorium Fuel to collect eight matching spent items. Burning ordinary or enriched uranium produces the plutonium recovery branch instead.
-4. Reprocess those eight spent items into one Recovered Fissile Material and seven Nuclear Waste.
-5. Select Advanced in the Fabricator. Supply one Recovered Fissile Material, two Enriched Uranium Fuel and one Thorium Fuel. The result is four Advanced Nuclear Fuel.
-
-The two enriched items and one thorium item are ingredients, not the fuel burned in step 3. There is no self-starting advanced-fuel loop: the first recovered material must come from an earlier fuel. With longer fuel lifetimes, spent material arrives slowly; count your fuel's burned volume rather than expecting immediate reprocessing output.
 
 ## The fuel chain
 
@@ -63,17 +52,14 @@ Pipes and AE2 Pattern Providers both work. Use processing patterns with all prod
 | --- | --- | --- | --- |
 | Fuel Enricher | 9 tagged uranium ingots | 1 Enriched Uranium Fuel + 8 Depleted Uranium | 64,000 |
 | Fuel Reprocessor | 8 Spent Uranium Fuel or 8 Spent Enriched Uranium Fuel | 1 Recovered Plutonium + 7 Nuclear Waste | 128,000 |
-| Fuel Reprocessor | 8 matching spent Plutonium, MOX, Thorium or Advanced fuel | 1 Recovered Fissile Material + 7 Nuclear Waste | 128,000 |
+| Fuel Reprocessor | 8 matching spent Plutonium or MOX fuel | 1 Recovered Fissile Material + 7 Nuclear Waste | 128,000 |
 | Fuel Fabricator | 1 Recovered Plutonium | 1 Plutonium Fuel | 32,000 |
 | Fuel Fabricator | 1 Recovered Plutonium + 3 Depleted Uranium | 4 MOX Fuel | 32,000 |
-| Fuel Fabricator | 1 tagged thorium ingot | 1 Thorium Fuel | 16,000 |
-| Fuel Fabricator | 1 Recovered Fissile Material + 2 Enriched Uranium Fuel + 1 Thorium Fuel | 4 Advanced Nuclear Fuel | 256,000 |
 
-Thorium ingots use `c:ingots/thorium`. If the pack supplies no matching item, that branch is unavailable until a pack adds one. No unrelated resource substitutes for thorium. Different spent fuel types are kept separate.
 
-The Enricher takes 10 seconds per batch. Reprocessing takes 20 seconds. Fabrication takes 5 seconds, or 20 seconds for Advanced fuel. These are operating times at full power; a paused plant takes longer.
+The Enricher takes 10 seconds per batch. Reprocessing takes 20 seconds. Standard fabrication takes 5 seconds. These are operating times at full power; a paused plant takes longer.
 
-Select Plutonium, MOX, Thorium or Advanced mode in the Fabricator before supplying ingredients. The mode is saved and applies to automated input too. Selecting MOX prevents a partial delivery of plutonium from being consumed by the Plutonium Fuel recipe. A reserved batch locks its mode until it finishes.
+Select an available fuel mode in the Fabricator before supplying ingredients. The mode is saved and applies to automated input too. Selecting MOX prevents a partial delivery of plutonium from being consumed by the Plutonium Fuel recipe. A reserved batch locks its mode until it finishes.
 
 ## Craft the controllers
 
@@ -95,22 +81,19 @@ Default potential output for the starter's three fuel segments at 0% rod inserti
 | Enriched uranium | 200,002 | 2,000 | 5 hours 20 minutes |
 | MOX | 270,000 | 2,700 | 5 hours 56 minutes |
 | Plutonium | 499,997 | 5,000 | 4 hours 16 minutes |
-| Thorium | 45,001 | 450 | 8 hours 53 minutes |
-| Advanced nuclear | 1,200,010 | 12,000 | 3 hours 33 minutes |
 
 50% insertion halves both output and fuel consumption. A larger core consumes fuel faster in proportion to its installed fuel segments. Adjacent reflectors improve energy yield by up to 25%; adjacent moderators reduce heat generation by up to 25%. Server owners may customize every fuel's burn, energy and heat values.
 
 ## Grow lower-tier nuclear materials
 
-Ordinary uranium already uses Mystical Agriculture's Uranium Seeds. Three additional resource crops support the lower part of the nuclear chain:
+Ordinary uranium already uses Mystical Agriculture's Uranium Seeds. Additional resource crops support the lower part of the nuclear chain:
 
 | Crop | Tier | Essence conversion |
 | --- | --- | --- |
 | Depleted Uranium | 4 | 8 essence around an empty center -> 4 Depleted Uranium |
-| Thorium Fuel | 4 | 8 essence around an empty center -> 1 Thorium Fuel |
 | Enriched Uranium | 5 | 9 essence in a full grid -> 1 Enriched Uranium Fuel |
 
-Create the first seeds with the normal MA infusion recipe and the matching material, or use the Seed Crafter with that recipe. The seeds require material already obtained through the fuel chain; they do not unlock the first batch for free. They work with the Seed Library, Crop Simulator and essence conversion patterns. Plutonium, MOX and Advanced Nuclear Fuel have no new crop in this update.
+Create the first seeds with the normal MA infusion recipe and the matching material, or use the Seed Crafter with that recipe. The seeds require material already obtained through the fuel chain; they do not unlock the first batch for free. They work with the Seed Library, Crop Simulator and essence conversion patterns. Plutonium and MOX have no new crop in this update.
 
 Existing modpack crops with the same name are preserved. Our conversion recipes only load when the crop belongs to Essence & Industry and uses its intended tier.
 
@@ -123,3 +106,36 @@ Server owners and single-player users can edit `config/essenceindustry-reactor-s
 Untouched earlier fuel presets migrate automatically. Customized per-fuel presets are preserved.
 
 For layout bonuses and your own estimates, see [Reactor calculations](reactor_calculations.md).
+
+<ThoriumAvailable>
+
+## Optional fuel branch
+
+This pack supplies thorium ingots in `c:ingots/thorium`, enabling Thorium Fuel and Advanced Nuclear Fuel. Their Fabricator modes are available alongside Plutonium and MOX.
+
+## First batch of Advanced Nuclear Fuel
+
+1. Make two Enriched Uranium Fuel in the Enricher using 18 uranium ingots. Keep these for fabrication.
+2. Select Thorium in the Fabricator and turn one tagged thorium ingot into one Thorium Fuel. Keep it too.
+3. Separately obtain and burn enough MOX, Plutonium Fuel or Thorium Fuel to collect eight matching spent items. Burning ordinary or enriched uranium produces the plutonium recovery branch instead.
+4. Reprocess those eight spent items into one Recovered Fissile Material and seven Nuclear Waste.
+5. Select Advanced in the Fabricator. Supply one Recovered Fissile Material, two Enriched Uranium Fuel and one Thorium Fuel. The result is four Advanced Nuclear Fuel.
+
+The two enriched items and one thorium item are ingredients, not the fuel burned in step 3. There is no self-starting advanced-fuel loop: the first recovered material must come from an earlier fuel. With longer fuel lifetimes, spent material arrives slowly; count your fuel's burned volume rather than expecting immediate reprocessing output.
+
+
+| Machine | Inputs | Outputs | FE per batch |
+| --- | --- | --- | --- |
+| Fuel Fabricator | 1 tagged thorium ingot | 1 Thorium Fuel | 16,000 |
+| Fuel Fabricator | 1 Recovered Fissile Material + 2 Enriched Uranium Fuel + 1 Thorium Fuel | 4 Advanced Nuclear Fuel | 256,000 |
+
+Eight matching spent Thorium or Advanced Nuclear Fuel reprocess into one Recovered Fissile Material and seven Nuclear Waste for 128,000 FE. Different spent types remain separate.
+
+| Fuel | Direct FE/t | Steam mB/t | Time per 1,000 mB |
+| --- | --- | --- | --- |
+| Thorium | 45,001 | 450 | 8 hours 53 minutes |
+| Advanced nuclear | 1,200,010 | 12,000 | 3 hours 33 minutes |
+
+Thorium Fuel Seeds are tier 4 and require existing Thorium Fuel to create. Eight essence around an empty center make one Thorium Fuel. Seeds do not unlock the first batch.
+
+</ThoriumAvailable>

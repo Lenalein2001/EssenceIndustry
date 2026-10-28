@@ -157,7 +157,7 @@ Set Item Ports: **2 Input / 1 Output**.
 
 New Fabricators start in **Automatic** mode and can process different ready fuel recipes in turn. Ordinary batches take 5 seconds; Advanced takes 20 seconds. Existing machines keep their saved mode.
 
-Automatic mode chooses a complete MOX recipe before the simpler Plutonium recipe when both need the same recovered plutonium. If your pipes deliver the MOX ingredients in separate steps, select **MOX** explicitly before supplying them: Automatic can make Plutonium Fuel while depleted uranium is still missing. The Plutonium, MOX, Thorium and Advanced modes restrict production to that one fuel.
+Automatic mode chooses a complete MOX recipe before the simpler Plutonium recipe when both need the same recovered plutonium. If your pipes deliver the MOX ingredients in separate steps, select **MOX** explicitly before supplying them: Automatic can make Plutonium Fuel while depleted uranium is still missing. Each available fuel mode restricts production to that one fuel. Optional modes only appear when their source material is supplied by the pack; existing stored fuel can still be processed.
 
 Connect FE to the Energy Port or controller. Craft the same Item Port for both directions. Right-click each port and select **Input** for ingredients or **Output** for products, matching the arrows in the layer scenes. The controller also accepts ingredients. You can use ordinary pipes or an AE2 Pattern Provider with a processing pattern; include both products and byproducts.
 

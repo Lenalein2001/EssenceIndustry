@@ -18,6 +18,15 @@ public final class FuelCycle {
   add("fuel_fabricator",256000,List.of(new Input("recovered_fissile_material",1),new Input("enriched_uranium_fuel",2),new Input("thorium_fuel",1)),new Output("advanced_nuclear_fuel",4));
   for(String name:List.of("uranium","enriched_uranium","plutonium","mox","thorium","advanced_nuclear"))add("fuel_reprocessor",128000,List.of(new Input("spent_"+name+"_fuel",8)),new Output(name.equals("uranium")||name.equals("enriched_uranium")?"recovered_plutonium":"recovered_fissile_material",1),new Output("nuclear_waste",7));
  }
+ /** Presentation availability is evaluated against the current world's tags, never during registration.
+  * Existing prepared fuel and queued jobs remain usable when a pack removes a source tag. */
+ private static final TagKey<Item> THORIUM_INGOTS=TagKey.create(Registries.ITEM,Identifier.parse("c:ingots/thorium"));
+ public static boolean thoriumAvailable(){return BuiltInRegistries.ITEM.get(THORIUM_INGOTS).map(tag->tag.size()>0).orElse(false);}
+ public static boolean visible(Process process){
+  if(!thoriumAvailable()&&(process.inputs().stream().anyMatch(i->optionalThoriumBranch(i.ingredient()))||process.outputs().stream().anyMatch(o->optionalThoriumBranch(o.item()))))return false;
+  return process.inputs().stream().allMatch(input->BuiltInRegistries.ITEM.stream().anyMatch(item->input.matches(new ItemStack(item))));
+ }
+ private static boolean optionalThoriumBranch(String item){return item.contains("thorium")||item.contains("advanced_nuclear");}
  private static void add(String m,int e,List<Input> i,Output...o){PROCESSES.add(new Process(m,e,List.copyOf(i),List.of(o)));}
  /** Basic uranium accepts tagged ingots and storage blocks, but not nuggets or dusts. */
  public static ItemStack spentFor(ItemStack fuel){
