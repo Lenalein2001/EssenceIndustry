@@ -59,7 +59,7 @@ Enrichers, reprocessors and fabricators use their fixed process layouts. Turbine
 
 ## Manual controller placement
 
-Use **Verify** to apply the selected dimensions and check a manual build without placing blocks or requiring its interior to match an auto-build pattern. **Project** toggles the Array's in-world guide.
+Use **Verify** to apply the selected dimensions and check a manual build without placing blocks or requiring its interior to match an auto-build pattern. The shared **Project** works for every supported multiblock.
 
 The illustrated controller position is a building default. For manual construction, an Array controller can occupy its outward-facing wall; a reactor controller can occupy any horizontal shell face away from edges. Place the controller facing out, complete the wall, and set the matching dimensions. Width is measured across that face. Interior rack and column rules still apply.
 
@@ -81,3 +81,12 @@ Energy Ports remain separate. Their direction follows the machine: reactor and t
 Saved separate-control cells become empty cells; existing fuel, moderator and reflector cells keep their positions. An actuator is generated above each retained fuel column. This does not add fuel or turn old controls into extra generating capacity. Existing building supplies stay stored, and the worker rescans old construction checkpoints before resuming.
 
 The **Windows** dropdown offers solid, strip, full, panoramic, centered, diamond, vertical-bay and horizontal-band layouts for reactors, arrays and turbines. Preview and material counts use the selected layout. Old saved strip/full designs keep their original shape. Use the same Reactor Casing for nuclear shells and fuel plants, and the same Observation Glass for walls and roofs.
+
+
+## Build by hand with a world guide
+
+Choose your layout in the controller construction screen, switch to **Layers** to choose a layer, then press **Project**. From the 3D view, projection starts at the base layer. The screen closes and a read-only outline guide appears at the actual planned world position. Blue outlines mark missing blocks; orange marks a wrong block or space that must be cleared. Aim at an outline to see its expected block name and item icon. Matching blocks disappear as you build, including their required orientation.
+
+Assign **Toggle world build guide**, **Next world build layer** and **Previous world build layer** under Minecraft Controls, in Essence Industry Construction. These bindings are unassigned by default. You can also reopen Construction to choose a layer or hide the guide. The guide keeps a snapshot of the chosen plan; after editing layout settings, show it again to refresh it.
+
+Only one horizontal layer is displayed. Large layers show the nearest 512 mismatches within 48 blocks; move around to inspect the rest. Unloaded chunks are skipped, and the guide never loads chunks, places blocks or consumes materials. It is local to your client, clears on disconnect or dimension change, and stops when its controller is removed. Manually relocated controllers use the server's actual construction origin. The guide shows the selected auto-build plan; an independently valid manual layout may intentionally differ from it.

@@ -121,7 +121,9 @@ public final class BlueprintWork {
  }
  private BlockPos position(BlueprintPlan.Cell c){return BlueprintPlan.position(layoutAnchor,facing,settings,c.local());}
  public static boolean matches(BlockState actual,BlockState expected){if(actual.isAir())return expected.isAir();if(actual.getBlock()!=expected.getBlock())return false;
-  for(var p:expected.getProperties())if((p.getName().equals("facing")||p.getName().equals("axis")||p.getName().equals("output"))&&!actual.getValue(p).equals(expected.getValue(p)))return false;return true;
+  // Array shell and rack facing is assigned by formation solely for rendering.
+  boolean visualFacing=net.neoforged.fml.ModList.get().isLoaded("ae2")&&(expected.is(com.neolena.essenceindustry.array.ProcessingArray.CASING.get())||expected.is(com.neolena.essenceindustry.array.ProcessingArray.GLASS.get())||expected.is(com.neolena.essenceindustry.array.ProcessingArray.RACK.get()));
+  for(var p:expected.getProperties())if((!visualFacing&&p.getName().equals("facing")||p.getName().equals("axis")||p.getName().equals("output"))&&!actual.getValue(p).equals(expected.getValue(p)))return false;return true;
  }
  private boolean safe(BlockPos p){if(p.getY()<level.getMinY()||p.getY()>=level.getMaxY()||!level.getWorldBorder().isWithinBounds(p)){stop(Status.DENIED,p);return false;}if(!level.isLoaded(p)){stop(Status.UNLOADED,p);return false;}return true;}
  private boolean configure(){

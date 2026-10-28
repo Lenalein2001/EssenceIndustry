@@ -1403,5 +1403,18 @@
   "tooltip.essenceindustry.quantum_module.vein_mining": "Staff: breaks up to 16 additional connected matching blocks per module. Takes priority over Area Mining. Hold Shift to mine one block.",
   "tooltip.essenceindustry.quantum_module.submerged_mining": "Staff: +20 percentage points of underwater mining efficiency. Four modules remove the usual underwater penalty.",
   "gui.essenceindustry.quantum_tool.vein": "Vein limit: %s",
-  "gui.essenceindustry.quantum_tool.submerged": "Underwater: +%s%%"
+  "gui.essenceindustry.quantum_tool.submerged": "Underwater: +%s%%",
+  "key.category.essenceindustry.construction": "Essence Industry Construction",
+  "key.essenceindustry.world_guide_toggle": "Toggle world build guide",
+  "key.essenceindustry.world_guide_next": "Next world build layer",
+  "key.essenceindustry.world_guide_previous": "Previous world build layer",
+  "gui.essenceindustry.planner.world_guide": "Project",
+  "gui.essenceindustry.planner.world_hide": "Hide",
+  "gui.essenceindustry.planner.world_layer": "World layer %s / %s",
+  "gui.essenceindustry.planner.world_guide_help": "Close this screen and show a read-only world guide. In Layers view it uses the selected layer; 3D view starts at the base. Matching blocks disappear. Bind guide controls in Minecraft Controls.",
+  "gui.essenceindustry.planner.world_layer_help": "Choose a layer before showing the guide. Next/previous layer hotkeys can be assigned in Minecraft Controls.",
+  "gui.essenceindustry.planner.world_legend": "Blue: place  |  Orange: replace / clear",
+  "gui.essenceindustry.planner.world_clear": "Clear this space",
+  "gui.essenceindustry.planner.world_aim": "Aim at an outline to identify its block",
+  "gui.essenceindustry.planner.world_unloaded": "Unloaded blocks are not shown"
 }
