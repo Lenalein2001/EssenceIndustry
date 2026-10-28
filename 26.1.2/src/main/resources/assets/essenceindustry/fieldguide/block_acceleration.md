@@ -21,4 +21,10 @@ The target must support extra server block-entity ticks. Not every machine does:
 
 The existing full-block AE Block Accelerator remains available. Use the cable part when you want the same job in a smaller connection space.
 
+## Power cables
+
+The full-block accelerator and tiered Growth Accelerators also accept FE from power cables such as Powah. Connect to an existing power/ME connector face: the Growth Accelerators use their two end faces, while the full-block accelerator accepts power on every face except its machine-facing target side. No Energy Acceptor is needed for direct FE input.
+
+A full-block accelerator prefers a sufficiently powered ME network. Otherwise it uses its own FE buffer, including when connected to an unpowered ME network. Each operation is paid by one source; it does not charge both. The cable-mounted ME Block Accelerator continues to use ME power through its host cable.
+
 <Recipe id="essenceindustry:block_accelerator_part" />

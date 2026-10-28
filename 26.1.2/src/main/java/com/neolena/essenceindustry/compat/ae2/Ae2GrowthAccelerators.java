@@ -141,6 +141,12 @@ public final class Ae2GrowthAccelerators {
     }
 
     private static void registerCapabilities(RegisterCapabilitiesEvent event) {
+        // Reuse AE2's transactional FE adapter and its configured power faces.
+        // Capability registration is per block-entity type, not inherited from AE2's tier one.
+        event.registerBlockEntity(net.neoforged.neoforge.capabilities.Capabilities.Energy.BLOCK,
+            BLOCK_ENTITY_TYPE.get(), TieredGrowthAcceleratorBlockEntity::getEnergyStorage);
+        event.registerBlockEntity(net.neoforged.neoforge.capabilities.Capabilities.Energy.BLOCK,
+            BLOCK_ACCELERATOR_ENTITY_TYPE.get(), BlockAcceleratorBlockEntity::getEnergyStorage);
         event.registerBlockEntity(
             AECapabilities.IN_WORLD_GRID_NODE_HOST,
             BLOCK_ENTITY_TYPE.get(),

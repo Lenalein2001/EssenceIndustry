@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
+    },
+    {
+      "type": "mysticalagriculture:crop_enabled",
+      "crop": "mysticalagriculture:honey"
+    }
+  ],
+  "pattern": [
+    "EE",
+    "EE"
+  ],
+  "key": {
+    "E": "mysticalagriculture:honey_essence"
+  },
+  "result": {
+    "id": "minecraft:honey_block",
+    "count": 1
+  }
+}

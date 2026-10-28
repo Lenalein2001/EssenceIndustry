@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "pattern": [
+    "ISI",
+    "QFQ",
+    "ISI"
+  ],
+  "key": {
+    "I": "#c:storage_blocks/iron",
+    "S": "ae2:speed_card",
+    "Q": "ae2:quartz_block",
+    "F": "ae2:fluix_block"
+  },
+  "result": {
+    "id": "ae2:growth_accelerator",
+    "count": 1
+  }
+}

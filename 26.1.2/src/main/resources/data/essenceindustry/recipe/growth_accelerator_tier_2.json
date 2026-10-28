@@ -14,11 +14,11 @@
   ],
   "key": {
     "A": "ae2:growth_accelerator",
-    "B": "#c:ingots/copper",
-    "C": "ae2:fluix_pearl",
+    "B": "ae2:fluix_block",
+    "C": "ae2:1k_crafting_storage",
     "D": "#c:ingots/netherite",
     "E": "ae2:speed_card",
-    "F": "ae2:formation_core"
+    "F": "ae2:energy_cell"
   },
   "result": {
     "id": "essenceindustry:growth_accelerator_tier_2",

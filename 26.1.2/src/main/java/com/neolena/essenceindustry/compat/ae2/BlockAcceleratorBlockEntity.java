@@ -138,14 +138,14 @@ public final class BlockAcceleratorBlockEntity extends AENetworkedPoweredBlockEn
     public boolean payOperationEnergy() {
         double cost = getEnergyUsage();
         var grid = getMainNode().getGrid();
-        if (grid != null) {
-            // Grid power never fills the private FE buffer. Pay the network directly.
-            if (!getMainNode().isPowered()) return false;
+        if (grid != null && getMainNode().isPowered()) {
+            // Pick one source only. Never partially drain the grid before falling back to FE.
             var energy = grid.getEnergyService();
-            return energy.extractAEPower(cost, Actionable.SIMULATE, PowerMultiplier.CONFIG) >= cost
-                    && energy.extractAEPower(cost, Actionable.MODULATE, PowerMultiplier.CONFIG) >= cost;
+            if (energy.extractAEPower(cost, Actionable.SIMULATE, PowerMultiplier.CONFIG) >= cost)
+                return energy.extractAEPower(cost, Actionable.MODULATE, PowerMultiplier.CONFIG) >= cost;
         }
-        // Standalone/direct startup retains its paid local operation path.
+        // An initialized standalone accelerator also owns an unpowered AE grid.
+        // Its independently supplied FE buffer must remain usable in that state.
         return extractAEPower(cost, Actionable.SIMULATE) >= cost
                 && extractAEPower(cost, Actionable.MODULATE) >= cost;
     }
@@ -153,7 +153,7 @@ public final class BlockAcceleratorBlockEntity extends AENetworkedPoweredBlockEn
     @Override
     public boolean isPowered() {
         if (!isClientSide()) {
-            if (getMainNode().getGrid() != null) return getMainNode().isPowered();
+            if (getMainNode().isPowered()) return true;
             return extractAEPower(getEnergyUsage(), Actionable.SIMULATE) >= getEnergyUsage();
         }
         return getBlockState().getValue(BlockAcceleratorBlock.POWERED);

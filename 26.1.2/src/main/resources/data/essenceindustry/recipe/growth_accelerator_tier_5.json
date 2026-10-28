@@ -14,11 +14,11 @@
   ],
   "key": {
     "A": "essenceindustry:growth_accelerator_tier_4",
-    "B": "#c:gems/emerald",
-    "C": "ae2:fluix_pearl",
-    "D": "#c:ingots/netherite",
+    "B": "ae2:fluix_block",
+    "C": "ae2:64k_crafting_storage",
+    "D": "#c:storage_blocks/netherite",
     "E": "ae2:speed_card",
-    "F": "ae2:formation_core"
+    "F": "ae2:dense_energy_cell"
   },
   "result": {
     "id": "essenceindustry:growth_accelerator_tier_5",
